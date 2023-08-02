@@ -1,0 +1,804 @@
+<?php require_once ('assets/php/header.php'); ?>
+<?php require_once('assets/php/navbar.php'); ?>
+   
+
+
+    <div class="header-image">
+        <img src="images/robotics banner.svg">
+    </div>
+    
+    
+
+    <div id="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="emoji-contain">
+                    <h1>🐼</h1>
+                </div>
+                <h1 style="color:#1C1E2B">Bread Pandas FTC Robotics Team</h1>
+                <!-- general role details -->
+                <div class="text-contain">
+                    <div class="row">
+                        <div class="column">
+                            <p><b>Role</b>
+                                <br>
+                                Business Lead
+                                <br>
+                                Designer
+                                <br>
+                                Outreach Coordinator
+                            </p>
+                        </div>
+                        <div class="column">
+                            <p><b>Duration</b>
+                                <br>
+                                2 years,
+                                <br>
+                                (Junior - Senior yr of HS)
+                                
+                            </p>
+                        </div>
+                        <div class="column">
+                            <p><b>Skills</b>
+                                <br>
+                                Workshop Coordination
+                                <br>
+                                Merch Design
+                                <br>
+                                Business Operations
+                            </p>
+                        </div>
+        
+                    </div>
+
+                    
+                </div>
+                
+                <br>
+                
+                
+                
+            </div>
+
+            <div class="container" style="padding: 5vh 0;">
+                <hr class="solid">
+            </div>
+
+            <div class="text-contain">
+                    <p>During my Junior Year (just back from COVID Lockdown), I decided to try something 
+                        new and join a Robotics Team (Fun Fact: I had zero engineering nor programming experience 
+                        prior to this!) 
+                        <br><br>
+                        As the Business Lead, I participated in the FIRST Tech Challenge 
+                        Robotics Competitions, <a href="notebook.php" target="_blank">compiled a 150 page 
+                        business plan/Notebook</a>, and developed our team merchandise from scratch.
+                        <br><br>
+                        After these two years, I'm happy to say that we've won multiple awards including <b>1st place in Design and Promotion</b>, 
+                        even being the first team at our high school to advance to States!
+                        <br><br>
+                        <div class="callout">
+                           <p>Heads-Up: This page combines projects from both the first season (Team 20191) and the second (Team 21980).
+                              <br><br> Review the contents below!
+                              <ol>
+                                <b>
+                                    <li><a href="#outreach">Outreach and Event Coordination</a> </li>
+                                    <li><a href="#merch">Merchandise and Uniform Design</a>  </li>
+                                    <li><a href="#web">Website Development</a>  </li>
+                                    <li><a href="#pit">Pit Booth Design</a>  </li>
+                                    <li><a href="#graphics">Other Graphics</a>  </li>
+                                    <li><a href="#reflection">Reflection</a>  </li>
+                                </b>
+                              </ol>
+                           </p> 
+                        </div>
+                        
+                    </p>
+                </div>
+        </div>
+    </div>
+
+
+    <!-- project overview section -->
+    <div class="color-contain">
+        
+            
+            <div class="text-contain-color">
+                <br>
+                <div class="subsub-title">Project Overview</div>
+            </div>
+            <br><br>
+            <hr style="height: 5px; width: 80px; background-color: #fff;">
+            <br>
+            <div id="column-contain">
+                <div class="col1">
+                    <div class="subsubsub-title" >
+                        <div class="row">
+                            <div class="column">
+                                ✦
+                            </div>
+                            <div class="column">
+                                My Roles
+                            </div>
+                        </div>
+                        
+                         
+                    </div>
+                </div>
+
+
+
+                    <div class="col2">
+                        <p>
+                            <ul>
+                                <li><b>Directing Outreach Events</b> including 6 webinars, workshops, and volunteer events collaborating with nonprofit organizations and high school + university clubs! <br></li>
+                                <li><b>Branding Development and Design</b> for social media posts, webisite, posters, and team merch <br></li>
+                                <li><b>Project Management</b> through our Discord Server (event reminders, setting key success metrics, organizing event details) </li>
+                            
+                            </ul>
+                        
+
+
+                        </p>
+                         
+                    </p>
+
+                    </div>           
+            </div>    
+
+            <div id="column-contain">
+                <div class="col1">
+                    <div class="subsubsub-title" >
+                        <div class="row">
+                            <div class="column">
+                                ✦
+                            </div>
+                            <div class="column">
+                                Overcoming Challenges
+                            </div>
+                        </div>
+                        
+                         
+                    </div>
+                </div>
+                <div class="col2">
+                    <p> After my first year of Robotics, our high school's program was suddenly canceled due to a lack of funding. 
+                        I led pitches to our school administrators to convince them to revive the program, but to no avail. Finally, 
+                        I decided to take the lead in <b>establishing an independent community team</b>, which became 
+                        <a href="https://teambreadpandas.wixsite.com/website" target="_blank" style="color: #CFA09A";>21980 Bread Pandas</a>
+                    </p>
+                </div>
+            </div>   
+
+            <div id="column-contain">
+                <div class="col1">
+                    <div class="subsubsub-title" >
+                        <div class="row">
+                            <div class="column">
+                                ✦
+                            </div>
+                            <div class="column">
+                                Acheivements
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col2">
+                    <p> Along with being the first team at our high school to advance to State Championships, we also won <a href="https://ftc-events.firstinspires.org/team/21980" style="color:#CFA09A">1st place Deisgn</a> (two times!), 
+                        the Promote Award, <a href="http://www.firsttechsocal.org/qualifier-1/" style="color:#CFA09A">2nd Place Inspire</a>, 2nd Place Promote, and more!
+                    </p>
+                </div>
+            </div>   
+                    
+                   
+
+        
+    </div>
+<!--------------------------- main section ------------------------------->
+<div id="section">
+    
+        <div class="text-contain">
+                <div id="column-contain">
+                   <div class="col-reg1" id="outreach">
+                        <p style="opacity: 60%";><b>Leadership</b></p>
+                        <div class="subsub-title" >Outreach Events </div>
+                        <br>
+                        <br>
+                        <p>As the Head of Business, I lead all of our 
+                            outreach events. I communicated with <b>8 HS/University Organizations</b> and <b> 12 speakers</b>  
+                            from top industries like like Riot Games, Roblox, and Mojang Studios to speak at <b>9 online webinars</b> 
+                             about their careers in product design, Machine Learning, and SWE. I also designed and led the
+                             Graphic Design Workshop!
+                            <br><br>
+                            I developed the <a href="https://docs.google.com/document/d/1plFfgmCtxF5mMiOgPTumq0lNU-1iK2f64k2Qd-roR4I/edit?usp=sharing" target="_blank">speaking agendas</a>, 
+                            slideshow presentations, and IG posts to promote the event (featured below).
+                            </p>
+                   </div>
+
+                <div class="col-reg2">
+                    <img src="images/Robotics FBLA.png" alt="">
+                    <img src="images/Robotics Graphics.png" alt="">
+
+                        
+                    
+                    <!-- zoom feature -->
+                    <script class="zoom" src="/medium-zoom.min.js"></script>
+                    <script class="zoom" src="/main.js"></script>
+                </div> 
+                </div>
+        </div>
+    <!-- second -->
+   <div class="contianer">
+<!-- border seperation between sections -->
+    <br><br><br>
+
+    <div style="display: flex; align-items: center; justify-content: center;">
+        <p style="margin-right: 30px;">✧</p>
+        <hr style="height: 4px; width: 100px; background-color: #454a67;"> 
+        <p style="margin-left: 30px;">✧</p>
+    </div>
+    
+    <br><br><br><br>
+
+    <div class="center">
+        <div class="text-contain">
+            <h1 class="subsubsub-title" style="color: #454a67;">Sample Instagram Posts </h1>
+        </div>
+        
+    </div>
+
+<div class="center">
+
+
+</div>
+ <div class="long-contain">
+    <div class="text-contain">
+        <div class="center">
+            <p>I lead the branding and design for all the <a href="https://www.instagram.com/teambreadpandas/?hl=en" target="_blank">instagram post designs</a> 
+            including outreach events. communicate with the co-hosts. I aimed for a simple blue and white color palette with complex graphics
+            to balance the simplicity. I organized each composition with images in the foreground and backgrond, enhancing the visual depth.</p>
+        </div>
+
+        
+    </div>
+        
+
+  
+    </div>
+       
+         
+  
+
+
+</div>
+    
+
+
+<!-- instagram post images -->
+
+    <div class="grid-contain">
+        <div id="grid-container4">
+          <img src="images/IG.png" alt="">
+          <img src="images/Screenshot 2023-05-17 at 8.03.27 AM.png" alt="">
+          <img src="images/Screenshot 2023-05-17 at 8.03.55 AM.png" alt="">
+          <img src="images/Screenshot 2023-05-17 at 8.04.11 AM.png" alt="">
+          <img src="images/Screenshot 2023-05-17 at 8.04.52 AM.png" alt="">
+          <img src="images/Screenshot 2023-05-17 at 8.04.28 AM.png" alt="">
+           <img src="images/Screenshot 2023-05-17 at 8.05.20 AM.png" alt="">
+          
+          <img src="images/Screenshot 2023-05-17 at 8.05.05 AM.png" alt="">
+         
+          <img src="images/Screenshot 2023-05-17 at 8.05.35 AM.png" alt="">
+          <img src="images/Screenshot 2023-05-17 at 8.05.49 AM.png" alt="">
+          <img src="images/Screenshot 2023-05-17 at 8.06.01 AM.png" alt="">
+          <img src="images/Screenshot 2023-05-17 at 9.09.42 AM.png" alt="">
+        </div>
+
+
+
+    </div>
+    
+    <div class="container">
+        <hr class="solid">
+    </div>
+
+
+<!-- Fashion Design / Team merch -->
+        <div class="text-contain">
+                <div id="column-contain">
+                    <div class="col-reg1">
+                        <img src="images/20191 mock.png" alt="">
+                        <img src="images/21980 mock.png" alt="">
+                        
+                    </div> 
+                    <div class="col-reg2">
+                            <p style="opacity: 60%"; id="merch"><b>Fashion Design</b></p>
+                            <div class="subsub-title">Team Merchandise </div>
+                            <p>I lead the designs for the team hoodies and t-shirts for both our first and second season.</p>
+                               <br>
+                                <div class="vertical"></div>
+                                <br>
+                            <p><b>Season 1</b>  
+                            <br>To ensure that our team spirit and brand were communicated through this uniform, I went with a 
+                            geometric, "e-sports" style design that combined the "Bread" and "Panda" with a bright, eye-catching color palette. <br></p>
+                             
+                                <div class="callout">
+                                     <p>Fun Fact: I designed the entire gaphic using a trackpad on my school-issued chromebook!</p>
+                                </div>
+                           
+                            <br>
+                            <div class="vertical"></div>
+                            <br>
+                            <p><b>Season 2</b>  
+                                <br>This season, I went with a flexible and neutral palette reminiscent of <b>traditional Japanese Ink Art</b>. 
+                                While not as flashy as the former, the monochrome color palette and minimalist design made for a <b>versitile design</b>: for competitions and daily wear.
+                                <br><br>
+                                Scroll for iteratons! :D </p>
+                                
+                            <br>
+
+                    </div>
+                </div>  
+
+                <!-- border seperation between sections -->
+         
+
+        <div style="display: flex; align-items: center; justify-content: center;">
+             <p style="margin-right: 30px;">✧</p>
+             <hr style="height: 4px; width: 100px; background-color: #454a67;"> 
+             <p style="margin-left: 30px;">✧</p>
+         </div>
+    
+         <br><br><br>
+
+            <!-- iterations -->
+            <div class="text-contain">
+                <div class="long-contain">
+                    <div class="subsubsub-title">Iterations!</div>
+                    <br>
+                    <p><b>Season 1</b>: My previous iterations featured monochrome color palettes, however I quickly realized that, though attractive, it 
+                        didn't have the eye-catching "pull-factor" that the vibrant, contrasting design of the original had, which is what we ultimately 
+                        chose through conducting a team poll. As a first-year team, this confident and daring color scheme also fit our branding a lot better!</p>
+                </div>
+                
+               
+                <div class="grid-contain">
+                    <div id="grid-container3">
+                      <img src="images/Panda.png"  >
+                      <img src="images/pink mock.png"  >
+                      <img src="images/brown mock.png" >
+                      
+                      
+                    </div>
+                    
+                </div> 
+                
+                <div class="center">
+                    <p>The Final Product Below (feat. me!) </p>
+                </div>
+                
+                <div class="grid-contain">
+                    <div id="grid-container3">
+                      <img src="images/irl robotics mock.jpg" >
+                      <img src="images/BP Mockup4.png" >
+                      <img src="images/irl robotics mock 2.jpg" >
+
+                    </div>
+                </div>
+
+
+                <div class="long-contain">
+        
+                    <p><b>Season 2</b>: I had two iterations: one fully white and one greyscale. I decided to choose the latter because it was more reminiscent of 
+                        traditional ink-art. I designed the logo in a <b>loose and organic</b> style, paralleling natural elements of nature consistent with our brand. </p>
+                </div>
+                <div class="grid-contain">
+                    <div id="grid-container3">
+                      <img src="images/BP mockup1.png" >
+                      <img src="images/21980 logo bread pandas.png" >
+                      <img src="images/BP Mockup2.png"  >
+                      
+                      
+                      
+                    </div>
+                    
+                </div>
+            </div>
+            
+            
+   
+    </div>
+        
+    <div class="container">
+        <hr class="solid">
+    </div>
+<!-- website design -->
+    <div class="text-contain">
+        <div id="column-contain">
+           <div class="col-reg1">
+                <p style="opacity: 60%"; id="web"><b>UI Design</b></p>
+                <div class="subsub-title">Website Development </div>
+                <br>
+                <br>
+                <p>I lead the website development for both seasons. This season, I initially went with a red theme (before we had established our blue-centric branding) 
+                    largely because it was a <b>minimal yet bold</b> and confident color palette.
+                    <br><br>
+                    I organized the Information Hierarchy based on mission and purpose, the ultimate goal being to <b>click the "fundraiser" button</b>, which is also 
+                    the main "CTA" button featured in the nav bar and landing page. Under the philosophy of the <b>serial positioning effect</b>, the contact form and 
+                    other target links were placed at the top and bottom of the page. 
+                    <br><br>
+                    I integrated dynamic yet subtle geometric graphics in the background with micro-animations. Simple and intuitive. <b>Versatile yet bold</b>. 
+                </p>
+                    
+           </div>
+
+        <div class="col-reg2">
+            <img src="images/BP website mock.png" alt="">
+            <img src="images/BP website mock laptop.png" alt="">
+
+                
+            
+            <!-- zoom feature -->
+            <script class="zoom" src="/medium-zoom.min.js"></script>
+            <script class="zoom" src="/main.js"></script>
+        </div> 
+        </div>
+   <!-- full scroll view of website video -->
+   <div class="center">
+    <p>▿ Click Play to see a full run-through of the website! ▿</p>
+   </div>
+    <div class="center">
+        
+        <div class="video-contain">
+            <iframe src="https://www.youtube.com/embed/kCQgkiIuukE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        
+    </div>
+    <div class="center">
+        <div class="btn-new">
+            <a href="https://ftcbreadpandas21980.wixsite.com/website" class="btn" target="_blank">View Website</a> 
+        </div>
+        
+        
+    </div>
+    </div>
+
+
+    <div class="container">
+        <hr class="solid">
+    </div>
+
+    <!-- pit booth design -->
+    <div class="text-contain">
+        <div class="long-contain">
+            <div class="center">
+                <img src="images/Pit Booth (1).JPG" id="pit">
+            </div>
+            
+            <br><br><br>
+            <p style="opacity: 60%";><b>Management</b></p>
+            <div class="subsub-title">Pit Booth Design</div>
+            <br><br>
+            <p>I headed the <b>design and execution</b>  of our booth (similar to a trade show booth but for robots) 
+                including the coordination of materials with administrators, communication of the design vision, 
+                and the design of all promotional materials used in the booth.
+                <br><br>
+                With a limited budget and location confinements, <b>I wrote around 16 bills</b> in coordination with 
+                the Robotics Club at our High School.
+            </p>
+            
+            <!-- border seperation between sections -->
+            <br><br><br>
+
+            <div style="display: flex; align-items: center; justify-content: center;">
+                 <p style="margin-right: 30px;">✧</p>
+                 <hr style="height: 4px; width: 100px; background-color: #454a67;"> 
+                 <p style="margin-left: 30px;">✧</p>
+            </div>
+    
+            <br><br><br><br>
+            
+        </div>
+         
+    </div>
+     
+    
+    <!-- Pit Booth iterations -->
+    <div class="text-contain">
+        <div id="column-contain">
+           <div class="col-reg1">
+                <div class="subsubsub-title">Design Process </div>
+                <br>
+                <br>
+                <p><b>Stage 1: Ideation and Brainsorming</b>  
+                <br>The initial concept design combined the natural elements of a Panda's habitat (hanging leaves, forest canopy, and "hut" canopy)
+                    with futuristic elements (LED Neon display). <br></p>                                                         
+                            <br>
+                            <div class="vertical"></div>
+                            <br>
+                            <p><b>Stage 2: Coordination and Conceptualization</b>  
+                                <br> The Digital Mockup offered a more technical and strategic overview of the design. This was also when I began 
+                                communicating with our mentor about the plan to secure, collect, and divide funds. </p>   
+                            <br>
+                            <div class="vertical"></div>
+                            <br>
+                            <p><b>Stage 3: Execution</b> 
+                               <br> After designing the banners, posters, and <a href="notebook.php">engineering portfolio</a>, I set up the budget 
+                               outline and collected/purchased the components.
+                            </p>
+                            
+           </div>
+
+        <div class="col-reg2">
+            <img src="images/pit booth design.jpeg" alt="">
+            <img src="images/vertical banner team name, social media.png" alt="">
+
+                
+            
+            <!-- zoom feature -->
+            <script class="zoom" src="/medium-zoom.min.js"></script>
+            <script class="zoom" src="/main.js"></script>
+        </div> 
+        </div>
+
+        <div class="long-contain">
+            <div class="callout">
+                <p><b>Overcoming Challenges:</b> On the day of the competition, we were unexpectedly met with tight restrictions on our pit booth and 
+                    were unable to put up our canopy, a key component of our design. Nevertheless, we powered through and <b>improvised our design:</b> 
+                    taping our banner to a stack of cardboard boxes and ultimately, receiving many compliments for our design! </p>
+            </div>
+        </div>
+        <br><br>
+        <div class="center">
+            
+            <p>▿ The Development Process! ▿</p>
+        </div>
+        
+        <div class="grid-contain">
+            <div id="grid-container3">
+                <img src="images/pit booth setup.JPG" alt="">
+                <img src="images/pit booth inside.JPG" alt="">
+                <img src="images/pit booth.jpeg" alt="">
+                
+            </div>
+        </div>
+
+        <div class="grid-contain">
+            <div id="grid-container2">
+                <img src="images/pit booth dev.JPG" alt="">
+                <img src="images/pit booth front.JPG" alt="">
+            </div>
+        </div>
+        <!-- border seperation between sections -->
+        <br>
+
+        <div style="display: flex; align-items: center; justify-content: center;">
+             <p style="margin-right: 30px;">✧</p>
+             <hr style="height: 4px; width: 100px; background-color: #454a67;"> 
+             <p style="margin-left: 30px;">✧</p>
+        </div>
+
+        <br>
+
+<!-- season 2 -->
+        <div id="column-contain">
+            <div class="col-reg1">
+                <img src="images/trifold ideation1.jpg" >
+                <img src="images/trifold ideation2.jpg" > 
+                <p> &nbsp; △ Season 2 Ideations Sketches Above!</p>
+                             
+            </div>
+ 
+         <div class="col-reg2">
+             
+ 
+                 <div class="subsubsub-title">Poster Designs </div>
+                 <br>
+                 <br>
+                 <p>For the second season, we decided to go with a trifold design instead of posters. I laid out rough sketches with a <b>strategic visual hierarchy</b> 
+                    that would emphasize the robot design (in the middle) while still adding personality with the panda graphic.
+                    <br><br>
+                    Since the 3 major award categories were the robot design, design process, and outreach, I organized those categories based on highest 
+                    importance (robot design ranked the highest) for an <b>intuitive user experience</b>.
+                    <br><br>
+                    The final design (thanks to Minh-Tu from our business team for painting the panda!) featured a vibrant pink that matched our portfolio branding and an eye-catching
+                    panda design on top.
+                </p>
+             
+             <!-- zoom feature -->
+             <script class="zoom" src="/medium-zoom.min.js"></script>
+             <script class="zoom" src="/main.js"></script>
+         </div> 
+        </div>
+
+        <div class="grid-contain">
+            <div id="grid-container2">
+                <img src="images/pit booth trifold.JPG" alt="">
+                <img src="images/trifold2.jpeg" alt="">
+            
+            </div>
+        </div>
+        <div class="center">
+            <p> ▿ The physical assets I designed for the competitions ▿</p>
+        </div>
+        <div class="grid-contain">
+            <div id="grid-container2">
+                <img src="images/trifold.png" alt="">
+                <img src="images/posterboards.png" alt="">
+                
+            </div>
+
+        </div>
+            
+        <div class="grid-contain">
+            <div id="grid-container4">
+                <img src="images/pink mock.png" alt="">
+                <img src="images/pink banner mock.png" alt="">
+                <img src="images/robotics pin.png" alt="">
+                <img src="images/thank you card.png" alt="">
+                
+            </div>
+        </div> 
+
+        <div class="container">
+            <hr class="solid">
+        </div>
+
+
+<!--------------- other graphics -------------------->
+        <div id="column-contain">
+            <div class="col-reg1">
+                <p style="opacity: 60%";><b>Graphics</b></p>
+                 <div class="subsub-title" id="graphics"> Other Designs </div>
+                 <br>
+                 <br>
+                 <p>I also worked on a variety of other designs such as banners for our 
+                    various social media pages, zoom backgrounds for our digital outreach 
+                    events, <a href="notebook.html">engineering notebook + portfolio</a> and instagram posts!
+                    <br><br>
+                    This also marked the <b>first time I designed a website</b> which you can check out 
+                    <a href="https://ftcbreadpandas21980.wixsite.com/bread-pandas-robotic">here</a>. Though 
+                    the design is not the most clean or visually appealing, it gave me my first taste of web development!
+                </p>                                                         
+        
+                             
+            </div>
+ 
+         <div class="col-reg2">
+            <div class="grid-contain">
+                <div id="grid-container2">
+                    <img src="images/1 copy.png" alt="">
+                    <img src="images/2 copy.png" alt="">
+                    <img src="images/3.png" alt="">
+                    <img src="images/4.png" alt="">
+                    <img src="images/5.png" alt="">
+                    <img src="images/desktop website.png" alt="">
+                </div>
+            </div>
+             
+ 
+                 
+             
+             <!-- zoom feature -->
+             <script class="zoom" src="/medium-zoom.min.js"></script>
+             <script class="zoom" src="/main.js"></script>
+         </div> 
+         </div>
+            
+         <div class="center">
+            <p>▿ Banner designs for Season 2 (this year) ▿</p>
+         </div>
+             
+         </div>
+        
+ 
+         <div class="grid-contain">
+             <div id="grid-container2">
+                 <img src="images/Bread pandas banner (1).png" alt="">
+                 <img src="images/2.png" alt="">
+             </div>
+         </div>
+         <div class="container">
+            <hr class="solid">
+        </div>
+
+
+<!--------------- reflection -------------------->
+         <div class="long-contain">
+            <div class="text-contain">
+                <p id="reflection" style="opacity: 60%";><b>Reflection</b></p>
+                <div class="subsubsub-title">Say Yes Now, Strategize Later</div>
+                <br>
+                <p>On the surface, this saying seems counter-intuitive. Why would you agree to something without having a plan? 
+                    Well, the reason I started Robotics was because <b>I was suddenly introduced to it by my AP Comp Sci teacher </b>
+                    who unexpectedly asked me if I wanted to join the High School Robotics team, though I had no experience. 
+                    <br><br>
+                    Because of that <b>spontaneous decision</b> , I have attended my first competition in high school, learned invaluable 
+                    management skills, and made lasting memories with amazingly talented people who I wouldn't have met otherwise.
+                    <br><br>
+                </p>
+
+                <div class="callout">
+                    <p>
+                        Here are some other lessons:
+                        <ol>
+                            <li><b> Focus on the Big Picture:</b> I learned not to get caught up in the small details of 
+                                design and instead focus on how the message and spirit of our team 
+                                could be clearly communicated to the audience</li>
+                            <li><b> Communication is key: </b> Collecting ideas from others, finding patterns, and being 
+                                 open[-minded] allowed me to create the highest-value events & designs.</li>
+                        </ol>
+                        
+                    
+                    </p> 
+
+                </div>
+                <br>
+                <div class="center">
+                    <p>▿ Us at Regionals '23; So proud! ▿</p>
+                </div>
+                <br>
+                <img src="images/interleague robotics 2023.JPG" alt="">
+            </div>
+            
+         </div>
+         <div class="center">
+            <a href="#section">
+                <div class="stack-contain">
+                    <div class="stack">
+                        <button onclick="topFunction()" id="myBtn" title="Go to top">
+                            <h1 class="subsubsub-title">△</h1>
+                        </button>
+                    </div>
+                    <div class="stack" style="color:#4356ff">
+                        <p><b>back to top</b></p>
+                    </div>
+                </div>
+                
+                
+            </a>
+            
+            <!-- <a href="#" class="to-top">
+             -->
+         </div>
+         
+<!-- recommended posts -->
+<div id="rec">
+    <div class="subsubsub-title">You Might Also Want to See... </div>
+    <br>
+    <div class="grid-contain">
+        <div id="grid-container3">
+            <a href="notebook.php" class="work">
+                <img src="images/Engineering Mockup Portfolio.png" alt="FTC Robotics Engineering Notebook Design">
+                <div  class="layer">
+                    <h1>Engineering Portfolio Notebook</h1>
+                    
+                </div>
+            </a>
+
+            <a href="flow.php" class="work">
+                <img src="images/Flow Thumbnail.png" alt="Olivo Amigo Designs">
+                <div  class="layer">
+                    <h1>Flow Productivity App</h1>
+                   
+                </div>
+            </a>
+
+            <a href="bonsai.php" class="work">
+                <img src="images/bonsai bento.png" alt="">
+                <div  class="layer">
+                    <h1>Bonsai Bento</h1>
+                    
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+    
+        
+
+
+
+    </div>   
+</div>
+
+<?php require_once('assets/php/footer.php'); ?>

@@ -12,12 +12,27 @@
 body {
     background: #fffcfa;
     margin: 0;
+    overflow-x: hidden;
     
 }
+
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.5s ease;
+    color: rgba(28, 30, 43, 0.9);
+}
+
 
 a {
     text-decoration: none;
 }
+.text-contain a {
+    font-weight: bold;
+    color: #CFA09A;
+    text-decoration: underline;
+}
+
 
 p {
     font-size: 20px;
@@ -33,6 +48,7 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 
@@ -41,8 +57,9 @@ p {
     text-align: center;
 }
 
-p a:link, a:visited {
-    color: #171719;
+p a:link, a:visited,
+.text-contain .callout a {
+    color: rgba(28, 30, 43, 0.9);
     text-decoration: underline;
     font-weight: bold;
 }
@@ -138,19 +155,16 @@ p a:link, a:visited {
     background-image: url(images/jasmineAvatar\ Minimize\ Screen.svg);
     background-size: cover;
     background-position: right;
-    background-color: #171719;
+    background-color: #05050E;
     
 }
-.container {
-    padding: 10px 10vh;
-    
-}
+
 /* nav bar */
 nav {
     display: flex;
     align-items: center;
     position: sticky;
-    background-color: #171719;
+    background-color: #05050E;
     justify-content: space-between;
     flex-wrap: nowrap;
     padding: 10px 0;
@@ -160,7 +174,7 @@ nav {
     padding: 1vh 20vh;
     position: fixed;
     top: 0;
-    background-color: #171719;
+    background-color: #05050E;
     z-index: 3;
     width: 100vw;
 }
@@ -185,7 +199,7 @@ nav {
     color:#CFA09A;
 }
 .dropdown-nav {
-    background-color: #171719;
+    background-color: #05050E;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     height: 0;
 
@@ -220,6 +234,10 @@ nav {
     justify-content: center;
     align-items: center;
 
+}
+.text-contain .row .column {
+    margin-right: 2vw;
+    margin-top: 2vw;
 }
 .dropdown-nav.open {
     height: 170px;
@@ -371,7 +389,7 @@ p.black {
 /*---------------- about section --------------------*/
 #about {
     padding: 15vh 10vh;
-    color: #171719;
+    color: #05050E;
     flex: auto;
     
 }
@@ -460,7 +478,8 @@ p.black {
     margin: 2vh 0;
 }
 
-.sub-title span {
+.sub-title span,
+.section-header span {
     background-color:#CFA09A;
     font-style: italic;
     font-family: karla;
@@ -549,7 +568,7 @@ p.black {
 
 /* motto section */
 #motto {
-    background-color: #171719;
+    background-color: #05050E;
     
 }
 .motto-contain {
@@ -569,7 +588,7 @@ p.black {
 #contact{
     padding: 6vh 0 2vh 0;
     color: #fff;
-    background-color: #171719;
+    background-color: #05050E;
     
 }
 #contact h1{
@@ -654,8 +673,9 @@ p.black {
     position: relative;
 }
 .header-image img {
-    width: 100vw;
-    height: auto;
+    /* width: 100vw; */
+    height: 100%;
+    width: 100%;
     
 }
 #section {
@@ -666,9 +686,14 @@ p.black {
     overflow: hidden;
     
 }
-#section .container {
-    padding: 5vh 0;
+#section img {
+    width: 100%;
+    height: auto;
 }
+#section .container {
+    padding: 7vh 0;
+}
+
 
 .section-header h1{
     margin-bottom: 20px;
@@ -724,7 +749,7 @@ p.black {
     align-items: center;
     display: block;
     margin: 0 auto;
-    padding: 10vh 0;
+    margin-bottom: 10vh;
 }
 .video-contain iframe {
     width: 70vw;
@@ -769,7 +794,7 @@ p.black {
 }
  .text-contain ol li{
     font-size: 22px;
-    color:#454a67;
+    color:rgba(28, 30, 43, 0.9);
     opacity: 85%;
     line-height: 2;
     
@@ -778,7 +803,7 @@ p.black {
 .color-contain {
     align-items: left;
     text-align: left;
-    background-color: #171719;
+    background-color: #05050E;
     padding: 0;
     padding: 30px 14%;
     
@@ -1042,7 +1067,7 @@ a .stack-contain {
     text-decoration: none;
 }
 .stack-contain p a:link, a:visited {
-    color: #171719;
+    color: #05050E;
     text-decoration: none;
     font-weight: bold;
 }
@@ -1058,6 +1083,9 @@ html {
 
 #rec{
     padding: 30px 0;
+}
+#rec #grid-container3 {
+    margin: 0;
 }
 
 .right-nav{
@@ -1120,7 +1148,7 @@ html {
         padding: 0;
     }
     .container .solid {
-        margin: 10vh 0;
+        margin: 3vh 0;
     }
     
     #column-contain {
@@ -1232,9 +1260,7 @@ html {
         top: 4vw;
     }
     .header-image img {
-        width: 192vw;
-        height: 69vw;
-        overflow: hidden;
+        margin-top: 12vw;
     }
     #motto img {
         width: 100vw;
@@ -1496,6 +1522,31 @@ html {
    
 }
 
+
+
+/* hobbies page */
+#hobbies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#hobbies .section-header{
+    margin: 5vw 10vw 0 10vw;
+}
+#hobbies .section-header h1,
+#hobbies .section-header p {
+    text-align: center;
+}
+#hobbies .hobby-contain .subp p {
+    color:#454a67;
+}
+
+.hobbies-contain {
+    min-height: 100vh;
+}
+.hobbies-contain .pins-contain h3 {
+    margin-bottom: 0;
+}
     
 
 /* SUPER COOL GRADIENT BCKGROUND */
