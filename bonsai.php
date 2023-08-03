@@ -185,6 +185,30 @@
             <div class="subsubsub-title">The Core Question</div>
             <p>How can we create an <b>accessible yet personable</b> experience for digitally-versed college students to buy delicious yet fast Japanese Cuisine? </p>
         </div>
+        <br><br>
+
+         <!-- full scroll view of website video -->
+   <div class="center">
+    <p>▿ Click Play to see a full run-through of the website! ▿</p>
+   </div>
+    <div class="center">
+        
+        <div class="video-contain">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PPyX6otGGIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <div class="subp"><p>Note: Website was launched on wix under the CTO's name</p></div>
+        </div>
+        
+    </div>
+    <div class="center">
+        <div class="btn-new">
+            <a href="https://tnnguyen161.wixsite.com/bonsai-bento" class="btn" target="_blank">View Website</a> 
+            
+        </div>
+        <br>
+        
+    </div>
+
+    
 
         <div class="container">
             <hr class="solid">
@@ -231,9 +255,40 @@
         <div class="container">
             <hr class="solid">
         </div>
+
+        <!-- competitive analysis -->
+        <p style="opacity: 60%";><b>Market Landscape</b></p>
+        <div class="subsub-title">Competitive Analysis</div>
+        <br><br>
+        <p>I spent a lot of time looking through <b>40-50 VE e-commerce websites</b> and seeing the common trends 
+            to either avoid or follow (but do even better). I also analyzed a couple of cuisine startup websites and conglomerated
+            the results here:
+        </p>
+        <img src="images/competitive advantage bonsai bento text.png" alt="">
+        <p>overall, there seemed to be major neglect to most of the VE websites in terms of UI/UX. In terms of optimizing our website for 
+            trade show use, I designed the check out process to be incredibly intuititve and guided so that the customer doesn't need to 
+            overthink what to purchase. 
+            <br><br>
+            In addition, one of the other mahor advantages I found was incorporating a <b>unique personality</b> within our product through 
+            visual cues. Most of the websites were soely focused on functionality but did not have a <b>unique selling point</b>. Since our 
+            target audience values authenticity and brand incredibly high, I made sure to include more personal stories and tidbits about our 
+            brand and production process throughout the website.
+            <br><br>
+            
+                <div class="callout">
+                    <p><b>The goal:</b> transform the website experience into a story and <u>journey</u></p>
+                </div>  
+            <div class="container">
+                <hr class="solid">
+            </div>
+            
+            
+        </p>
+        
     <!-- design process -->
     
         <div id="column-contain">
+            
             <div class="col-reg1" id="design">
                 <p style="opacity: 60%";><b>Ideation</b></p>
                 <div class="subsub-title" >Design Process </div>
@@ -242,15 +297,48 @@
                 <p>My approach was to first gather initial thoughts and feelings from our student body (quasi user research) based on 
                     the business plan provided to us by the C-Suite. 
                     <br><br>
-                    The general design process was simplified: from basic pen-on-paper ideation to 
+                    <b>Ideation:</b> The general design process was simplified; I started with basic <b>pen-on-paper ideation sketches</b> to map out the entire
+                    flow of the website including the different pages included.
                 </p>
+
+                <br>
+                   <div class="vertical"></div>
+                <br>
+
+                <p><b>Hi Fi:</b> transfered design straight to final version on Figma for <b>agile design and development iteration</b></p>
+               
+                <br>
+                   <div class="vertical"></div>
+                <br>
+
+                <p><b>Development:</b> decided to use wix for <b>agile development </b>and ability to implement all the features we wanted (at this point I had no coding experience)
+                    This allowed us to implement a ton of mini interactions without extra javascript but still creating the same user experience. 
+                
+                </p>
+                
             </div>
 
             <div class="col-reg2">
                 <img src="images/bonsai ideations.jpeg" alt="">
                 <img src="images/bonsai bento figma.png" alt="">
             </div>
+            
         </div>
+        <div class="callout">
+                    <div class="subsubsub-title">
+                        My New Philosophy 🎨 
+                    </div>
+                    <p><b>faster shipping > unecessary
+                    industry standards</b>. The best part: the two end results are exactly the same. The former was just faster and gave us more <b>creative leverage</b></p>
+        </div>
+        <div class="center">
+        <div class="btn-new" style="margin-top: 5vw;">
+            <a href="https://www.figma.com/file/UOVsXuUw4Qgb3rKJ0aXBRf/Bonsai-Bento-Website?type=design&node-id=124%3A239&mode=design&t=J01aydz4RJGl7klA-1" class="btn" target="_blank">View Full Figma Page</a> 
+            
+        </div>
+        
+        
+    </div>
     </div>
 </div>
 
@@ -268,41 +356,97 @@
                 </p>
                 <img src="images/pain points bonsai bento text.png" alt="">
                 <p>There were also a couple of issues with the intial design in the same vein of accesibility. I did a couple of <b>design audits 
-                    and reviews</b> based on feedback from the CEO. I mainly redesigned the <b>information hierarchyt</b> so that 
+                    and reviews</b> based on feedback from the CEO. I mainly redesigned the <b>information hierarchy</b> so that 
                     the user can purchase quickly without extra fluff in the process.
                 </p>
                 <br>
                 <img src="images/bonsai bento pain points.png" alt="">
-    </div>  
+    </div> 
+    <div class="container">
+        <hr class="solid">
+    </div>
+    
+</div>
+
+<!-- full run through of individual desdign decisions -->
+<div id="section">
+    <!-- landing page -->
+    <div id="column-contain">
+        <div class="col-reg1">
+            <p style="opacity: 60%";><b>Landing Page</b></p>
+            <div class="subsub-title">A Dynamic Entry</div>
+            <br>
+            <p>the hero was perhaps one of the most important pages since busy college students would want to quickly access
+                the purchase section. An easy way to accomplish this is by adding the CTA directly at the beginning 
+                <br><br>
+                I also added a dynamic auto scroll bar (orange line divider) to add more
+                personality and continuity to the otherwise static website.
+            </p>
+        </div>
+
+        <div class="col-reg2">
+            <img src="images/landing page bonsai.png" alt="">
+        </div>
+    </div>
+
+    <!-- landing page -->
+    <div id="column-contain">
+        <div class="col-reg1">
+            <img src="images/about us page bonsai.png" alt="">
+            <img src="images/about us bonsai 2.png" alt="">
+        </div>
+
+        <div class="col-reg2">
+            <p style="opacity: 60%";><b>About Us Page</b></p>
+            <div class="subsub-title">Authenticity and Brand Loyalty</div>
+            <br>
+            <p>I put extra attention on the about us page since I wanted the user to feel attached to both our food AND our
+                brand vision (ie "planting a fresh start [in order to build a sustainable future]")
+            </p>
+
+            <br>
+                   <div class="vertical"></div>
+            <br>
+
+            <p>
+                <b>Expressive Mission Statement: </b> I wanted to tell the story of our brand in a <b>non-boring and serendipitious way</b>.
+                    To acheive this, I designed 2 graphics: one at the beginning and the other at the end — combined, they tell the story 
+                    of our brand in a <b>concise yet engaging manner.</b> Instead of centralizing the "mission statement" in one section, this creates 
+                    a seamless and <b>journey-like user experience</b>.
+            </p>
+
+            <br>
+                   <div class="vertical"></div>
+            <br>
+
+            <p><b>Focused Imagery: </b> Instead of using stock images, we decided to use all pictures that we took ourselves. Luckily, this made the brand 
+            <b>much more cohesive</b> than other VE firms. 
+            <br><br>
+            One of the challenges I had was adding too many pcitures about our brand culture and not enough of the product.
+            To remedy this, I added more pictures featuring <b>different POV's of our product</b> ALONG with our "top-notch customer service" (ie <b>human-centric images</b> - people still want to 
+            see the "people" aspect of the company)
+            </p>
+
+            <br>
+                   <div class="vertical"></div>
+            <br>
+
+            <p><b>Mini Interactions and Graphics:</b> I wanted to add more personaity over the static "buy-now" e-commerce websites while still making 
+                the entire UI approachable and familiar. To do this, I added small tidbits of personality through personalized, dyanmic graphics and 
+                animations. watch <a href="https://youtu.be/PPyX6otGGIk" target="_blank">this video</a> for a visual.
+            </p>
+        </div>
+    </div>
+    
 </div>
 
 
    
 <div id="section">
-    <!-- full scroll view of website video -->
-   <div class="center">
-    <p>▿ Click Play to see a full run-through of the website! ▿</p>
-   </div>
-    <div class="center">
-        
-        <div class="video-contain">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/PPyX6otGGIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="subp"><p>Note: Website was launched on wix under the CTO's name</p></div>
-        </div>
-        
-    </div>
-    <div class="center">
-        <div class="btn-new">
-            <a href="https://tnnguyen161.wixsite.com/bonsai-bento" class="btn" target="_blank">View Website</a> 
-            
-        </div>
-        <br>
-        
-    </div>
-
-    <div class="container" style="padding: 5vh 0;">
+<div class="container">
         <hr class="solid">
     </div>
+   
 
     <!--------------- reflection -------------------->
     <div class="long-contain">
