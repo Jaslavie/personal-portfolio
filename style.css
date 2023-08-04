@@ -35,7 +35,7 @@ a {
 
 
 p {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 2;
     opacity: 85%;
     font-weight: normal;
@@ -152,7 +152,7 @@ p a:link, a:visited,
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(images/jasmineAvatar\ Minimize\ Screen.svg);
+    background-image: url(images/jasminewu\ avatar.png);
     background-size: cover;
     background-position: right;
     background-color: #05050E;
@@ -811,7 +811,7 @@ p.black {
 .color-contain p,
 .color-contain ul li {
     color: #fff;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 2;
     opacity: 85%;
     font-weight: normal;
@@ -1546,10 +1546,34 @@ html {
 
 .hobbies-contain {
     min-height: 100vh;
+    margin-bottom: 5vw;
 }
-.hobbies-contain .pins-contain h3 {
-    margin-bottom: 0;
+.hobbies-contain .pins-contain {
+    width: 400px;
+    margin: 1.5vw;
 }
+.hobbies-contain .pins-contain h2, 
+.hobbies-contain .pins-contain p {
+    margin: 2vw 0;
+}
+.hobbies-contain .subp {
+    font-weight: normal;
+    color: rgba(28, 30, 43, 0.5);
+    font-size: 18px;
+    line-height: 22px;
+}
+.hobbies-contain .pins-contain p {
+    font-size: 18px;
+}
+.hobbies-contain .column {
+    justify-content: flex-start;
+}
+.hobbies-contain .pins-contain img {
+    border-radius: 15px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
     
 
 /* SUPER COOL GRADIENT BCKGROUND */
