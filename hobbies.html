@@ -15,16 +15,36 @@
 
 <html>
 <body>
-<!--Navigation bar-->
-<div id="nav-placeholder">
-
+<!-- nav bar -->
+<div class="nav-container">
+    <nav>
+        <a href="index.html"><img src="images/jasmine wu logo text.png" class="logo" width = 250px height = auto> </a> 
+       <div class="right-nav">
+            <ul>
+                <li id="work-nav"><a href="#projects">work</a></li>
+                <li id="hobbies-nav"><a href="hobbies.html" id="active">serendipity</a></li>
+                <li id="about-nav" ><a href="about.html">about</a></li>
+            </ul>
+            <div class="toggle-button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+       </div>
+        
+    </nav> 
+    
 </div>
 
-<script>
-    $(function(){
-      $("#nav-placeholder").load("assets/html/navbar.html");
-    });
-</script>
+<div class="dropdown-nav">
+    <div class="column">
+        <li><a href="#projects">work</a></li>
+        <li><a href="hobbies.html">serendipity</a></li>
+        <li><a href="about.html">about</a></li>
+        <a href="mailto: jasmineqw45@gmail.com" class="btn">Get in Touch</a>
+    </div>
+        
+</div>
+    
+<script src="main.js"></script>
 
 <!-- hobbies header -->
 <div id="hobbies">
@@ -37,6 +57,7 @@
         </div>
     </div>
 </div>
+
 <!-- general boxex -->
 <div class="hobbies-contain">
     <div class="row">
@@ -242,7 +263,7 @@
 
 <script>
     ScrollReveal ({
-        reset: true,
+        reset: false,
         distance: '60px',
         duration: 2500,
         delay: 100,

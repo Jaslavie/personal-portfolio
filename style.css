@@ -34,6 +34,7 @@ a:-webkit-any-link {
 
 a {
     text-decoration: none;
+    color: rgba(255,255,255,.8);
 }
 .text-contain a {
     font-weight: bold;
@@ -45,7 +46,7 @@ h1 {
     font-weight: 900;
     font-size: 90px;
 }
-p {
+p, li {
     font-size: 20px;
     line-height: 2;
     opacity: 85%;
@@ -59,7 +60,7 @@ p {
 }
 /* divider */
 .solid-contain {
-    padding: 10vh 0;
+    padding: 15vh 0;
 }
 
 .center{
@@ -494,7 +495,6 @@ p.black {
 /*---------------- about section --------------------*/
 
 
-
 .row {
     /* content is side by side */
     display: flex;
@@ -573,8 +573,9 @@ p.black {
 }
 
 .subsub-title{
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 900;
+    margin-bottom: 2vh;
    
 }
 
@@ -585,7 +586,7 @@ p.black {
     margin: 2vh 0;
 }
 
-.sub-title span,
+.subsub-title span,
 .section-header span {
     background-color:#CFA09A;
     font-style: italic;
@@ -989,7 +990,7 @@ p.black {
     /* width: 60vh;
     height: 48vh; */
     width: 35vw;
-    height: 25vw;
+    height: 28vw;
     transition: box-shadow .2s ease;
 }
 .pins-contain:hover {
@@ -1000,15 +1001,18 @@ p.black {
     display: flex;
 }
 .pins-contain ul li a {
-    font-size: 16px;
+    font-size: 18px;
     color:rgba(255,255,255,.8);
     line-height: 2;
     text-decoration: underline;
 }
-.pins-contain h3 {
-    font-size: 22px;
+.pins-contain .subsubsub-title {
     color:rgba(255,255,255,.8);
     margin-bottom: 3vh;
+}
+/* use for all containing a header and a paragraph underneath */
+.head-text-contain {
+    margin-bottom: 10vh;
 }
 .emoji-contain {
     padding: 5vh;
@@ -1662,6 +1666,7 @@ html {
 }
 .hobbies-contain .pins-contain {
     width: 400px;
+    height: auto;
     margin: 1.5vw;
 }
 .hobbies-contain .pins-contain h2, 

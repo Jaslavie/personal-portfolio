@@ -57,7 +57,7 @@
     </div>
     
     <div class="about-col-2">
-        <h1 class="sub-title">A little <span> Introduction </span>  </h1>
+        <h1 class="subsub-title">A little <span> Introduction </span>  </h1>
         <br><br>
         <p>I'm a Product Designer and Front End Developer who started off creating dollhouses from cardboard boxes and building towns in Minecraft. Through exploring the edges
             of my curiosity, I discovered an obsessive passion for building <b>magical experiences</b> from scratch [especially at ungodly hours in the night] 
@@ -74,9 +74,44 @@
     
     </div>
     </div>
+<div class="solid-contain">
+    <div class="solid"></div>
+</div>
+<!-- prev -->
+    <div class="prev-contain" style="
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between;"
+    >
+        <div class="subsub-title" style="flex-basis: 40%;">Prev</div>
+       
+        <p >
+            <ul style="flex-basis: 60%;">
+                <li>Founder of a streetwear clothing business, sold to 40+ states, 8 countries</li>
+                <li>1st place E-Commerce Website Design out of 148 submissions</li>
+                <li>Creative Design intern @ Mediterranean Culinary Startup</li>
+                <li>Dances Coordinator for ASB, led 4 dances, 4k+ cumulative attendees, managing $100k+</li>
+                <li>Founder of the first letter writing club at my High School</li>
+                <li>Graduated top 3% of class + Social Science Coronet Nominee (top academic honor)</li>
+            <div class="btn-new" style="margin-top: 8vh;">
+                <a href="files/Wu, Jasmine Resume (3).pdf" class="btn" target="_blank">View Resume</a> 
+            </div>
+            </ul>
+            
+        </p>
+        
+    </div>
+    
 
-    <!-- pins -->
-    <div class="subsub-title">Serendipity ✨</div>
+    <div class="solid-contain">
+        <div class="solid"></div>
+    </div>
+<!-- pins -->
+    <div class="head-text-contain">
+        <div class="subsub-title">Serendipity ✨</div>
+        <p>My favorite past-time is reading and reasearching :)</p>
+    </div>
+    
     <div id="pins">
         
         <div class="row">
@@ -85,7 +120,7 @@
                     <h1>📖</h1>
                 </div>
 
-                <h3>Currently Consuming...</h3>
+                <h1 class="subsubsub-title">Currently Consuming...</h1>
                 <p>
                     <ul>
                         <li> <a href="http://www.paulgraham.com/greatwork.html" target="_blank">Paul Graham's Essays (YC)</a></li>
@@ -101,13 +136,14 @@
                     <h1>🦄</h1>
                 </div>
 
-                <h3>All-Time Favorites</h3>
+                <h1 class="subsubsub-title">All-Time Favorites</h1>
+                
                 <p>
                     <ul>
                         <li><a href="https://www.amazon.com/Mastery-Robert-Greene/dp/014312417X" target="_blank">Mastery By Robert Greene</a></li>
                         <li> <a href="https://davidepstein.com/the-range/" target="_blank">Range by David Esptin - Generalists vs Specialists</a></li>
                         <li><a href="https://www.youtube.com/watch?v=DMOBlEcRuw8" target="_blank">the Pursuit of Happyness - staring Will Smith</a></li>
-                        <li><a href="monkeytype.com" target="_blank">MonkeyType- currently 110wpm avg, aiming for 130</a></li>
+                        <li><a href="monkeytype.com" target="_blank">MonkeyType- 110wpm avg, aiming for 130</a></li>
                     </ul>
                 </p>
             </div>
@@ -118,6 +154,30 @@
 
 
 </section>
+
+<!-- footer -->
+<div id="footer-placeholder">
+
+</div>
+
+<script>
+    $(function(){
+        $("#footer-placeholder").load("assets/html/footer.html");
+    });
+</script>
+
+<script>
+    ScrollReveal ({
+        reset: false,
+        distance: '60px',
+        duration: 2500,
+        delay: 400,
+    });
+
+    ScrollReveal().reveal('.about-col-1', {delay: 100, origin: "right"});
+    ScrollReveal().reveal('.about-col-2 .sub-title', {delay: 100, origin: "left"});
+    ScrollReveal().reveal('.pins-contain, .btn-new, .subsub-title, p, li', {delay: 100, origin: "bottom"});
+</script>
 
 </body>
 </html>
