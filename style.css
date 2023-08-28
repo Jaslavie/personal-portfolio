@@ -28,13 +28,13 @@ a:-webkit-any-link {
     cursor: url('../images/hover cursor.png') 16 16, auto;
     text-decoration: none;
     transition: color 0.5s ease;
-    color: rgba(255,255,255,.8);
+    color: #ffffff;
 }
 
 
-a {
+p a {
     text-decoration: none;
-    color: rgba(255,255,255,.8);
+    color: #ffffff;
 }
 .text-contain a {
     font-weight: bold;
@@ -54,6 +54,7 @@ p, li {
     color: rgba(255,255,255,.8);
     
 }
+
 .row {
     display: flex;
     flex-direction: row;
@@ -125,9 +126,9 @@ p, li {
 
 .infinite-cards {
     left: 100%;
-    width: 100%;
+    width: auto;
     position:absolute;
-    overflow: hidden;
+    
     white-space: nowrap;
   	animation: scroll 40s linear infinite;
 }
@@ -140,7 +141,7 @@ p, li {
 }
 
 .infinite-cards2 {
-    animation-delay: 21s;
+    animation-delay: 25s;
 }
 @keyframes scroll {
     0% { left:100%;}
@@ -154,7 +155,7 @@ p, li {
 
 p a:link, a:visited,
 .text-contain .callout a {
-    color: rgba(255,255,255,.8);
+    color: #ffffff;
     text-decoration: underline;
     font-weight: 600;
 }
@@ -313,7 +314,8 @@ nav ul li a#active {
     margin: auto;
     z-index: 1000;
     color: #fff;
-    top: 100px;
+    top: 80px;
+    
    
 }
 .dropdown-nav li {
@@ -344,13 +346,15 @@ nav ul li a#active {
 }
 .text-contain .row .column {
     margin-right: 2vw;
-    margin-top: 2vw;
+    margin-top: 4vw;
 }
 .dropdown-nav.open {
-    height: 240px;
+    height: 100vh;
     width: 100vw;
     margin: auto;
+    padding-top: 20vh;
 }
+
 
 
 
@@ -377,7 +381,6 @@ nav ul li a:link, nav ul li a:visited {
     color: #fff;
     opacity: .5;
     cursor:  url('../images/hover cursor.png') 16 16, auto;
-    /* remove underline */
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -494,6 +497,34 @@ p.black {
 
 /*---------------- about section --------------------*/
 
+.listen-contain {
+    display: flex;
+    justify-content: flex-start;
+}
+.listen-contain .column {
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 2em;
+    width: 15vw;
+}
+.listen-contain .subsubsub-title,
+.listen-contain p {
+    text-align: center;
+
+}
+.listen-contain .subsubsub-title {
+    font-size: 30px;
+}
+.listen-contain img {
+    width: 30vh;
+    height: 30vh;
+}
+.song-contain {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 4vh;
+}
 
 .row {
     /* content is side by side */
@@ -555,7 +586,7 @@ p.black {
     
 }
 .about-col-1 img:hover {
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 15px rgba(255, 255, 255, 0.3);
 }
 
 .about-col-2 {
@@ -573,17 +604,16 @@ p.black {
 }
 
 .subsub-title{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 900;
     margin-bottom: 2vh;
    
 }
 
 .subsubsub-title{
-    font-size: 35px;
+    font-size: 36px;
     font-weight: 900; 
-    line-height: 42px;
-    margin: 2vh 0;
+    line-height: 54px;
 }
 
 .subsub-title span,
@@ -626,6 +656,7 @@ p.black {
     border-radius: 20px;
     display: block;
 }
+
 
 .layer {
     width: 100%;
@@ -670,7 +701,7 @@ p.black {
     
 }
 .work:hover {
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 15px rgba(255, 255, 255, 0.3);
 }
 
 /* motto section */
@@ -729,6 +760,7 @@ p.black {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 2vh;
 }
 .contact-mid{
     flex-basis: 30%;
@@ -802,7 +834,7 @@ p.black {
     
 }
 #section {
-    padding: 10vh 30vh;
+    padding: 5vh 30vh;
     background: #101010;
     flex: auto;
     position: relative;
@@ -815,6 +847,9 @@ p.black {
 }
 #section .container {
     padding: 7vh 0;
+}
+.inner-img {
+    margin: 10vh 0;
 }
 
 
@@ -926,7 +961,7 @@ p.black {
     text-align: left;
     background-color: #101010;
     padding: 0;
-    padding: 30px 14%;
+    padding: 30px 10vh;
     
 }
 .color-contain p,
@@ -984,17 +1019,21 @@ p.black {
 }
 .pins-contain {
     border-radius: 40px;
-    box-shadow: 0px 0px 10px 0px rgba(69, 74, 103, 0.1);
     padding: 5vh;
     background-color: rgba(255,255,255,0.05);
     /* width: 60vh;
     height: 48vh; */
-    width: 35vw;
-    height: 28vw;
+    padding: 6vh;
+    width: 38vw;
+    height: auto;
     transition: box-shadow .2s ease;
+    margin: 2vh 0;
+}
+.pins-contain li {
+    margin-left: 8vh;
 }
 .pins-contain:hover {
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 3px 15px rgba(255, 255, 255, 0.3);
 }
 #pins .row {
     justify-content: space-between;
@@ -1207,7 +1246,18 @@ html {
 
 
 
-
+/* about page responsiveness */
+@media (max-width: 1280px) {
+    #pins .row{
+        flex-direction: column;
+    }
+    .listen-contain .row {
+        flex-direction: column;
+    }
+    .listen-contain .column {
+        width: 20vw;
+    }
+}
 
 /* change padding of viewport l2 */
 @media (max-width: 1126px) {
@@ -1336,7 +1386,7 @@ html {
         padding: 10vh 10vh;
     }
     .nav-container {
-        padding: 4vh 10vh 2vh 10vh;
+        padding: 4vh 8vh 2vh 8vh;
     }
     .about-col-1 img {
         width: 90%;
@@ -1371,6 +1421,9 @@ html {
 
 /* footer wraps + hero image replaced, flex wrap pins*/
 @media (max-width: 768px) {
+    .nav-container {
+        padding: 4vh 5vh 2vh 5vh;;
+    }
     .header-image {
         
         top: 4vw;
@@ -1492,8 +1545,19 @@ html {
 
 /* decreasing the size of home page image */
 @media (max-width: 600px) {
+    .current-contain .row{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .current-contain p {
+        margin: 5vh 0 0 0;
+    }
     .about-col-1 img{
         width: 90%;
+    }
+    .overview .text-contain .row{
+        display: flex;
+        flex-direction: column;
     }
     .type-container {
         margin-bottom: 0vh;
@@ -1514,9 +1578,8 @@ html {
         grid-gap: 40px;
         margin-top: 50px;
     }
-    .nav-container {
-        padding: 1vh 5vh;
-    }
+   
+    
     .head-contain {
         margin: 5vh;
     }
@@ -1583,6 +1646,7 @@ html {
         align-items: center;
         text-align: center;
         justify-content: center;
+        
     }
     
     .subp {
@@ -1675,9 +1739,9 @@ html {
 }
 .hobbies-contain .subp {
     font-weight: normal;
-    color: rgba(28, 30, 43, 0.5);
+    color: rgba(255,255,255,.5);
     font-size: 18px;
-    line-height: 22px;
+    line-height: 27px;
 }
 .hobbies-contain .pins-contain p {
     font-size: 18px;

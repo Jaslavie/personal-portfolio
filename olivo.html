@@ -4,47 +4,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flow</title>
+    <title>Jasmine Wu Portfolio</title>
     <link rel ="stylesheet" href = "style.css">
+    <link rel="shortcut icon" href="images/jasmine wu logo official.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    
 </head>
+
+<html>
 <body>
-    <div class="container">
-        <nav>
-            <a href="home.html"><img src="images/logo.png" class="logo" width = 250px height = auto> </a> 
-           
-            
-          <!-- unordered list means the order of the list doesnt mchange hte meaning -->
+<!-- nav bar -->
+<div class="nav-container">
+    <nav>
+        <a href="index.html"><img src="images/jasmine wu logo text.png" class="logo" width = 250px height = auto> </a> 
+       <div class="right-nav">
             <ul>
-                <li><a href="#">Projects</a></li>
-                <li class="btn"><a href="mailto: jasmineqw45@gmail.com">Get in Touch</a></li>
+                <li id="work-nav"><a href="index.html#projects">work</a></li>
+                <li id="hobbies-nav"><a href="hobbies.html">serendipity</a></li>
+                <li id="about-nav"><a href="about.html">about</a></li>
             </ul>
+            <div class="toggle-button">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+       </div>
+        
+    </nav> 
+    
+</div>
+
+<div class="dropdown-nav">
+    <div class="column">
+        <li><a href="#projects">work</a></li>
+        <li><a href="hobbies.html">serendipity</a></li>
+        <li><a href="about.html">about</a></li>
+        <a href="mailto: jasmineqw45@gmail.com" class="btn">Get in Touch</a>
     </div>
+        
+</div>
+
+<div class="header-image">
+    <img src="images/ool website mock banner.png">
+</div>
+    
+<script src="main.js"></script>
 
 
     <div id="section">
         <div class="container">
             <div class="section-header">
-                <h1>Olivo Amigo</h1>
-                <p>Creative Design Intern | Marketing | Graphic Design</p>
-                <br>
-                <div class="image-contain">
-                    <img src="Images/Olivo Amigo Mockups Trifold.png">
+                <div class="emoji-contain">
+                    <h1>🥙</h1>
                 </div>
-                
-                
+                <h1>Olivo Amigo Mediterranean Startup</h1>
+                <br>
+                <!-- general role -->
+                <div class="text-contain">
+                    <div class="row">
+                        <div class="column">
+                            <p><b>Role</b>
+                                <br>
+                                Creative Design Intern
+                                <br>
+                                Marketing Intern
+                                <br>
+                                Website Designer
+                            </p>
+                        </div>
+                        <div class="column">
+                            <p><b>Duration</b>
+                                <br>
+                                9 months,
+                                <br>
+                                (Senior yr of HS)
+                                
+                            </p>
+                        </div>
+                        <div class="column">
+                            <p><b>Skills</b>
+                                <br>
+                                Brand Development
+                                <br>
+                                Graphics Design
+                                <br>
+                                Content Creation (videos)
+                            </p>
+                        </div>
+        
+                    </div>
+
+                    
+                </div>
                 
             </div>
+            <div class="solid-contain">
+                <hr class="solid">
+            </div>
+
             <div class="text-contain">
-                    <p>This was my first Internship with a startup business (and based on real products!); During my 9 months, 
+                    <p>This was my first Internship with a startup (based on physical products!) During my 9 months, 
                         I tackled the intersection of physical product design, marketing, and branding (I also got to develop 
                         the website interface + branding of their subsidiary company: Olive Oil Land)</p>
-                </div>
+                        <br><br>
+                        <div class="callout">
+                           <p>This page combines work for both <b>Olivo Amigo</b> and <b>Olive Oil Land</b>
+                              <br><br> Review the contents below!
+                              <ol>
+                                <b>
+                                    <li><a href="#outreach">Outreach and Event Coordination</a> </li>
+                                    <li><a href="#merch">Merchandise and Uniform Design</a>  </li>
+                                    <li><a href="#web">Website Development</a>  </li>
+                                    <li><a href="#pit">Pit Booth Design</a>  </li>
+                                    <li><a href="#graphics">Other Graphics</a>  </li>
+                                    <li><a href="#reflection">Reflection</a>  </li>
+                                </b>
+                              </ol>
+                           </p> 
+                        </div>
+            </div>
         </div>
     </div>
 
 
     <!-- project overview section -->
-    <div class="color-contain">
+    <div id="section">
+        <div class="solid-contain">
+            <hr class="solid">
+        </div>
         
             
             <div class="text-contain-color">
@@ -57,45 +143,67 @@
             <div id="column-contain">
                     <div class="col1">
                         
-                       <div class="subsubsub-title" >✦ &nbsp; My Role</div>
+                       <div class="subsubsub-title" >✦ My Role</div>
                        
                     </div>
 
 
 
                     <div class="col2">
-                        <p>As the <b>Creative Design Intern</b>, I tackled 3 main fields:
-                        <br>
-                         &nbsp;&nbsp;✧ <b>Social Media + Email Marketing</b> through reels (short videos),  IG Posts, &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;weekly newsletters, and articles <br>
-                         &nbsp;&nbsp; ✧ <b>Graphic Design</b> including phamplets, postcards, and  giftbox designs <br>
-                         &nbsp;&nbsp; ✧ <b>Market Research</b> on the Olive Oil + Gifts Industry, synthesizing &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;customer needs
-                    </p>
+                        <p>
+                            <ul>
+                                <li><b>Social Media + Email Marketing</b> through reels (short videos),  IG Posts, weekly newsletters, and articles </li>
+                                <li><b>Graphic Design</b> including phamplets, postcards, and  giftbox designs</li>
+                                <li>Market Research</b> on the Olive Oil + Gifts Industry, synthesizing customer needs</li>
+                            </ul>
+                         
+                        </p>
 
                     </div>
-           
-                      
-                        
+                
                         
             </div>    
 
             <div id="column-contain">
                 <div class="col1">
-                    <div class="subsubsub-title" >✦ &nbsp; Highlight</div>
+                    <div class="subsubsub-title" >✦ Highlight</div>
                 </div>
                 <div class="col2">
                     <p>As an intern for a startup, I got a lot of one-on-one mentorship sessions with the CEO where I learned the process of  <b>starting a business</b> and designing a <b>marketable product</b>
                     </p>
                 </div>
-            </div>   
-                    
-                   
+            </div>  
+            
+            <div id="column-contain">
+                <div class="col1">
+                    <div class="subsubsub-title">✦ Goals</div>
+                </div>
+                <div class="col2">
+                    <ol>
+                        <li><b>revitalize brand personality</b> to speak to a broader audience</li>
+                        <li>spearhead brand personality and design palette for new startup launch</li>
+                    </ol>
+                </div>
+            </div>
 
-        
+            <div class="solid-contain">
+                <hr class="solid">
+            </div>
+                    
     </div>
 
+
+
 <div id="section">
-    <!-- graphic designs -->
         <div class="text-contain">
+            <!-- introducing olivo -->
+            <div class="subsub-title">Introducing Olivo Amigo</div>
+            <br>
+            <p>Virtual Enterprise is a simulated, curricular business class for high school students seperating members into 5 different groups including
+                design, marketing, and sales. My general responsibility was to develop a <b>usable digital platform for possible leads/cusotmers to easily access 
+                and buy our goods online</b> (as opposed to going to a resturaunt) 🍱🎋
+            </p>
+            <!-- graphic designs -->
                 <div id="column-contain">
                    <div class="col-reg1">
                         <p style="opacity: 60%";><b>Graphic Design</b></p>
@@ -176,6 +284,7 @@
     <div class="center">
         <div class="text-contain">
             <div class="subsubsub-title">Sample Instagram Reels!</div>
+            <p>click to open full video with sound</p>
         </div>
         
     </div>
@@ -184,28 +293,38 @@
 
     <div class="grid-contain">
         <div id="grid-container4">
-          <video src="Videos/https___drive.google.com_file_d_1DSvzpe3897mE3ba3zCxXeIewT-1gTkpQ_view_usp=sharing.mov" autoplay muted loop></video>
-          <video src="Videos/USED_Jasmine_IGREEL_0817 (1).MOV" autoplay muted loop></video>
-          <video src="Videos/USED_jasmine_ igreel_0918.MOV" autoplay muted loop></video>
-          <video src="Videos/USED_jasmine_igreel1023.mov" autoplay muted loop></video>
-          <video src="Videos/USED_jasmine_igreel_0819.mov" autoplay muted loop></video>
-          <video src="Videos/USED_jasmine_IGREEL_1009.mov" autoplay muted loop></video>
-          <video src="Videos/USED_jasmine_igreel_0820.mov" autoplay muted loop></video>
-          <video src="Videos/USED_jasmine_spaghetti_0813.mov" autoplay muted loop></video>
+            <a href="https://drive.google.com/file/d/1DSvzpe3897mE3ba3zCxXeIewT-1gTkpQ/view?usp=sharing" target="_blank">
+                <video src="Videos/https___drive.google.com_file_d_1DSvzpe3897mE3ba3zCxXeIewT-1gTkpQ_view_usp=sharing.mov" autoplay muted loop></video>
+            </a>
+            <a href="USED_jasmine_ igreel_0918.MOV" target="_blank">
+                <video src="Videos/USED_jasmine_ igreel_0918.MOV" autoplay muted loop></video>
+            </a>
+            <a href="USED_jasmine_ igreel_0918.MOV" target="_blank">
+                <video src="Videos/USED_Jasmine_IGREEL_0817 (1).MOV" autoplay muted loop></video>
+            </a>
+            <a href="USED_jasmine_igreel1023.mov" target="_blank">
+                <video src="Videos/USED_jasmine_igreel1023.mov" autoplay muted loop></video>
+            </a>
+            <a href="USED_jasmine_igreel_0819.mov" target="_blank">
+                <video src="Videos/USED_jasmine_igreel_0819.mov" autoplay muted loop></video>
+            </a>
+            <a href="USED_jasmine_IGREEL_1009.mov" target="_blank">
+                <video src="Videos/USED_jasmine_IGREEL_1009.mov" autoplay muted loop></video>
+            </a>
+            <a href="USED_jasmine_igreel_0820.mov" target="_blank">
+                <video src="Videos/USED_jasmine_igreel_0820.mov" autoplay muted loop></video>
+            </a>
+            <a href="USED_jasmine_spaghetti_0813.mov" target="_blank">
+                <video src="Videos/USED_jasmine_spaghetti_0813.mov" autoplay muted loop></video>
+            </a>
+            
          
         </div>
     </div>    
     
-    <!-- Divider border star thing -->
-    <br><br><br>
-
-    <div style="display: flex; align-items: center; justify-content: center;">
-        <p style="margin-right: 30px;">✧</p>
-        <hr style="height: 4px; width: 100px; background-color: #454a67;"> 
-        <p style="margin-left: 30px;">✧</p>
+    <div class="solid-contain">
+        <hr class="solid">
     </div>
-    
-    <br><br><br><br>
 
     <div class="text-contain">
         <div class="long-contain">
@@ -215,7 +334,11 @@
              <br><br>
         
              <p>During my Internship, I conducted research on the Olive Oil industry. Here are some key categories of research I collected:
-                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>1. Properties of Olive Oil </b> including antioxidants, oleic acids, organoleptic properties, and the &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;general biology behind Healthy Fats</p>
+                <ol>
+                    <li><b>1. Properties of Olive Oil </b> including antioxidants, oleic acids, organoleptic properties, and the general biology behind Healthy Fats</p></li>
+                </ol>
+                
+            
 
 
 
@@ -226,6 +349,9 @@
        
 
 
+    </div>
+    <div class="solid-contain">
+        <hr class="solid">
     </div>
         
          
