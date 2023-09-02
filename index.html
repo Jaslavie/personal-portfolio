@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    
 </head>
 
 <html>
@@ -44,25 +45,59 @@
 </div>
     
 <script src="main.js"></script>
-    
+
 
 <div class="contain">
 
 
     <!-- hero landing page -->
-    
-        <div id="header">
-            
+
+
+             <div class="icons-contain" >
+                <!-- right -->
+                <div  style="margin-left: 88vw; margin-top: 20vw;">
+                    <p >intp 5w4, cognitive neuroscience</p>
+                    <i class="fa-solid fa-brain" ></i>
+                </div>
+                <div  style="margin-left: 75vw; margin-top: 42vw;">
+                    <p >digital nomadic life 24/7</p>
+                    <i class="fa-solid fa-laptop" ></i>
+                </div>
+                <div  style="margin-left: 80vw; margin-top: 10vw;">
+                    <p >wu wei, stoicism, effortless action</p>
+                    <i class="fa-solid fa-water" ></i>
+                </div>
+                <!-- left -->
+              
+                <div  style="margin-left: 20vw; margin-top: 40vw;">
+                    <p>10k steps, podcasts 2x speed</p>
+                    <i class="fa-solid fa-book" ></i>
+                    
+                </div>
+                <div  style="margin-left: 12vw; margin-top: 10vw;">
+                    <p>romanticism, art history, museum analysis</p>
+                    <i class="fa-solid fa-palette" ></i>
+                </div>
+                <div  style="margin-left: 6vw; margin-top: 32vw;">
+                    <p>ww2 history buff, germany</p>
+                    <i class="fa-solid fa-jet-fighter-up"></i>
+                </div>
+
+            </div>
+
+            <script src="main.js"></script>
+
         <div class="head-contain">
 
                 
-
+           
                 <div class="type-container">
                     <div class="header-text">
-                    <h1>Hey! I'm &nbsp; </h1>
-                    <h1> <span>Jasmine Wu </span></h1>
+                        <h1>Hey! I'm &nbsp; </h1>
+                        <h1> <span>Jasmine Wu </span></h1>
                     </div>
                     <h1 class="bottom-header-text">I'm <span class="auto-type"></span></h1>    
+                    <p>18, product designer who likes building things @ 3am</p>
                 </div>
                 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
@@ -246,7 +281,7 @@
                     <!-- motto -->
                     <p>(life mantra)</p>
                     <div class="motto-contain">
-                        <img src="images/motto remove bg.svg" alt="">
+                        <img src="images/motto.svg" alt="">
                     </div>
 
             </div>
@@ -319,12 +354,16 @@
         distance: '60px',
         duration: 2500,
         delay: 400,
+        opacity: 0,
     });
 
     ScrollReveal().reveal('.work-list .work, .tech-stack img, #about .about-col-1, .sub-title, .subsub-title, .callout, p, .pins-contain', {delay: 100, origin: 'bottom' });
-    ScrollReveal().reveal('.header-text, .bottom-header-text, .current-contain', {delay:50, origin: 'bottom', interval: 100});
+    ScrollReveal().reveal(' .header-text, .bottom-header-text, .current-contain', {delay:100, origin: 'bottom', interval: 100});
     ScrollReveal().reveal('.nav-container', {delay: 200, origin: 'top'});
+
+    
 </script>
+
 
 </body>
 </html>

@@ -20,7 +20,7 @@
         <a href="index.html"><img src="images/jasmine wu logo text.png" class="logo" width = 250px height = auto> </a> 
        <div class="right-nav">
             <ul>
-                <li id="work-nav"><a href="#projects">work</a></li>
+                <li id="work-nav"><a href="index.html#projects">work</a></li>
                 <li id="hobbies-nav"><a href="hobbies.html">serendipity</a></li>
                 <li id="about-nav" ><a href="about.html"id="active">about</a></li>
             </ul>
@@ -35,7 +35,7 @@
 
 <div class="dropdown-nav">
     <div class="column">
-        <li><a href="#projects">work</a></li>
+        <li><a href="index.html#projects">work</a></li>
         <li><a href="hobbies.html">serendipity</a></li>
         <li><a href="about.html">about</a></li>
         <a href="mailto: jasmineqw45@gmail.com" class="btn">Get in Touch</a>
@@ -58,12 +58,28 @@
     
     <div class="about-col-2">
         <h1 class="subsub-title">A little <span> Introduction </span>  </h1>
-        <br><br>
-        <p>I'm a Product Designer and Front End Developer who started off creating dollhouses from cardboard boxes and <a href="https://www.instagram.com/p/BnzOrUNFZl_/?img_index=2" target="_blank">building towns in Minecraft</a>. Through exploring the edges
-            of my curiosity, I discovered an obsessive passion for building <b>magical experiences</b> from scratch [especially at ungodly hours in the night] 
-            <br>
-            My combined intrests in cognitive science, art, and startup ecosystems have driven me to build end-to-end, user-driven products in fast-paced, iterative environments.
-            My approach is to foster an <u>obsessive curiosity</u> for everything ⸺ cross-fertilized designs.
+        <br>
+        <div class="about-row" >
+            <p style="opacity: 1;">
+                🧠  INTP 5w4
+                
+            </p>
+            <p style="opacity: 1;">
+            
+                🎓  Cog Sci + Comp Sci @ UCI 27'
+                
+            </p>
+        </div>
+        
+            <div class="solid-contain" style="padding: 4vh 0;">
+                <div class="solid"></div>
+            </div>
+        <p>
+            I'm a Product Designer and Front End Developer who started off creating dollhouses from cardboard boxes and <a href="https://www.instagram.com/p/BnzOrUNFZl_/?img_index=2" target="_blank">building towns in Minecraft</a>.
+            This has since translated to an obsession for building <b>magical experiences</b> from scratch [especially at ungodly hours into the night] 
+            <br><br>
+            My combined intrests in cognitive science, art, and startup ecosystems have driven me to build end-to-end products in fast-paced, iterative environments.
+            My approach to design: 1) foster an <u>obsessive curiosity</u> for everything 2) express it.
             <br>
         
             <!-- When I'm not designing new products or <a href="https://teambreadpandas.wixsite.com/website" target="_blank">building robots</a>, 
@@ -78,10 +94,7 @@
     <div class="solid"></div>
 </div>
 <!-- prev -->
-    <div class="prev-contain" style="
-        display: flex; 
-        flex-direction: row; 
-        justify-content: space-between;"
+    <div class="prev-contain" 
     >
         <div class="subsub-title" style="flex-basis: 40%;">Prev</div>
        
@@ -91,7 +104,7 @@
                 <li>1st place E-Commerce Website Design out of 148 submissions</li>
                 <li>Creative Design intern @ Mediterranean Culinary Startup</li>
                 <li>Dances Coordinator for ASB, led 4 dances, 4k+ cumulative attendees, managing $100k+</li>
-                <li>Founder of the first letter writing club at my High School</li>
+                <li>Founder of the first letter writing club at my High School, 400 letters + 40 gift packages delivered</li>
                 <li>Graduated top 3% of class + Social Science Coronet Nominee (top academic honor)</li>
             <div class="btn-new" style="margin-top: 8vh;">
                 <a href="files/Wu, Jasmine Resume (3).pdf" class="btn" target="_blank">View Resume</a> 
@@ -199,10 +212,7 @@
     </div>
     <!-- contact me -->
     <div class="chat-contain"
-        style="
-        display: flex; 
-        flex-direction: row; 
-        justify-content: space-between;"
+    
     >
     <section style="flex-basis: 50%;">
         <h1 class="subsub-title">Let's grab some virtual coffee! ☕️</h1>
@@ -210,7 +220,7 @@
             Always open for feedback or mentorship!
         </p>
     </section>
-    <section style="flex-basis: 50%; margin-left: 10vh;">
+    <section id= "chat-right" >
         <p>Would love to meet you!</p>
         <!-- linkedin -->
         <div class="btn-new" style="margin-top: 8vh;">
@@ -249,7 +259,7 @@
 
     ScrollReveal().reveal('.about-col-1', {delay: 100, origin: "right"});
     ScrollReveal().reveal('.about-col-2 .sub-title', {delay: 100, origin: "left"});
-    ScrollReveal().reveal('.pins-contain, .btn-new, .subsub-title, p, li', {delay: 100, origin: "bottom"});
+    ScrollReveal().reveal('.pins-contain, .btn-new, .solid-contain, .subsub-title, .callout, p, li', {delay: 100, origin: "bottom"});
 </script>
 
 </body>
