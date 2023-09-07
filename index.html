@@ -47,7 +47,7 @@
 <script src="main.js"></script>
 
 
-<div class="contain">
+<div id="header">
 
 
     <!-- hero landing page -->
@@ -56,31 +56,47 @@
              <div class="icons-contain" >
                 <!-- right -->
                 <div  style="margin-left: 88vw; margin-top: 20vw;">
-                    <p >intp 5w4, cognitive neuroscience</p>
-                    <i class="fa-solid fa-brain" ></i>
+                    <a href="hobbies.html">
+                        <p >intp 5w4, cognitive neuroscience</p>
+                        <i class="fa-solid fa-brain" ></i>
+                    </a>
+                    
                 </div>
-                <div  style="margin-left: 75vw; margin-top: 42vw;">
-                    <p >digital nomadic life 24/7</p>
-                    <i class="fa-solid fa-laptop" ></i>
+                <div  style="margin-left: 77vw; margin-top: 37vw;">
+                    <a href="hobbies.html">
+                        <p >digital nomadic life 24/7</p>
+                        <i class="fa-solid fa-laptop" ></i>
+                    </a>
                 </div>
                 <div  style="margin-left: 80vw; margin-top: 10vw;">
-                    <p >wu wei, stoicism, effortless action</p>
-                    <i class="fa-solid fa-water" ></i>
+                    <a href="hobbies.html">
+                        <p >wu wei, stoicism, effortless action</p>
+                        <i class="fa-solid fa-water" ></i>
+                    </a>
                 </div>
                 <!-- left -->
               
-                <div  style="margin-left: 20vw; margin-top: 40vw;">
-                    <p>10k steps, podcasts 2x speed</p>
-                    <i class="fa-solid fa-book" ></i>
+                <div  style="margin-left: 18vw; margin-top: 42vw;">
+                    <a href="hobbies.html">
+                        <p>10k steps/day, podcasts 2x speed</p>
+                        <i class="fa-solid fa-book" ></i>
+                    </a>
+                    
                     
                 </div>
                 <div  style="margin-left: 12vw; margin-top: 10vw;">
-                    <p>romanticism, art history, museum analysis</p>
-                    <i class="fa-solid fa-palette" ></i>
+                    <a href="hobbies.html">
+                        <p>romanticism, art history, museum analysis</p>
+                        <i class="fa-solid fa-palette" ></i>
+                    </a>
+                    
                 </div>
                 <div  style="margin-left: 6vw; margin-top: 32vw;">
-                    <p>ww2 history buff, germany</p>
-                    <i class="fa-solid fa-jet-fighter-up"></i>
+                    <a href="hobbies.html">
+                        <p>ww2 history buff, fashion, military</p>
+                        <i class="fa-solid fa-jet-fighter-up"></i>
+                    </a>
+                    
                 </div>
 
             </div>
@@ -97,7 +113,11 @@
                         <h1> <span>Jasmine Wu </span></h1>
                     </div>
                     <h1 class="bottom-header-text">I'm <span class="auto-type"></span></h1>    
-                    <p>18, product designer who likes building things @ 3am</p>
+                    <p>18 y.o. product designer who likes building things @ 3am</p>
+                </div>
+
+                <div class="scroll-down">
+                    <i class="fa-solid fa-angles-down"></i>
                 </div>
                 <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 
@@ -113,8 +133,19 @@
                     <img src="images/jasmineAvatar min.svg" alt="">
                 </div>
         </div>
+        <!-- <img src="images/purple light gradient.png" 
+            style="
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60vw;
+            height: auto;
+            overflow-y: hidden;
+            position: absolute;
+            "
+        > -->
                     
-        </div>
+</div>
     
     
 
@@ -209,7 +240,7 @@
 
                 <!-- Robotics gneral -->
                 <a href="robotics.html" class="work">
-                    <img src="images/robotics IG mockups.png" alt="">
+                    <img src="images/robotics/robotics IG mockups.png" alt="">
                     <div  class="layer">
                         <h1>Bread Pandas Robotics</h1>
                         <p>Business Lead | Design | Events Hosting </p>
@@ -227,7 +258,7 @@
 
                 <!-- olivo amigo -->
                 <a href="olivo.html" class="work">
-                    <img src="images/Olivo Amigo Mock Cover.png" alt="Olivo Amigo Designs">
+                    <img src="images/olivo/Olivo Amigo Mock Cover.png" alt="Olivo Amigo Designs">
                     <div  class="layer">
                         <h1>Olivo Amigo</h1>
                         <p>Creative Design Intern | Marketing | Graphic Design</p>
@@ -357,8 +388,8 @@
         opacity: 0,
     });
 
-    ScrollReveal().reveal('.work-list .work, .tech-stack img, #about .about-col-1, .sub-title, .subsub-title, .callout, p, .pins-contain', {delay: 100, origin: 'bottom' });
-    ScrollReveal().reveal(' .header-text, .bottom-header-text, .current-contain', {delay:100, origin: 'bottom', interval: 100});
+    ScrollReveal().reveal('i, .work-list .work, .tech-stack img, #about .about-col-1, .sub-title, .subsub-title, .callout, p, .pins-contain', {delay: 100, origin: 'bottom' });
+    ScrollReveal().reveal(' .header-text, .bottom-header-text, .current-contain, .type-container p', {delay:100, origin: 'bottom', interval: 100});
     ScrollReveal().reveal('.nav-container', {delay: 200, origin: 'top'});
 
     

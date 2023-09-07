@@ -175,7 +175,7 @@ p a:link, a:visited,
 .icons-contain {
     width: 80vw;
     height: auto;
-    animation: float 15s ease-in-out infinite;
+    animation: float 8s ease-in-out infinite;
 }
 .icons-contain p{
     text-align: center;
@@ -191,23 +191,37 @@ p a:link, a:visited,
     font-size: 3em;
     cursor: url('../images/hover cursor.png') 16 16, auto;
     transition: color .5s ease, text-shadow .5s ease;
-
-  
 }
 
 .icons-contain div {
     position: absolute;
+    
+}
+.icons-contain a {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-.icons-contain i:hover {
+.icons-contain i:hover, .scroll-down i:hover {
     text-shadow: 0 0 50px #A284F9;
     color: #A284F9;
-    transform: 1s;
+    transform: 2s;
+}
+.scroll-down {
+    align-items: center;
+    display: flex;
+    margin-top: 20vh;
+}
+.scroll-down i {
+    color: #fff;
+    font-size: 2em;
+    cursor: url('../images/hover cursor.png') 16 16, auto;
+    transition: color .5s ease, text-shadow .5s ease;
+    animation: slowfloat 2s ease-in-out infinite;
 }
 
-/* float animation */
+/* float animation */ 
+
 @keyframes float {
     0% {
         transform: translatey(0px);
@@ -219,6 +233,18 @@ p a:link, a:visited,
         transform: translatey(0px);
     }
 }
+@keyframes slowfloat {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-.5em);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
 /* button */
 
 
@@ -288,13 +314,17 @@ p a:link, a:visited,
     background-color:rgba(255,255,255,0.05);
     border-radius: 40px;
     padding: 2vw;
-    margin: 1vw 0;
+    margin: 2vw 0;
     min-width: 30vw;
+}
+.callout .emoji-contain {
+    margin-right: 2em;
+    
 }
 
 #header {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     /* background-image: url(images/jasmine\ wu\ avatar.svg);
     transition: background-image 2s ease-in-out; */
     background-size: cover;
@@ -409,7 +439,7 @@ nav ul li a#active {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 120vh;
     flex-direction: column;
     /* margin: auto 70vh auto 30vh; */
     color: #fff;
@@ -501,6 +531,7 @@ p.black {
     text-align: center;
     
 }
+
 /* .wrapper .dynamic-txts{
     margin-left: 15px;
     line-height: 90px;
@@ -802,6 +833,7 @@ p.black {
 }
 #contact h1{
     font-size: 20px;
+    line-height: 30px;
 }
 #contact p {
     color: #fff;
@@ -1568,20 +1600,17 @@ html {
     }
     .head-contain {
         height: 130vh;
-        padding: 0 5vh;
         justify-content: end;
+        margin: 10vh 5vh;
     }
     .type-container {
-        margin-bottom: 10vh;
+        margin: 20vh 0;
     }
     .avatar2 img {
         display: block;
     }
     #section {
         padding: 5vh;
-    }
-    .head-contain{
-        margin: 10vh 5vh;
     }
     .header-text h1 span {
         font-size: 60px;
@@ -1655,6 +1684,20 @@ html {
         align-items: center;
         justify-content: center;
     }
+    .type-container p {
+        text-align: center;
+    }
+    .head-contain h1 {
+        font-size: 50px;
+        line-height: 1.3;
+    }
+    .header-text h1 span {
+        font-size: 50px;
+    }
+    .icons-contain {
+        display: none;
+    }
+   
     
 }
 
@@ -1703,7 +1746,7 @@ html {
    
     
     .head-contain {
-        margin: 5vh;
+        margin: 10vh 5vh 5vh 5vh;
     }
     
     .head-contain {
@@ -1711,16 +1754,6 @@ html {
     }
     .container {
         padding: 2vh 5vh;
-    }
-
-    
-    
-    .head-contain h1 {
-        font-size: 40px;
-        line-height: 1.3;
-    }
-    .header-text h1 span {
-        font-size: 45px;
     }
     
 
