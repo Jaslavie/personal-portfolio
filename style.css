@@ -52,6 +52,9 @@ h1 {
     font-weight: 900;
     font-size: 80px;
 }
+.callout-p {
+    font-size: 22px;
+}
 
 
 /* h2 */
@@ -727,10 +730,9 @@ p.black {
 
 
 .subsub-title span,
-.section-header span {
+.section-header span,  #hobbies h1 span{
     background-color:#A284F9;
     font-style: italic;
-    font-size: 50px;
     color: #fff;
     padding: 2px 10px;
 }
@@ -1028,7 +1030,6 @@ p.black {
 
 .section-header h1{
     margin-bottom: 20px;
-    font-size: 60px;
     text-align: left;
     
 }
