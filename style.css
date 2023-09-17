@@ -34,11 +34,12 @@ a:-webkit-any-link {
 }
 
 
-p a {
+p a, a p {
     color: #ffffff;
+    transition: color .25s ease;
 }
 
-p a:hover {
+p a:hover, a p:hover{
     color: #A284F9;
     transform: 2s;
 }
@@ -1648,6 +1649,12 @@ html {
 
 /* footer wraps + hero image replaced, flex wrap pins*/
 @media (max-width: 768px) {
+    #fashion .row {
+        flex-direction: column;
+     }
+     #fashion .work-contain {
+        margin-top: 10vh;
+     }
     #header {
         height: 100vh;
     }
@@ -1995,8 +2002,98 @@ html {
     max-width: 100%;
     max-height: 100%;
 }
+.hobbies-contain .row {
+    flex-wrap: wrap;
+}
 
+/* play */
+#fashion .row {
+   margin-top: 10vh;
+   justify-content: space-between;
+   
+}
+#fashion .work-contain {
+    flex-basis: 45%;
     
+}
+.play-image {
+    border-radius: 50px;
+    height: 20em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vw;
+    overflow: hidden;
+}
+.play-image img{
+    width: 100%;
+    object-fit: cover; /*means image is cropped*/
+    height: auto;
+    transition: width 1s ease;
+    
+}
+.play-image img:hover {
+    width: 105%;
+}
+
+/* overlay */
+.art-contain {
+    position: relative;
+}
+.art-contain img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .5s ease;
+    background-color: rgb(16, 16, 16, .5);
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2vh;
+}
+.art-contain:hover .overlay {
+   opacity: 1;
+   cursor: url('../images/portfolio cursor.png') 16 16, auto;
+
+}
+.overlay p {
+    text-align: center;
+    color:#fff;
+    
+}
+
+/* table of contents */
+.TOC {
+    padding: 4vh 8vh;
+    border-radius: 100px;
+    background-color: rgba(255,255,255,0.05);
+    
+}
+.TOC .row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.TOC .row a, .TOC .subsubsub-title{
+    margin-right: 5vh;
+}
+.TOC a p {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(255, 255, 255, .5);
+}
+.TOC a p:hover {
+    color: #A284F9;
+}
 
 /* SUPER COOL GRADIENT BCKGROUND */
 /* background: rgb(240,252,255);
