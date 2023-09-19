@@ -6,6 +6,7 @@
     content box*/
     box-sizing: border-box;
     color:#fff;
+    
 }
 
 
@@ -16,6 +17,7 @@ img {
 
 
 body {
+    overflow-x: hidden;
     font-family: 'Inter', sans-serif;
     background: #101010;
     margin: 0;
@@ -118,6 +120,9 @@ p, li {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.center p, .center h1, .center .subsub-title, .center .subsubsub-title, .center .callout-h{
+    text-align: center;
 }
 /* other containers */
 .current-contain{
@@ -297,6 +302,7 @@ p a:link, a:visited,
     background-color: #A284F9;
     padding: 17px 30px;
     border-radius: 15px;
+    max-width: 15em;
     transition: background-color 1s ease;
     /* border-width: 3px;
     border-color:#A284F9;
@@ -308,8 +314,10 @@ p a:link, a:visited,
     background-color: #fff;
 }
 
-/* buttons not in nav */
-
+.btn-new {
+    align-items: center;
+    display: flex;
+}
 .btn-new a:link, .btn-new a:visited {
     color: #fff;
     text-decoration: none;
@@ -509,7 +517,7 @@ body.dropdown-nav.open {
 }
 #personality-content .column {
     align-items: flex-start; 
-    margin: 0 2vh;
+    margin: 2em;
     flex-basis: 33%;
 }
 #personality-content .row {
@@ -696,15 +704,15 @@ p.black {
     margin-top: 2vh;
 }
 .listen-contain img {
-    width: 30vh;
-    height: 30vh;
+    width: 100%;
+    height: auto;
 }
 .song-contain {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     margin-top: 4vh;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .row {
@@ -1070,9 +1078,12 @@ p.black {
 }
 #section img {
     width: 100%;
-    height: 100%;
+    height: auto;
     margin: 0;
     margin-bottom: 5vh;
+}
+#section .work img {
+    height: 100%;
 }
 #section .container {
     padding: 7vh 0;
@@ -1552,7 +1563,7 @@ html {
         padding: 0;
     }
     #contact .container {
-        padding: 1vh 5vh;
+        padding: 1vh 0;
     }
    
     .head-contain {
@@ -1580,10 +1591,7 @@ html {
     .listen-contain .column {
         padding: 0 1vh;
     }
-    .listen-contain img {
-        width: 20vh;
-        height: 20vh;
-    }
+   
     .prev-contain {
         flex-direction: column;
     }
@@ -1675,6 +1683,7 @@ html {
     }
     .about-col-1 img {
         width: 90%;
+        height: auto;
     }
 
 }
@@ -1905,9 +1914,7 @@ html {
     .current-contain p {
         margin: 5vh 0 0 0;
     }
-    .about-col-1 img{
-        width: 90%;
-    }
+   
     .overview .text-contain .row{
         display: flex;
         flex-direction: column;
@@ -2027,12 +2034,54 @@ html {
     .cool-container {
         padding: 3vh 5vh;
     }
+    .infinite-cards {
+        animation: scroll 20s linear infinite;
+    }
 }
 
 /* iphone xr */
-@media (max-width: 414px) {
-    .about-col-1 img {
-        width: 90%;
+@media (max-width: 430px) {
+    .tech-stack img {
+        width: 4.5em;
+    }
+    body {
+        overflow: hidden;
+    }
+    .work-image {
+        border-radius: 20px;
+        padding: 2vh;
+    }
+    .tag p {
+        font-size: 14px;
+    }
+    .head-contain h1, .head-contain h1 span{
+        font-size: 45px;
+        line-height: 55px;
+    }
+ 
+    h1 {
+        font-size: 40px;
+    }
+    .container {
+        padding: 2vh 0;
+    }
+    .callout-h {
+        font-size: 30px;
+    }
+    .section-header .emoji-contain {
+        padding: 5vh;
+    }
+    .section-header h1 {
+        margin-bottom: 5vh;
+    }
+    .solid-contain {
+        padding: 8vh 0;
+    }
+    .section-header .emoji-contain h1 {
+        font-size: 40px;
+    }
+    .wrapper, .child{
+        padding: 2vh 5vh;
     }
     #header, .head-contain {
         height: 99vh;
@@ -2049,7 +2098,7 @@ html {
         margin-bottom: 0;
     }
     #motto img {
-        width: 120vw;
+        width: 142vw;
     }
     
     
@@ -2185,6 +2234,7 @@ html {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
 }
 .TOC .row a, .TOC .subsubsub-title{
     margin-right: 5vh;
