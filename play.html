@@ -49,7 +49,7 @@
 
 <div class="child">
     <div class="center">
-        <h1>My Playground</h1>
+        <h1>My <span>Playground</span></h1>
         <p class="callout-p" style="margin-top: 2vw;">My spontaneous life musings: fashion design, oil painting, and ASB posters</p>
     </div>
     <div class="space"></div>
@@ -58,7 +58,8 @@
         <div class="row">
             <div class="subsubsub-title">Table of Contents</div>
             <div class="subsubsub-title">|</div>
-            <a href="#fashion"><p>Fashion</p></a>
+            <a href="#fashion"><p>Fashion</p></a> 
+            <a href="#volunteering"><p>Volunteering</p></a>
             <a href="#artwork"><p>Artworks</p></a>
         </div>
     </div>
@@ -66,8 +67,8 @@
 
  <!-- fashion -->
  <div id="fashion">
-    <h1 style="opacity: .5;">Fashion Design.</h1>
-    <p>From DIY-ing barbie clothes to selling 2d roblox clothes to opening an irl fashion business.</p>
+    <h1 style="opacity: .5; margin-bottom: 2vh;">Fashion Design.</h1>
+    <p class="callout-p">From DIY-ing barbie clothes to selling 2d roblox clothes to opening an irl fashion business.</p>
     <div class="row">
         <!-- solidarity -->
         <div class="work-contain">
@@ -101,11 +102,66 @@
 
 
  </div>
+
+ <div class="space"></div>
+<!-- volunteering -->
+    <div id="volunteering">
+        <h1 style="opacity: .5; margin-bottom: 2vh;">Volunteering.</h1>
+        <p class="callout-p">Directing Dances for ASB, writing letters to seniors, and designing graphics for nonprofits</p>
+        <div class="row">
+            <!-- Letter-writing -->
+            <div class="work-contain">
+                <a href="#">
+                        <div class="play-image">
+                            <img src="images/play/Letter Recaps.png" alt="">
+                        </div>
+                </a>
+                <br>
+                <div class="caption">FOUNDER & PRESIDENT</div>
+                        <div class="subsubsub-title">Pen on Paper</div>
+                        <p>I write letters to seniors and young girls in my free time. 
+                            Created a HS club where I designed templates for 400+ letters :)
+                        </p>
+    
+            </div>
+            <!-- asb -->
+            <div class="work-contain">
+                <a href="#">
+                        <div class="play-image">
+                            <img src="images/play/Aloha 2.0.png" alt="">
+                        </div>
+                </a>
+                <br>
+                <div class="caption">DANCES COORDINATOR</div>
+                        <div class="subsubsub-title">High School ASB</div>
+                        <p>Designing dance themes/decor and posters/flyers to promote events.</p>
+    
+            </div>
+        </div>
+        <div class="row">
+             <!-- fnl -->
+             <div class="work-contain">
+                <a href="#">
+                        <div class="play-image">
+                            <img src="images/play/fnl mock.png" alt="">
+                        </div>
+                </a>
+                <br>
+                <div class="caption">PUBLICIST</div>
+                        <div class="subsubsub-title">FNL Non-Profit</div>
+                        <p>Re-branded nonprofit graphics and coordinated school-wide events</p>
+    
+            </div>
+        </div>
+
+   
+    </div>
+
  <div class="space"></div>
     <!-- art -->
     <div id="artwork">
-        <h1 style="opacity: .5; margin-bottom: 10vh;">Artworks.</h1>
-        <p>Majority painted during 6th-8th grade (age 11-13)</p>
+        <h1 style="opacity: .5; margin-bottom: 5vh;">Artworks.</h1>
+        <p class="callout-p">Majority painted during 6th-8th grade (age 11-13)</p>
         <div id="grid-container4">
             <div class="art-contain">
                 <img src="images/play/cat oil painting.jpg" alt="">
@@ -195,10 +251,6 @@
            
         </div>
     </div>
-    
-
-   
-</div>
 
 
 
@@ -222,7 +274,7 @@
         opacity: 0,
     });
 
-    ScrollReveal().reveal('h1, p, .subsubsub-title, .caption, .art-contain', {delay: 100, origin: 'bottom' });
+    ScrollReveal().reveal('h1, p, .subsubsub-title, .caption, .art-contain, .TOC', {delay: 100, origin: 'bottom' });
     ScrollReveal().reveal('.nav-container', {delay: 200, origin: 'top'});
     // for the artworks
     ScrollReveal().reveal('img', {delay:100, origin: 'bottom', interval:200});
