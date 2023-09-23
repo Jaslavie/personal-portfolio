@@ -27,7 +27,9 @@ body {
     cursor: url('../images/portfolio cursor.png') 16 16, auto;
     
 }
-
+::selection {
+    background: #A284F9;
+}
 a:-webkit-any-link {
     cursor: url('../images/hover cursor.png') 16 16, auto;
     text-decoration: none;
@@ -36,12 +38,12 @@ a:-webkit-any-link {
 }
 
 
-p a, a p {
+p a, a p, .main-content a {
     color: #ffffff;
     transition: color .25s ease;
 }
 
-p a:hover, a p:hover{
+p a:hover, a p:hover, .main-content a:hover{
     color: #A284F9;
     transform: 2s;
 }
@@ -57,7 +59,7 @@ h1 {
 }
 .callout-p {
     font-size: 22px;
-    line-height: 33px;
+    line-height: 36px;
     font-weight: 400;
 }
 .overview .callout-p {
@@ -79,7 +81,7 @@ h1 {
 
 /* h2 */
 .subsub-title{
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 900;
     margin-bottom: 4vh;
    
@@ -113,6 +115,7 @@ p, li {
 /* divider */
 .solid-contain {
     padding: 20vh 0;
+    width: 100%;
 }
 
 .center{
@@ -451,7 +454,7 @@ nav ul li a#active {
     color: #A284F9;
 }
 .main-content {
-    margin-left: 8vh;
+    margin-left: 10vh;
     width: 85%;
 }
 /* responsive nav */
@@ -711,7 +714,6 @@ p.black {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 4vh;
     align-items: flex-start;
 }
 
@@ -1080,7 +1082,7 @@ p.black {
     width: 100%;
     height: auto;
     margin: 0;
-    margin-bottom: 5vh;
+    margin: 2vh 0;
 }
 #section .work img {
     height: 100%;
@@ -1121,7 +1123,7 @@ width: 30%;
 width: 70%;
 }
 .left {
-    margin-right: 10vh;
+    margin-right: 15vh;
     display: flex;
     margin-bottom: 5vh;
 }
@@ -1191,19 +1193,6 @@ width: 70%;
     color: #fff;
     
     margin: 0 auto;
-    
-}
-
-
-
-.text-contain ol {
-    padding-left: 50px;
-}
- .text-contain ol li{
-    font-size: 22px;
-    color:rgba(255,255,255,.8);
-    opacity: 85%;
-    line-height: 2;
     
 }
 
@@ -1689,12 +1678,11 @@ html {
 }
 /* nav bar responsiveness and tech stack stackecd */
 @media (max-width: 845px) {
-    #rec .row {
+    
+    #rec .row, .main-content-container .row, .wrapper{
         flex-direction: column;
     }
-    .wrapper {
-        flex-direction: column;
-    }
+    
     .wrapper #section {
         padding: 10vh 0;
     }
@@ -1728,6 +1716,7 @@ html {
         padding: 4vw 0;
     }
     .song-contain {
+        margin-top: 4vh;
         flex-direction: column;
     }
     .nav-container nav ul {
@@ -1964,7 +1953,7 @@ html {
 @media (max-width: 500px){
     #header {
         background-image: none;
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .btn {
         padding: 17px 18px;
@@ -2045,7 +2034,7 @@ html {
         width: 4.5em;
     }
     body {
-        overflow: hidden;
+        overflow-x: hidden;
     }
     .work-image {
         border-radius: 20px;
@@ -2247,6 +2236,24 @@ html {
 .TOC a p:hover {
     color: #A284F9;
 }
+/* target users */
+.main-content-container {
+    display: flex;
+}
+.main-content-container .row .column {
+    width: 50%;
+    align-items: flex-start;
+}
+
+.main-content-container .row {
+    align-items: flex-start;
+    display: flex;
+}
+ol {
+    margin: 2em 0 2em 5em;
+}
+/* case studies internal */
+
 
 /* SUPER COOL GRADIENT BCKGROUND */
 /* background: rgb(240,252,255);
