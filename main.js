@@ -33,3 +33,22 @@ iconMain.addEventListener('mouseleave', () => {
     // Hide iconText on mouseleave
     iconText.style.display = 'none';
 });
+
+
+// pop up modal
+
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("modalBtn");
+var close = document.getElementById("closeModal");
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+close.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
