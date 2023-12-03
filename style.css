@@ -20,7 +20,7 @@ img {
 
 
 html, body {
-    overflow-x:hidden;
+    overflow-x: hidden;
     font-family: 'Inter', sans-serif;
     background: #101010;
     margin: 0;
@@ -28,7 +28,7 @@ html, body {
     /* cursor: url('../images/portfolio cursor.png') 16 16, auto; */
 }
 ::selection, a::selection {
-    background: var(--prim);
+    background: #20222d;
 }
 a:-webkit-any-link {
     /* cursor: url('../images/hover cursor.png') 16 16, auto ; */
@@ -157,21 +157,20 @@ p, li {
 }
 
 .tech-stack {
-    display: flex;
-    justify-content: space-between;
-    
-}
-.tech-stack .images-contain {
     display: grid;
     grid-auto-flow: column;
     flex-wrap: wrap;
+    
+}
+.tech-stack .images-contain {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
 }
 .tech-stack img {
     width: 5em;
     border-radius: 0;
     z-index: 1000;
-    margin-right: 3em;
-    cursor: pointer;
 }
 .tech-stack img:hover {
     animation: hoverFloat 2s ease-in-out;
@@ -1521,10 +1520,7 @@ html {
 }
 /* tech stack flex*/
 @media (max-width: 1050px) {
-    .tech-stack {
-        flex-direction: column;
-    }
-    
+   
     .listen-contain .row {
         flex-direction: column;
     }
@@ -1602,6 +1598,9 @@ html {
         
         max-width: 80vw;
        
+    }
+    .tech-stack {
+        grid-auto-flow: row;
     }
     .long-contain p {
         text-align: left;
@@ -1682,12 +1681,8 @@ html {
     .right-nav .toggle-button {
         display:block;
     }
-    .tech-stack .images-contain {
-        flex-direction: column;
-    }
-    .tech-stack {
-        flex-direction: row;
-    }
+   
+   
     .tech-stack img {
         width: 6em;
     }
@@ -1791,9 +1786,7 @@ html {
     .sec2 img {
         margin: 0vh 2vh;
     }
-    .tech-stack {
-        flex-direction: column;
-    }
+    
     .footer, #contact .container .row {
         flex-direction: column;
         
@@ -1987,9 +1980,6 @@ html {
     .tech-stack img {
         width: 4.5em;
     }
-    body {
-        overflow-x: hidden;
-    }
     .work-image {
         border-radius: 20px;
         padding: 2vh;
@@ -2111,6 +2101,7 @@ html {
     place-content: center;
     z-index: 105550;
     background-color: rgba(0,0,0,0.75);
+    display: none;
 
 }
 .modal-content {
@@ -2193,7 +2184,7 @@ html {
 }
 .art-contain:hover .overlay {
    opacity: 1;
-   cursor: url('../images/portfolio cursor.png') 16 16, auto;
+   cursor: pointer;
 
 }
 .overlay p {
