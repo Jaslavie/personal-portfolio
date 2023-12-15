@@ -1,0 +1,36 @@
+<svg width="836" height="386" viewBox="0 0 836 386" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_601_5320)">
+<circle cx="418.5" cy="343.5" r="343.5" fill="#4946FF" fill-opacity="0.25"/>
+<circle cx="418" cy="352" r="309" fill="#4946FF" fill-opacity="0.25"/>
+<circle cx="418.188" cy="344.187" r="269.093" fill="#211F76"/>
+<g clip-path="url(#clip1_601_5320)">
+<rect x="176.454" y="102.454" width="483.468" height="483.468" rx="241.734" fill="#6360FF"/>
+<rect x="182.825" y="320.201" width="179.52" height="74.5814" rx="37.2907" fill="#413DFF"/>
+<rect x="442.923" y="121.942" width="216.998" height="73.0823" rx="36.5412" fill="#413DFF"/>
+<rect x="478.152" y="351.683" width="164.154" height="63.7128" rx="31.8564" fill="#413DFF"/>
+<rect x="225.925" y="268.482" width="73.0823" height="77.2049" rx="29.9825" fill="#413DFF"/>
+<circle cx="292.074" cy="248.806" r="126.114" fill="#8280FF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M362.152 353.673C342.109 367.093 318.006 374.919 292.074 374.919C253.194 374.919 218.424 357.326 195.29 329.666C201.883 323.779 210.582 320.201 220.116 320.201H325.054C344.36 320.201 360.239 334.872 362.152 353.673Z" fill="#5350FF"/>
+<rect x="150.219" y="195.024" width="299.45" height="106.063" rx="37.4781" fill="#413DFF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M406.874 301.088C414.139 285.16 418.187 267.455 418.187 248.806C418.187 229.569 413.88 211.338 406.178 195.024H187.697C184.086 195.024 180.594 195.535 177.29 196.488C170.014 212.426 165.96 230.142 165.96 248.806C165.96 266.796 169.727 283.906 176.515 299.391C180.046 300.493 183.802 301.088 187.697 301.088H406.874Z" fill="#5350FF"/>
+</g>
+<rect x="371.34" y="234.002" width="153.285" height="42.3503" rx="21.1751" fill="#A09EFF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M415.17 276.352C417.145 267.486 418.187 258.267 418.187 248.806C418.187 243.797 417.895 238.857 417.328 234.002L392.515 234.002C380.82 234.002 371.34 243.482 371.34 255.177C371.34 266.872 380.82 276.352 392.515 276.352H415.17Z" fill="#B7B5FF"/>
+<rect x="508.135" y="288.72" width="52.0946" height="42.3503" rx="21.1751" fill="#A09EFF"/>
+<rect x="260.779" y="175.911" width="52.0946" height="42.3503" rx="21.1751" fill="#B7B5FF"/>
+<rect x="152.093" y="373.795" width="150.662" height="36.3538" rx="18.1769" fill="#A09EFF"/>
+<rect x="534.37" y="175.911" width="118.056" height="47.972" rx="23.986" fill="#A09EFF"/>
+</g>
+<circle cx="724.5" cy="298.5" r="9.5" fill="#8280FF" fill-opacity="0.75"/>
+<circle cx="106" cy="249" r="7" fill="#8280FF" fill-opacity="0.75"/>
+<circle cx="772" cy="23" r="6" fill="#8280FF" fill-opacity="0.25"/>
+<circle cx="6" cy="285" r="6" fill="#8280FF" fill-opacity="0.25"/>
+<defs>
+<clipPath id="clip0_601_5320">
+<rect width="687" height="386" fill="white" transform="translate(75)"/>
+</clipPath>
+<clipPath id="clip1_601_5320">
+<rect x="176.454" y="102.454" width="483.468" height="483.468" rx="241.734" fill="white"/>
+</clipPath>
+</defs>
+</svg>
