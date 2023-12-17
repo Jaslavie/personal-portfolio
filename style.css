@@ -11,10 +11,10 @@
   --outline: rgba(135, 135, 135, 0.25);
   --textColor: rgba(255, 255, 255, 0.5);
   --hoverBackground: rgba(72, 91, 255, 0.15);
-  --borderHover: 2px solid var(--prim);
-  --border: 2px solid var(--card);
-  --cardBorderColor: rgba(225, 225, 225, 0.1);
-  --cardBorder: 3px solid var(--cardBorderColor);
+  --borderHover: 3px solid var(--prim);
+  --border: 3px solid var(--card);
+  --cardBorderColor: #18181f;
+  --cardBorder: 4px solid var(--cardBorderColor);
   --hoverBlur: drop-shadow(0px 0px 8px rgba(99, 96, 255, 0.5));
   --transitionHover: 500ms background-color ease-in-out,
     500ms border ease-in-out;
@@ -904,7 +904,7 @@ p.black {
   grid-template-columns: 0.7fr 1.3fr;
   gap: 48px;
   width: 92vw;
-  margin: 20vh 4vw;
+  margin: 20vh 4vw 8vh 4vw;
   justify-content: center;
   height: auto;
   align-items: start;
@@ -948,6 +948,7 @@ p.black {
   color: var(--cardBorderColor);
   font-size: 12px;
   transition: color 500ms ease;
+  white-space: nowrap;
 }
 .inventory-item:hover p {
   color: #fff;
@@ -1049,7 +1050,7 @@ p.black {
   padding: 28px;
   display: grid;
   grid-template-columns: auto;
-  border-radius: 22px;
+  border-radius: 30px;
   gap: 18px;
   width: fit-content;
   height: 100%;
@@ -1188,7 +1189,7 @@ p.black {
   align-items: center;
   width: 100%;
   border-radius: 20px;
-  border: 1px solid var(--cardBorderColor);
+  border: 2px solid var(--cardBorderColor);
   background-color: var(--darkCard);
   padding: 18px;
   display: flex;
@@ -1297,8 +1298,8 @@ h1 span,
   gap: 12px;
 }
 .tagAbout a {
-  padding: 8px 18px;
-  border: 2px solid rgba(255, 255, 255, 0.15);
+  padding: 12px 22px;
+  border: 3px solid var(--cardBorderColor);
   color: #ffffff;
   display: grid;
   grid-auto-flow: column;
@@ -1306,7 +1307,7 @@ h1 span,
   justify-content: center;
   align-items: center;
   gap: 8px;
-  border-radius: 14px;
+  border-radius: 16px;
   transition: var(--transitionHover);
   white-space: nowrap;
 }

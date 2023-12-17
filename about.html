@@ -29,7 +29,7 @@
         <nav>
           <a href="index.html"
             ><img
-              src="images/jasmine wu logo text.png"
+              src="images/jasmineWuLogoLong.svg"
               class="logo"
               width="250px"
               height="auto"
@@ -38,7 +38,6 @@
           <div class="right-nav">
             <ul>
               <li id="work-nav"><a href="index.html#projects">work</a></li>
-              <li id="work-nav"><a href="play.html">play</a></li>
               <li id="hobbies-nav"><a href="hobbies.html">serendipity</a></li>
               <li id="about-nav"><a href="about.html" id="active">about</a></li>
             </ul>
@@ -66,7 +65,7 @@
       <div class="about-contain">
         <div class="dashboard-contain-left">
           <div class="profile-img">
-            <img src="images/Profile Picture Jasmine Wu BW.svg" />
+            <img src="images/about/Profile Picture Jasmine Wu.svg" />
           </div>
 
           <div class="inventory-contain">
@@ -92,10 +91,11 @@
               <a
                 href="https://youtu.be/6KUEigk4JCA?si=phG-MJd8T6QLnxNK"
                 target="_blank"
+                style = "background-color: var(--hoverBackground); border: var(--borderHover); opacity: 1; filter: var(--hoverBlur);"
               >
                 <img src="images/about/masteryBook.svg" alt="" />
               </a>
-              <p>mastery</p>
+              <p style="color: #fff;">mastery</p>
             </div>
             <div class="inventory-item">
               <a
@@ -274,7 +274,7 @@
         </div>
       </div>
 
-      <div class="about-contain">
+      <div class="about-contain" style="margin: 0 4vw 10vh 4vw;">
         <div class="bookshelf-contain">
           <h2>Bookshelf</h2>
           <div class="bookshelf-item">
@@ -312,7 +312,7 @@
           </div>
           <div class="bookshelf-item">
             <div class="bookshelf-left">
-              <img src="images/about/range banner.png" alt="" />
+              <img src="images/about/range banner 2.svg" alt="" />
               <div class="bookshelf-center-text">
                 <h3>Range</h3>
                 <div class="tag">BOOK</div>
@@ -327,7 +327,7 @@
           </div>
           <div class="bookshelf-item">
             <div class="bookshelf-left">
-              <img src="images/about/y combinator logo.png" alt="" />
+              <img src="images/about/y combinator logo 1.svg" alt="" />
               <div class="bookshelf-center-text">
                 <h3>Paul Graham</h3>
                 <div class="tag">BLOG</div>
@@ -664,8 +664,8 @@
           origin: "left",
         });
         ScrollReveal().reveal(
-          ".ideation-contain, .coffee-contain, .dashboard-contain-left, .dashboard-contain, .bookshelf-contain, .tagAbout, .tag, .pins-contain, .btn-new, .solid-contain, .subsubsub-title, h1, .subsub-title, .callout, p, li",
-          { delay: 100, origin: "bottom" },
+          ".ideation-contain, .coffee-contain, .dashboard-contain-left, .skills-contain, .dash-header-contain, .prev-contain,  .bookshelf-contain, .pins-contain, .btn-new, .solid-contain, .subsubsub-title, h1, .subsub-title, .callout",
+          { delay: 400, origin: "bottom" },
         );
         ScrollReveal().reveal(".nav-container, .nav-container p", {
           delay: 200,
