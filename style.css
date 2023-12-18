@@ -11,8 +11,8 @@
   --outline: rgba(135, 135, 135, 0.25);
   --textColor: rgba(255, 255, 255, 0.5);
   --hoverBackground: rgba(72, 91, 255, 0.15);
-  --borderHover: 3px solid var(--prim);
-  --border: 3px solid var(--card);
+  --borderHover: 4px solid var(--prim);
+  --border: 4px solid var(--card);
   --cardBorderColor: #18181f;
   --cardBorder: 4px solid var(--cardBorderColor);
   --hoverBlur: drop-shadow(0px 0px 8px rgba(99, 96, 255, 0.5));
@@ -283,7 +283,7 @@ h3 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 110vh;
   width: 100vw;
 }
 
@@ -448,7 +448,7 @@ a:visited,
 .btn {
   background-color: var(--prim);
   padding: 16px 30px;
-  border-radius: 15px;
+  border-radius: 20px;
   max-width: 15em;
   width: fit-content;
   font-weight: 500;
@@ -1019,7 +1019,7 @@ p.black {
 }
 .dash-right {
   text-align: right;
-
+  gap: 4px;
   display: grid;
   grid-template-columns: auto;
   margin: 0;
@@ -1265,7 +1265,97 @@ h1 span,
 .bottom-header-text span {
   background-color: #101010;
 }
+/* serendipity section */
+.serendipity-header h1{
+    font-size: 48px;
+    text-align: center;
+}
 
+.serendipity-header p {
+    width: 100%;
+    text-align: center;
+}
+.serendipity-header {
+    display: grid;
+    place-content: center;
+    grid-template-columns: auto;
+    align-content: center;
+    justify-content: center;
+    gap: 12px;
+    margin: 5vh 0;
+}
+.serendipity-wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 72px;
+    align-items: start
+}
+.serendipity-contain {
+    margin: 10vh 0;
+    display: grid;
+    gap: 72px;
+    grid-template-columns: auto;
+}
+.seren-item a, .seren-item-shelf a{
+    border-radius: 42px;
+    display: grid;
+    place-content: center;
+    justify-content: flex-start;
+    grid-template-columns: auto;
+    gap: 16px;
+    padding: 36px;
+    border: 4px solid #222134;
+    background-color: var(--darkCard);
+    width: calc (100% - 72px);
+    transition: var(--transitionHover);
+    height: fit-content;
+    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+   animation-duration: 3s;
+}
+.seren-item-shelf img {
+    width: 150px;
+    height: 150px;
+    border-radius: 25px;
+    transition: transform 500ms ease;
+}
+.seren-item-shelf a {
+    grid-auto-flow: column;
+    gap: 28px;
+}
+.right-seren-contain {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 12px;
+    align-content: center;
+    justify-content: flex-start;
+}
+.seren-item a:hover, .seren-item-shelf a:hover {
+    background-color: var(--hoverBackground);
+    filter: var(--hoverBlur);
+    border: var(--borderHover);
+    cursor: pointer;
+}
+.seren-item a:hover img, .seren-item-shelf a:hover img {
+    transform: scale(1.05);
+}
+.seren-item a .tag-wrap .tag {
+    font-size: 14px;
+    padding: 8px 12px;
+    margin: 0;
+    line-height: 1.2;
+}
+.seren-item a p, .seren-item-shelf a p {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+}
+.seren-item a h3, .seren-item-shelf a h3 {
+    font-size: 22px;
+}
+.seren-item a img {
+    width: 100%;
+    transition: transform 500ms ease;
+}
 /* portfolio section */
 #portfolio {
   display: grid;
@@ -1286,6 +1376,7 @@ h1 span,
   width: fit-content;
   font-size: 18px;
   font-family: var(--secFont);
+  white-space: nowrap;
 }
 .tag-wrap {
   display: grid;
