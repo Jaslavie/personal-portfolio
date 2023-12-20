@@ -1296,6 +1296,15 @@ h1 span,
     gap: 72px;
     grid-template-columns: auto;
 }
+.seren-img {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.seren-img img {
+    border-radius: 30px;
+    max-width: 500px;
+}
 .seren-item a, .seren-item-shelf a{
     border-radius: 42px;
     display: grid;
