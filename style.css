@@ -1626,6 +1626,7 @@ h1 span,
   grid-template-columns: auto;
   padding: 2vh;
   max-width: 360px;
+  gap: 8px;
 }
 .contact-mid p,
 .contact-right p {
