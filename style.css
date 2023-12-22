@@ -9,7 +9,8 @@
   --icon: rgba(50, 48, 80, 0.5);
   --iconBackground: #18182f;
   --outline: rgba(135, 135, 135, 0.25);
-  --textColor: rgba(255, 255, 255, 0.5);
+  --textColor: rgba(255, 255, 255, 0.7);
+  --subheadingColor: rgba(255, 255, 255, 0.4);
   --hoverBackground: rgba(72, 91, 255, 0.15);
   --borderHover: 4px solid var(--prim);
   --border: 4px solid var(--card);
@@ -68,7 +69,7 @@ li {
   font-family: var(--secFont);
   color: var(--textColor);
   font-size: 1.2em;
-  line-height: 36px;
+  line-height: 42px;
   font-weight: 400;
 }
 /* links */
@@ -324,13 +325,7 @@ h3 {
   text-align: center;
 }
 
-p a:link,
-a:visited,
-.text-contain .callout a {
-  color: #ffffff;
-  text-decoration: underline;
-  font-weight: 600;
-}
+
 
 .arrow {
   margin-top: 1.5vh;
@@ -403,14 +398,20 @@ a:visited,
 }
 
 .scroll-down {
-  margin-top: 80vh;
-  position: absolute;
   display: grid;
   place-content: center;
 }
 .scroll-down i {
   color: #fff;
-  font-size: 2em;
+  filter: var(--hoverBlur);
+  background-color: var(--prim);
+  border-radius: 200px;
+  padding: 4vh;
+  height: 50px;
+  width: 50px;
+  font-size: 1.5em;
+  display: grid;
+  place-content: center;
   /* cursor: url('../images/hover cursor.png') 16 16, auto ; */
   transition:
     color 0.5s ease,
@@ -449,12 +450,21 @@ a:visited,
   background-color: var(--prim);
   padding: 16px 30px;
   border-radius: 20px;
-  max-width: 15em;
+  max-width: 20em;
   width: fit-content;
   font-weight: 500;
   font-family: var(--secFont);
-  border: var(--border);
+  white-space: nowrap;
 }
+.btn-sec a{
+  background-color: #201f2d;
+}
+.btn-sec a:hover {
+  background-color: #fff;
+  transition: background-color 300ms ease;
+  
+}
+
 .contact-btn {
   background-color: var(--prim);
   width: 50px;
@@ -495,12 +505,18 @@ a:visited,
 .btn-new:hover a p {
   color: var(--prim);
 }
+.btn-sec:hover a p {
+  color: #201f2d;
+}
 .btn-new i {
   font-size: 20px;
 }
 .btn-new:hover i {
   color: var(--prim);
   transform: translateX(4px);
+}
+.btn-sec:hover i {
+  color: #201f2d;
 }
 /* open new tab button */
 .btn-nav a {
@@ -1385,6 +1401,7 @@ h1 span,
   width: fit-content;
   font-size: 18px;
   font-family: var(--secFont);
+  font-weight: 600;
   white-space: nowrap;
 }
 .tag-wrap {
@@ -1468,8 +1485,8 @@ h1 span,
 }
 
 .work-image img {
-  max-width: 900px;
-  max-height: 640px;
+  max-width: 1000px;
+  max-height: 660px;
   object-fit: contain;
   transition: transform 0.5s ease;
   border-radius: 0px;
@@ -1672,6 +1689,158 @@ h1 span,
 .subp {
   font-weight: 200;
   font-size: 14px;
+}
+/* portfolio case study sections */
+.case-header-img {
+  height: fit-content;
+}
+.case-header-img img{
+  border-radius: 0;
+  width: 100vw;
+}
+.case-header {
+  padding: 18vh 12vw 6vh 12vw;
+  display: grid;
+  place-content: center;
+  height: fit-content;
+  gap: 12px;
+}
+.case-header .tag-wrap {
+  margin: 2vh 0;
+}
+.case-header-contain {
+  font-size: 48px;
+  font-family: var(--font);
+  line-height: 1.4;
+}
+.case-subheading {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--subheadingColor);
+  font-family: var(--secFont);
+}
+.case-subheading-contain {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 16px;
+  margin: 0;
+  height: fit-content;
+}
+.case-subheading-contain img {
+  max-width: 40px;
+  border-radius: 14px;
+}
+.case-summary-contain {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 56px;
+  margin: 6vh 0;
+}
+.case-header .typed-cursor.typed-cursor--blink {
+  display: none;
+  opacity: 0;
+}
+.auto-type-after {
+  margin-left: 12px;
+}
+.case-main {
+  display: grid;
+  gap: 18vh;
+}
+.btn-contain {
+  margin: 2vh 11vw;
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+}
+h2 {
+  font-size: 48px;
+  line-height: 1.5;
+  font-weight: 800;
+  font-family: var(--secFont);
+
+}
+h2 span {
+  color: var(--sec)
+}
+.case-text-contain {
+  gap: 12px;
+  display: grid;
+  padding: 0 11vw;
+}
+.case-text-contain p {
+  font-size:22px;
+  margin-top: 8vh;
+}
+.case-text-contain p span {
+  font-weight: 600;
+  color: #fff;
+  font-style: italic;
+}
+.case-inner-img-contain img{
+  border-radius: 0;
+  width: 100%;
+}
+.case-inner-img-contain {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 11vw;
+}
+.case-inner-img-contain p {
+  color: rgba(225, 225, 225, .45);
+}
+.case-call-out {
+  padding: 12vh 11vw;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  place-content: center;
+  background-color: var(--darkCard);
+
+}
+.case-call-out h1{
+  font-size: 48px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: var(--secFont);
+  color: #fff;
+}
+.case-call-out .case-subheading {
+  text-align: center;
+}
+.case-call-out h1 span {
+  color: #fff;
+  font-weight: 600;
+  background-color: var(--hoverBackground);
+}
+.callout-mini-contain {
+  border-radius: 32px;
+  background-color: var(--darkCard);
+  border: 4px solid #222134;
+  padding: 36px;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 22px;
+  margin: 0 11vw;
+}
+.callout-mini-contain-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+.mini-icon {
+  padding: 5px;
+  border-radius: 18px;
+  background-color: var(--prim);
+  display: grid;
+  place-content: center;
+  height: 60px;
+  width: 60px;
 }
 
 /* portfolio project sections */
@@ -2062,13 +2231,12 @@ h1 span,
   flex-direction: column;
   padding: 2vh;
 }
-a .stack-contain {
-  text-decoration: none;
-}
-.stack-contain p a:link,
-a:visited {
+
+a {
   text-decoration: none;
   font-weight: bold;
+  font-style: italic;
+  font-weight: 600;
 }
 
 .stack {
@@ -2843,8 +3011,3 @@ html {
 ol {
   margin: 2em 0 2em 5em;
 }
-/* case studies internal */
-
-/* SUPER COOL GRADIENT BCKGROUND */
-/* background: rgb(240,252,255);
-    background: linear-gradient(318deg, rgba(240,252,255,1) 11%, rgba(242,243,255,1) 30%, rgba(255,255,255,1) 42%, rgba(242,244,255,1) 54%, rgba(255,255,255,1) 65%, rgba(255,255,255,1) 78%, rgba(255,255,255,1) 92%, rgba(248,240,255,1) 100%, rgba(233,255,251,1) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%); */
