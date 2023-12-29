@@ -1765,6 +1765,12 @@ h2 {
 h2 span {
   color: var(--sec)
 }
+h4 {
+  font-size: 32px;
+  line-height: 1.5;
+  font-weight: 800;
+  font-family: var(--secFont);
+}
 .case-text-contain {
   gap: 12px;
   display: grid;
@@ -2236,7 +2242,6 @@ h2 span {
 a {
   text-decoration: none;
   font-weight: bold;
-  font-style: italic;
   font-weight: 600;
 }
 
