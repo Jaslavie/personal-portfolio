@@ -38,7 +38,9 @@
           <div class="right-nav">
             <ul>
               <li id="work-nav"><a href="index.html#projects">work</a></li>
-              <li id="hobbies-nav"><a href="serendipity.html">serendipity</a></li>
+              <li id="hobbies-nav">
+                <a href="serendipity.html">serendipity</a>
+              </li>
               <li id="about-nav"><a href="about.html" id="active">about</a></li>
             </ul>
             <div class="toggle-button">
@@ -91,11 +93,16 @@
               <a
                 href="https://youtu.be/6KUEigk4JCA?si=phG-MJd8T6QLnxNK"
                 target="_blank"
-                style = "background-color: var(--hoverBackground); border: var(--borderHover); opacity: 1; filter: var(--hoverBlur);"
+                style="
+                  background-color: var(--hoverBackground);
+                  border: var(--borderHover);
+                  opacity: 1;
+                  filter: var(--hoverBlur);
+                "
               >
                 <img src="images/about/masteryBook.svg" alt="" />
               </a>
-              <p style="color: #fff;">mastery</p>
+              <p style="color: #fff">mastery</p>
             </div>
             <div class="inventory-item">
               <a
@@ -166,13 +173,14 @@
             <div class="dash-left">
               <p>
                 Jasmine is a Product Designer studying Cognitive Science
-                <span>(why build it?)</span> and Computer Science <span>(how can I build it?)</span>.
-                Passionate about building end-to-end, gamified user interfaces
-                automating workflows in agile startup ecosystems.
+                <span>(why build it?)</span> and Computer Science
+                <span>(how can I build it?)</span>. Passionate about building
+                end-to-end, gamified user interfaces automating workflows in
+                agile startup ecosystems.
               </p>
               <div class="skills-contain">
                 <h3>Abilities</h3>
-                <img src="images/about/abilities.svg" alt="">
+                <img src="images/about/abilities.svg" alt="" />
                 <!-- <img src="images/about/rapid prototyping.svg" alt="" />
                 <img src="images/about/branding.svg" alt="" />
                 <img src="images/about/design systems.svg" alt="" />
@@ -275,7 +283,7 @@
         </div>
       </div>
 
-      <div class="about-contain" style="margin: 0 4vw 10vh 4vw;">
+      <div class="about-contain" style="margin: 0 4vw 10vh 4vw">
         <div class="bookshelf-contain">
           <h2>Bookshelf</h2>
           <div class="bookshelf-item">
@@ -680,7 +688,7 @@
           origin: "left",
         });
         ScrollReveal().reveal(
-          ".ideation-contain, .coffee-contain, .dashboard-contain-left, .skills-contain, .dash-header-contain, .prev-contain,  .bookshelf-contain, .pins-contain, .btn-new, .solid-contain, .subsubsub-title, h1, .subsub-title, .callout",
+          ".ideation-contain, p, .coffee-contain, .dashboard-contain-left, .skills-contain, .dash-header-contain, .prev-contain,  .bookshelf-contain, .pins-contain, .btn-new, .solid-contain, .subsubsub-title, h1, .subsub-title, .callout",
           { delay: 400, origin: "bottom" },
         );
         ScrollReveal().reveal(".nav-container, .nav-container p", {

@@ -49,6 +49,7 @@ body {
   overflow-x: hidden;
   background: #101010;
   margin: 0;
+  max-width: 100vw;
   width: 100vw;
   /* cursor: url('../images/portfolio cursor.png') 16 16, auto; */
 }
@@ -242,7 +243,7 @@ h3 {
   overflow: hidden;
   display: flex;
   align-items: center;
-
+  overflow-x: hidden;
   padding: 2em 0;
   background-color: var(--primTransparent);
 }
@@ -299,8 +300,9 @@ h3 {
 .infinite-cards {
   left: 100%;
   width: auto;
+  max-width: 100vw;
   position: absolute;
-
+  overflow-x: hidden;
   white-space: nowrap;
   animation: scroll 42s linear infinite;
 }
@@ -310,6 +312,7 @@ h3 {
   font-family: var(--secFont);
   font-weight: 400;
   padding-right: 1em;
+  overflow-x: hidden;
 }
 
 @keyframes scroll {
@@ -324,8 +327,6 @@ h3 {
 .center p {
   text-align: center;
 }
-
-
 
 .arrow {
   margin-top: 1.5vh;
@@ -456,13 +457,12 @@ h3 {
   font-family: var(--secFont);
   white-space: nowrap;
 }
-.btn-sec a{
+.btn-sec a {
   background-color: #201f2d;
 }
 .btn-sec a:hover {
   background-color: #fff;
   transition: background-color 300ms ease;
-  
 }
 
 .contact-btn {
@@ -1282,105 +1282,114 @@ h1 span,
   background-color: #101010;
 }
 /* serendipity section */
-.serendipity-header h1{
-    font-size: 48px;
-    text-align: center;
+.serendipity-header h1 {
+  font-size: 48px;
+  text-align: center;
+}
+.serendipity-header h1 span {
+  background-color: #101010;
+  font-style: normal;
 }
 
 .serendipity-header p {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 .serendipity-header {
-    display: grid;
-    place-content: center;
-    grid-template-columns: auto;
-    align-content: center;
-    justify-content: center;
-    gap: 12px;
-    margin: 5vh 0;
+  display: grid;
+  place-content: center;
+  grid-template-columns: auto;
+  align-content: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 5vh 0;
 }
 .serendipity-wrapper {
-    display: grid;
-    grid-auto-flow: column;
-    gap: 72px;
-    align-items: start
+  display: grid;
+  grid-auto-flow: column;
+  gap: 72px;
+  align-items: start;
 }
 .serendipity-contain {
-    margin: 10vh 0;
-    display: grid;
-    gap: 72px;
-    grid-template-columns: auto;
+  margin: 10vh 0;
+  display: grid;
+  gap: 72px;
+  grid-template-columns: auto;
 }
 .seren-img {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .seren-img img {
-    border-radius: 30px;
-    max-width: 500px;
+  border-radius: 30px;
+  max-width: 500px;
 }
-.seren-item a, .seren-item-shelf a{
-    border-radius: 42px;
-    display: grid;
-    place-content: center;
-    justify-content: flex-start;
-    grid-template-columns: auto;
-    gap: 16px;
-    padding: 36px;
-    border: 4px solid #222134;
-    background-color: var(--darkCard);
-    width: calc (100% - 72px);
-    transition: var(--transitionHover);
-    height: fit-content;
-    animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
-   animation-duration: 3s;
+.seren-item a,
+.seren-item-shelf a {
+  border-radius: 42px;
+  display: grid;
+  place-content: center;
+  justify-content: flex-start;
+  grid-template-columns: auto;
+  gap: 16px;
+  padding: 36px;
+  border: 4px solid #222134;
+  background-color: var(--darkCard);
+  width: calc (100% - 72px);
+  transition: var(--transitionHover);
+  height: fit-content;
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 3s;
 }
 .seren-item-shelf img {
-    width: 150px;
-    height: 150px;
-    border-radius: 25px;
-    transition: transform 500ms ease;
+  width: 150px;
+  height: 150px;
+  border-radius: 25px;
+  transition: transform 500ms ease;
 }
 .seren-item-shelf a {
-    grid-auto-flow: column;
-    gap: 28px;
+  grid-auto-flow: column;
+  gap: 28px;
 }
 
 .right-seren-contain {
-    display: grid;
-    grid-template-columns: auto;
-    gap: 12px;
-    align-content: center;
-    justify-content: flex-start;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 12px;
+  align-content: center;
+  justify-content: flex-start;
 }
-.seren-item a:hover, .seren-item-shelf a:hover {
-    background-color: var(--hoverBackground);
-    filter: var(--hoverBlur);
-    border: var(--borderHover);
-    cursor: pointer;
+.seren-item a:hover,
+.seren-item-shelf a:hover {
+  background-color: var(--hoverBackground);
+  filter: var(--hoverBlur);
+  border: var(--borderHover);
+  cursor: pointer;
 }
-.seren-item a:hover img, .seren-item-shelf a:hover img {
-    transform: scale(1.05);
+.seren-item a:hover img,
+.seren-item-shelf a:hover img {
+  transform: scale(1.05);
 }
 .seren-item a .tag-wrap .tag {
-    font-size: 14px;
-    padding: 8px 12px;
-    margin: 0;
-    line-height: 1.2;
+  font-size: 14px;
+  padding: 8px 12px;
+  margin: 0;
+  line-height: 1.2;
 }
-.seren-item a p, .seren-item-shelf a p {
-    font-size: 18px;
-    font-weight: 600;
-    margin: 0;
+.seren-item a p,
+.seren-item-shelf a p {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
 }
-.seren-item a h3, .seren-item-shelf a h3 {
-    font-size: 22px;
+.seren-item a h3,
+.seren-item-shelf a h3 {
+  font-size: 22px;
 }
 .seren-item a img {
-    width: 100%;
-    transition: transform 500ms ease;
+  width: 100%;
+  transition: transform 500ms ease;
 }
 /* portfolio section */
 #portfolio {
@@ -1696,7 +1705,7 @@ h1 span,
 .case-header-img {
   height: fit-content;
 }
-.case-header-img img{
+.case-header-img img {
   border-radius: 0;
   width: 100vw;
 }
@@ -1761,10 +1770,9 @@ h2 {
   line-height: 1.5;
   font-weight: 800;
   font-family: var(--secFont);
-
 }
 h2 span {
-  color: var(--sec)
+  color: var(--sec);
 }
 h4 {
   font-size: 32px;
@@ -1778,7 +1786,7 @@ h4 {
   padding: 0 11vw;
 }
 .case-text-contain p {
-  font-size:22px;
+  font-size: 22px;
   margin-top: 8vh;
 }
 .case-text-contain p span {
@@ -1786,7 +1794,7 @@ h4 {
   color: #fff;
   font-style: italic;
 }
-.case-inner-img-contain img{
+.case-inner-img-contain img {
   border-radius: 0;
   width: 100%;
 }
@@ -1798,7 +1806,7 @@ h4 {
   padding: 0 11vw;
 }
 .case-inner-img-contain p {
-  color: rgba(225, 225, 225, .45);
+  color: rgba(225, 225, 225, 0.45);
 }
 .case-call-out {
   padding: 12vh 11vw;
@@ -1807,9 +1815,8 @@ h4 {
   gap: 22px;
   place-content: center;
   background-color: var(--darkCard);
-
 }
-.case-call-out h1{
+.case-call-out h1 {
   font-size: 48px;
   text-align: center;
   font-weight: 400;
@@ -2328,7 +2335,7 @@ html {
   }
 
   .head-contain {
-    margin: auto 20vh;
+    padding: auto 20vh;
   }
   #section {
     padding: 10vh;
@@ -2427,7 +2434,7 @@ html {
     padding: 0;
   }
   .head-contain {
-    margin: 0 10vh;
+    padding: 0 10vh;
   }
   .child {
     padding: 10vh 10vh;
@@ -2543,7 +2550,7 @@ html {
     padding-right: 0;
   }
   .head-contain {
-    margin: 10vh 5vh;
+    padding: 10vh 5vh;
   }
   .type-container {
     margin: 0;
@@ -2639,8 +2646,22 @@ html {
 
 /* decreasing the size of home page image */
 @media (max-width: 600px) {
+  html, body {
+    max-width: 100vw;
+  }
   .child {
     padding: 10vh 6vh;
+  }
+  .infinite-contain > * {
+    max-width: 100%; /* Prevents any child from exceeding the container's width */
+    box-sizing: border-box; /* Includes padding and border in the element's total width */
+  }
+  .infinite-contain {
+    position: relative;
+  }
+  .current-contain a{
+    grid-auto-flow: row;
+    
   }
   h1 {
     font-size: 60px;
@@ -2668,7 +2689,7 @@ html {
     margin: auto;
   }
   #header {
-    height: 110vh;
+    height: 100vh;
   }
   .work-list {
     display: grid;
@@ -2678,7 +2699,7 @@ html {
   }
 
   .head-contain {
-    margin: 10vh 5vh 5vh 5vh;
+    padding: 10vh 5vh 0vh 5vh;
   }
 
   .head-contain {
@@ -2782,6 +2803,7 @@ html {
     font-size: 45px;
     line-height: 55px;
   }
+
 
   h1 {
     font-size: 40px;
