@@ -2289,11 +2289,11 @@ html {
 }
 
 /*  wrap header text */
-@media (max-width: 1425px) {
+/* @media (max-width: 1425px) {
   .header-text {
     flex-direction: column;
   }
-}
+} */
 /* about page responsiveness with top column container flex down */
 @media (max-width: 1280px) {
   .about-row {
