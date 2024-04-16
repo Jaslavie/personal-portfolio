@@ -19,6 +19,9 @@
   --hoverBlur: drop-shadow(0px 0px 8px rgba(99, 96, 255, 0.5));
   --transitionHover: 500ms background-color ease-in-out,
     500ms border ease-in-out;
+
+  /* text */
+  --subparagraph: 22px;
 }
 
 @font-face {
@@ -127,7 +130,7 @@ h3 {
   color: var(--textColor);
 }
 .callout-p {
-  font-size: 18px;
+  font-size: var(--subparagraph);
   line-height: 36px;
   font-weight: 400;
 }
@@ -467,7 +470,9 @@ h3 {
   background-color: #fff;
   transition: background-color 300ms ease;
 }
+/** cool button animation */
 
+/* contact */
 .contact-btn {
   background-color: var(--prim);
   width: 50px;
@@ -930,9 +935,6 @@ p.black {
 }
 .dashboard-contain {
   max-width: 100%;
-  /* border: var(--border);
-  border-radius: 20px;
-  padding: 24px; */
   display: grid;
   height: 100%;
   grid-template-columns: auto;
@@ -1259,19 +1261,6 @@ p.black {
   border-radius: 12px;
   margin: 0;
 }
-/* .about-col-1 img {
-  border-radius: 40px;
-  max-width: 83.8vh;
-  width: auto;
-  height: 85vh;
-}
-
-.about-col-2 {
-  flex-basis: 50%;
-  margin-right: 10vh;
-  height: auto;
-} */
-
 .subsub-title span,
 h1 span,
 #hobbies h1 span {
@@ -2288,12 +2277,6 @@ html {
   margin-left: 10vh;
 }
 
-/*  wrap header text */
-/* @media (max-width: 1425px) {
-  .header-text {
-    flex-direction: column;
-  }
-} */
 /* about page responsiveness with top column container flex down */
 @media (max-width: 1280px) {
   .about-row {
