@@ -1,6 +1,8 @@
 :root {
   --font: "Palanquin Dark";
   --secFont: "Inter", sans-serif;
+
+  /* colors */
   --prim: #6360ff;
   --sec: #9290ff;
   --primTransparent: rgba(72, 91, 255, 0.2);
@@ -13,13 +15,15 @@
   --subheadingColor: rgba(255, 255, 255, 0.4);
   --hoverBackground: rgba(72, 91, 255, 0.15);
   --borderHover: 4px solid var(--prim);
-  --border: 4px solid var(--card);
-  --cardBorderColor: #18181f;
-  --cardBorder: 4px solid var(--cardBorderColor);
+  --cardBorderColor: #2a2a35;
   --hoverBlur: drop-shadow(0px 0px 8px rgba(99, 96, 255, 0.5));
   --transitionHover: 500ms background-color ease-in-out,
     500ms border ease-in-out;
 
+  /* formatting */
+  --border: 4px solid var(--card); /* border for large containers */
+  --cardBorder: 4px solid var(--cardBorderColor); /* border for cards and tags */
+  --cardBorderRadius: 12px;
   /* text */
   --subparagraph: 22px;
 }
@@ -456,7 +460,7 @@ h3 {
 .btn {
   background-color: var(--prim);
   padding: 16px 30px;
-  border-radius: 20px;
+  border-radius: 12px;
   max-width: 20em;
   width: fit-content;
   font-weight: 500;
@@ -470,7 +474,6 @@ h3 {
   background-color: #fff;
   transition: background-color 300ms ease;
 }
-/** cool button animation */
 
 /* contact */
 .contact-btn {
@@ -478,7 +481,7 @@ h3 {
   width: 50px;
   height: 50px;
   padding: 4px;
-  border-radius: 12px;
+  border-radius: var(--cardBorderRadius);
   display: grid;
   place-content: center;
   transition: background-color 300ms ease;
@@ -993,7 +996,7 @@ p.black {
   align-items: center;
   justify-content: center;
   transition: var(--transitionHover);
-  opacity: 0.25;
+  opacity: 0.75;
 }
 .inventory-item a:hover {
   background-color: var(--hoverBackground);
@@ -1418,7 +1421,7 @@ h1 span,
 }
 .tagAbout a {
   padding: 12px 22px;
-  border: 3px solid var(--cardBorderColor);
+  border: 2px solid rgba(255, 255, 255, 0.25);
   color: #ffffff;
   display: grid;
   grid-auto-flow: column;
@@ -1426,7 +1429,7 @@ h1 span,
   justify-content: center;
   align-items: center;
   gap: 8px;
-  border-radius: 16px;
+  border-radius: var(--cardBorderRadius);
   transition: var(--transitionHover);
   white-space: nowrap;
 }
