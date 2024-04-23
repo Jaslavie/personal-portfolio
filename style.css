@@ -77,7 +77,7 @@ li,
 p {
   font-family: var(--secFont);
   color: var(--textColor);
-  font-size: 1.2em;
+  font-size: 1.22em;
   line-height: 42px;
   font-weight: 400;
 }
@@ -856,37 +856,6 @@ p.black {
 }
 */
 
-/*---------------- about section --------------------*/
-
-.listen-contain {
-  display: flex;
-  justify-content: flex-start;
-}
-.listen-contain .column {
-  align-items: center;
-  justify-content: flex-start;
-  margin: 0 2em;
-  width: 15vw;
-}
-.listen-contain .subsubsub-title,
-.listen-contain p {
-  text-align: center;
-}
-.listen-contain .subsubsub-title {
-  font-size: 30px;
-  margin-top: 2vh;
-}
-.listen-contain img {
-  width: 100%;
-  height: auto;
-}
-.song-contain {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-}
-
 .row {
   /* content is side by side */
   display: grid;
@@ -1058,12 +1027,12 @@ p.black {
 }
 .dash-main-contain .dash-left p {
   width: 360px;
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 16px;
+  color: #fff;
   margin: 2vh 0;
+  font-size: 1.15em;
 }
 .dash-main-contain .dash-left p span {
-  color: rgba(255, 255, 255, 0.36);
+  color: rgba(255, 255, 255, 0.7);
 }
 .skills-contain,
 .prev-contain,
@@ -3022,4 +2991,27 @@ html {
 }
 ol {
   margin: 2em 0 2em 5em;
+}
+/* memories */
+.memories-contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40vh;
+  margin: 40vh 0;
+}
+.memories {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+}
+.memories h3, .memories p {
+  text-align: center;
+  width: 30vw;
+  line-height: 150%;
+}
+.memories img {
+  width: 100%;
+  margin-top: -15vh;
 }

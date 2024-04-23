@@ -427,7 +427,6 @@
                     </p>
                   </div>
                 </div>
-               
               </div>
             </div>
             <div class="ideation-item">
@@ -463,7 +462,20 @@
           </div>
         </div>
       </div>
-
+      <div class="memories-contain">
+        <!-- hackathons -->
+        <div class="memories">
+          <p class="callout-p">my favorite moments...</p>
+          <h3>Traveling 3,000+ miles to attend 18 hackathons...</h3>
+          <img src="images/hackathons.png" />
+        </div>
+        <!-- design -->
+        <div class="memories">
+          <p class="callout-p">my favorite moments...</p>
+          <h3>Creating a 300+ member design community 🤍</h3>
+          <img src="images/design.png" />
+        </div>
+      </div>
       <div class="coffee-contain">
         <div class="center-text-contain">
           <div class="tag-contain">
@@ -519,7 +531,7 @@
 
         ScrollReveal().reveal(
           ".ideation-contain, .intro, .coffee-contain,  .bookshelf-contain, .pins-contain, .btn-new, .solid-contain,  .subsub-title, .callout",
-          { delay: 400, origin: "bottom", distance: "50px"},
+          { delay: 400, origin: "bottom", distance: "50px" },
         );
         ScrollReveal().reveal(".nav-container, .nav-container p", {
           delay: 200,
@@ -533,7 +545,7 @@
           origin: "top",
           distance: "50px",
         });
-        ScrollReveal().reveal(".dash-left", {
+        ScrollReveal().reveal(".dash-left, .memories h3, .memories p", {
           delay: 500,
           origin: "bottom",
           distance: "50px",
@@ -543,7 +555,7 @@
           origin: "top",
           distance: "50px",
         });
-        ScrollReveal().reveal(".dash-header-contain, .dash-header-contain p",  {
+        ScrollReveal().reveal(".dash-header-contain, .dash-header-contain p, .memories img", {
           delay: 1300,
           duration: 3000,
         });
