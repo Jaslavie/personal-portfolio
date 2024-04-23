@@ -14,17 +14,17 @@
   --textColor: rgba(255, 255, 255, 0.7);
   --subheadingColor: rgba(255, 255, 255, 0.4);
   --hoverBackground: rgba(72, 91, 255, 0.15);
-  --borderHover: 4px solid var(--prim);
   --cardBorderColor: #2a2a35;
   --hoverBlur: drop-shadow(0px 0px 8px rgba(99, 96, 255, 0.5));
   --transitionHover: 500ms background-color ease-in-out,
     500ms border ease-in-out;
 
-  /* formatting */
-  --border: 4px solid var(--card); /* border for large containers */
-  --cardBorder: 4px solid var(--cardBorderColor); /* border for cards and tags */
+  /* border formatting */
+  --border: 3px solid var(--card); /* border for large containers */
+  --cardBorder: 3px solid var(--cardBorderColor); /* border for cards and tags */
   --containerBorderRadius: 22px;
   --cardBorderRadius: 12px;
+  --borderHover: 3px solid var(--prim);
   /* text */
   --subparagraph: 22px;
 }
@@ -912,7 +912,7 @@ p.black {
   gap: 36px;
 }
 .dashboard-contain-left .profile-img img {
-  border-radius: 0;
+  border-radius: var(--cardBorderRadius);
   width: 100%;
   max-width: 100%;
   height: 100%;
@@ -1389,7 +1389,7 @@ h1 span,
 }
 .tagAbout a {
   padding: 12px 22px;
-  border: 2px solid rgba(255, 255, 255, 0.25);
+  border: var(--cardBorder);
   color: #ffffff;
   display: grid;
   grid-auto-flow: column;

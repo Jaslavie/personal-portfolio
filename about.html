@@ -67,7 +67,7 @@
       <div class="about-contain">
         <div class="dashboard-contain-left">
           <div class="profile-img">
-            <img src="images/about/Profile Picture Jasmine Wu.svg" />
+            <img src="images/about/profilePictureJasmineBW.jpg" />
           </div>
 
           <div class="inventory-contain">
@@ -196,6 +196,7 @@
                     <div class="prev-center-text">
                       <p>Designer @ Mediterranean Startup Scaling to B2B</p>
                       <p>
+                        
                         <span
                           >80k+ reach, created brand & website for subsidiary
                           B2B company launch</span
@@ -444,6 +445,7 @@
                     style="margin-top: 10vh; margin-left: 8vh"
                   >
                     <p>
+                     
                       <span>reach 140 wpm avg </span>
                       ( currently 120 :P )
                     </p>
@@ -475,6 +477,7 @@
           <h3>Creating a 300+ member design community 🤍</h3>
           <img src="images/design.png" />
         </div>
+        <h3>a toast to serendipity 🥂</h3>
       </div>
       <div class="coffee-contain">
         <div class="center-text-contain">
@@ -528,6 +531,19 @@
           reset: false,
           duration: 2000,
         });
+        // bookshelf
+        ScrollReveal().reveal(" .bookshelf-item, .memories", {
+          delay: 100,
+          origin: "bottom",
+          interval: 500,
+        });
+        // ideation board
+        ScrollReveal().reveal(" .ideation-item", {
+          delay: 2200,
+          origin: "bottom",
+          distance: "50px",
+          interval: 500,
+        });
 
         ScrollReveal().reveal(
           ".ideation-contain, .intro, .coffee-contain,  .bookshelf-contain, .pins-contain, .btn-new, .solid-contain,  .subsub-title, .callout",
@@ -555,10 +571,13 @@
           origin: "top",
           distance: "50px",
         });
-        ScrollReveal().reveal(".dash-header-contain, .dash-header-contain p, .memories img", {
-          delay: 1300,
-          duration: 3000,
-        });
+        ScrollReveal().reveal(
+          ".dash-header-contain, .dash-header-contain p, .memories img",
+          {
+            delay: 1600,
+            duration: 3000,
+          },
+        );
       </script>
     </body>
   </html>
