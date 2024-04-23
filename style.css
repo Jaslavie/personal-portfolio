@@ -6,7 +6,7 @@
   --prim: #6360ff;
   --sec: #9290ff;
   --primTransparent: rgba(72, 91, 255, 0.2);
-  --card: #18181f;
+  --card: #1e1e26;
   --darkCard: rgba(21, 20, 32, 0.5);
   --icon: rgba(50, 48, 80, 0.5);
   --iconBackground: #18182f;
@@ -23,6 +23,7 @@
   /* formatting */
   --border: 4px solid var(--card); /* border for large containers */
   --cardBorder: 4px solid var(--cardBorderColor); /* border for cards and tags */
+  --containerBorderRadius: 22px;
   --cardBorderRadius: 12px;
   /* text */
   --subparagraph: 22px;
@@ -72,8 +73,8 @@ a:-webkit-any-link {
 }
 
 /* fonts */
-p,
-li {
+li,
+p {
   font-family: var(--secFont);
   color: var(--textColor);
   font-size: 1.2em;
@@ -203,7 +204,7 @@ h3 {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  border: var(--border);
+  border: var(--cardBorder);
   border-radius: 24px;
   background-color: var(--card);
   padding: 1.8em;
@@ -228,9 +229,7 @@ h3 {
   font-family: var(--secFont);
   font-weight: 700;
 }
-.current-contain p {
-  font-size: 18px;
-}
+
 .current-contain .emoji-contain {
   margin: 0;
   transition: 500ms background-color ease-in-out;
@@ -1104,7 +1103,7 @@ p.black {
 }
 .title-label {
   background-color: var(--prim);
-  border-radius: 8px;
+  border-radius: 4px;
   width: fit-content;
   height: fit-content;
   padding: 6px 8px;
@@ -1117,7 +1116,7 @@ p.black {
 }
 .ideation-main {
   border: 1px solid var(--prim);
-  border-radius: 18px;
+  border-radius: var(--cardBorderRadius);
   background-color: var(--iconBackground);
   padding: 28px;
   display: grid;
@@ -1402,7 +1401,7 @@ h1 span,
   padding: 14px 28px;
   background-color: var(--primTransparent);
   color: var(--sec);
-  border-radius: 14px;
+  border-radius: 8px;
   width: fit-content;
   font-size: 18px;
   font-family: var(--secFont);
@@ -1467,19 +1466,13 @@ h1 span,
   transform: translateX(25px);
   opacity: 0.5;
 }
-.work-image:hover {
-  background-color: var(--primTransparent);
-  border: var(--borderHover);
-  filter: var(--hoverBlur);
-  /* cursor: url('../images/hover cursor.png') 16 16, auto ; */
-}
+
 .work-image {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8vh;
-  border-radius: 40px;
-  background-color: var(--card);
+  border-radius: var(--containerBorderRadius);
+
   height: auto;
   margin-top: 4vh;
   transition:
@@ -1487,15 +1480,17 @@ h1 span,
     border 0.5s ease;
   width: 80vw;
   height: 98vh;
+  overflow: hidden;
 }
 
 .work-image img {
-  max-width: 1000px;
-  max-height: 660px;
-  object-fit: contain;
-  transition: transform 0.5s ease;
-  border-radius: 0px;
+  width: 100%; /* Ensure the image is as wide as the container */
+  height: 100%; /* Ensure the image is as tall as the container */
+  object-fit: cover; /* Cover the container without distorting the aspect ratio */
+  transition: transform 0.5s ease; /* Smooth transition for transforms */
+  border-radius: 0px; /* Keep the border-radius at 0 */
 }
+
 .work-image:hover img {
   transform: scale(1.05);
 }
