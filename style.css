@@ -854,9 +854,7 @@ p.black {
     margin: 0 -3.5vh 0 3.5vh;
   }
 }
-*/
-
-.row {
+*/ .row {
   /* content is side by side */
   display: grid;
   grid-auto-flow: column;
@@ -2745,8 +2743,7 @@ html {
     width: 4.5em;
   }
   .work-image {
-    border-radius: 20px;
-    padding: 2vh;
+   height: 50vh;
   }
   .tag p {
     font-size: 14px;
@@ -3006,7 +3003,8 @@ ol {
   place-content: center;
   justify-items: center;
 }
-.memories h3, .memories p {
+.memories h3,
+.memories p {
   text-align: center;
   width: 30vw;
   line-height: 150%;
