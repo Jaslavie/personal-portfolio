@@ -26,6 +26,7 @@
   --borderHover: 3px solid var(--prim);
 
   /* general spacing */
+  --smallGap: 8px; /* small gap */
   --listGap: 18px; /* list of elements */
   --containerGap: 28px; /* cards of elements */
 
@@ -121,7 +122,7 @@ h3 {
 }
 /* headings inside of cards */
 h4 {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.5;
   font-family: var(--secfont);
   text-align: left;
@@ -1184,7 +1185,7 @@ p.black {
   height: 50vh;
   display: grid;
   grid-template-columns: auto;
-  gap: 18px;
+  gap: var(--listGap);
   align-content: flex-start;
 }
 .skills-contain img {
@@ -1242,16 +1243,14 @@ p.black {
 .prev-contain h3 {
   text-align: left;
 }
+
 .prev-item p {
   text-align: left;
-
-  font-weight: 500;
-  font-style: normal;
-  color: #fff;
 }
-.prev-item p span {
-  font-size: 12px;
-  color: var(--textColor);
+.prev-text {
+  display: flex;
+  flex-direction: column;
+  gap: var(--smallGap);
 }
 .prev-item img {
   width: 42px;
