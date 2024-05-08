@@ -11,7 +11,7 @@
   --icon: #17171a;
   --iconBackground: #18182f;
   --outline: rgba(135, 135, 135, 0.25);
-  --subheadingColor: rgba(255, 255, 255, 0.4);
+  --subheadingColor: rgba(255, 255, 255, 0.601);
   --hoverBackground: rgba(72, 91, 255, 0.15);
   --cardBorderColor: #363637;
   --hoverBlur: drop-shadow(0px 0px 8px rgba(99, 96, 255, 0.5));
@@ -34,7 +34,7 @@
   --heading: 48px;
   --subparagraph: 22px;
   --paragraphs: 16px;
-  --textColor: #ffffff97;
+  --textColor: #ffffffb3;
   --textGradient: linear-gradient(
     180deg,
     rgba(255, 255, 255, 1) 0%,
@@ -80,8 +80,10 @@ body {
   /* cursor: url('../images/portfolio cursor.png') 16 16, auto; */
 }
 ::selection,
-a::selection {
-  background: #6577df79;
+a::selection, h1::selection, h2::selection, p::selection, .gradient-text::selection{
+  background: #415effed;
+  z-index: 1;
+  color: #fff;
 }
 a:-webkit-any-link {
   /* cursor: url('../images/hover cursor.png') 16 16, auto ; */
@@ -1709,10 +1711,10 @@ h1 span,
   line-height: 1.4;
 }
 .case-subheading {
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 500;
   color: var(--subheadingColor);
-  font-family: var(--textfont);
+  font-family: var(--secfont);
 }
 .case-subheading-contain {
   display: flex;
@@ -1791,7 +1793,7 @@ h1 span,
   text-align: center;
   font-weight: 400;
   line-height: 1.5;
-  font-family: var(--textfont);
+  font-family: var(--font);
   color: #fff;
 }
 .case-call-out .case-subheading {
@@ -1800,27 +1802,22 @@ h1 span,
 .case-call-out h1 span {
   color: #fff;
   font-weight: 600;
-  background-color: var(--hoverBackground);
+  font-style: italic;
 }
 .callout-mini-contain {
-  border-radius: 32px;
+  border-radius: var(--containerBorderRadius);
   background-color: var(--card);
-  border: 4px solid #222134;
+  border: var(--border);
   padding: 36px;
   display: grid;
   grid-auto-flow: column;
   gap: 22px;
   margin: 0 11vw;
 }
-.callout-mini-contain-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-}
+
 .mini-icon {
   padding: 5px;
-  border-radius: 18px;
+  border-radius: var(--cardBorderRadius);
   background-color: var(--prim);
   display: grid;
   place-content: center;
@@ -2759,6 +2756,7 @@ html {
   }
   h2 {
     font-size: 24px;
+    font-family: var(--secfont);
   }
   #header {
     padding: 0 5vw;
