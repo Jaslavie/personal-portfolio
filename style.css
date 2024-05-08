@@ -1395,9 +1395,10 @@ h1 span,
   white-space: nowrap;
 }
 .tag-wrap {
-  display: grid;
-  grid-auto-flow: column;
+  display: flex;
+  flex-direction: row;
   gap: 16px;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
 }
@@ -1430,9 +1431,11 @@ h1 span,
   cursor: pointer;
 }
 .work-heading {
-  display: grid;
-  grid-template-columns: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
   gap: 22px;
+  width: 100%;
 }
 .work-heading .subsub-title {
   margin-right: 25px;
@@ -2735,8 +2738,26 @@ html {
 
 /* iphone xr */
 @media (max-width: 430px) {
-  .tech-stack img {
-    width: 4.5em;
+  .callout-p {
+    font-size: 18px;
+  }
+  .arrowContain {
+    display: none;
+  }
+  .work-contain {
+    width: 100%;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  #header {
+    padding: 0 5vw;
+  }
+  .type-container, .bottom-header-text {
+    font-size: 48px;
+  }
+  p {
+    font-size: 18px;
   }
   .work-image {
     height: 50vh;
@@ -2771,10 +2792,7 @@ html {
   .section-header .emoji-contain h1 {
     font-size: 40px;
   }
-  .wrapper,
-  .child {
-    padding: 2vh 5vh;
-  }
+  
 
   .nav-container a img {
     width: 180px;
