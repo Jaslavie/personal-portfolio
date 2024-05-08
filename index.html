@@ -162,8 +162,7 @@
               </div>
             </a>
           </div>
-          <!-- cafe grind -->
-          <!-- in the future: show starbucks rewards as an img LOLLOL -->
+         
           <div
             class="icon-items"
             style="margin-left: 24vw; margin-top: 40vw; margin-top: 39vw"
@@ -217,8 +216,8 @@
                 "I'm a &lt;Engineer/&gt;.",
                 "I'm a Hackathon Enthusiast.",
               ],
-              typeSpeed: 150,
-              backSpeed: 150,
+              typeSpeed: 80,
+              backSpeed: 80,
               loop: true,
             });
           </script>
@@ -357,7 +356,6 @@
               </div>
 
               <div  class="tag-wrap">
-                <div class="tag">DESIGN ENGINEERING</div>
                 <div class="tag">PRODUCT DESIGN</div>
                 <div class="tag">COMPUTER VISION</div>
                 <div class="tag">HACKATHON</div>
@@ -528,15 +526,14 @@
       <script>
         ScrollReveal({
           reset: false,
-
-          duration: 2500,
+          duration: 1200,
           delay: 400,
           opacity: 0,
         });
 
         ScrollReveal().reveal(
-          ".favContain, .center-text, .head-contain, .icon-contain, .center-text-contain, .btn-new, .tech-stack, .work-contain, .caption, .tag, .work-list .work, .tech-stack img, #about .about-col-1, .sub-title, .subsub-title, .callout, p, .pins-contain",
-          { delay: 100, origin: "bottom", distance: "60px" },
+          ".favContain, .center-text, .head-contain, .icon-contain, .center-text-contain, .btn-new, .tech-stack, .work-contain, .caption, .tag, .work-list .work, .tech-stack img, #about .about-col-1, .sub-title, .subsub-title, .callout, .pins-contain",
+          { delay: 100, origin: "bottom", distance: "30px" },
         );
         ScrollReveal().reveal(
           " .header-text, .bottom-header-text,  .head-contain i, .planetContain,",
@@ -545,8 +542,7 @@
         ScrollReveal().reveal(" .current-contain", {
           delay: 100,
           origin: "bottom",
-          interval: 200,
-          distance: "60px",
+          interval: 500,
         });
         ScrollReveal().reveal(".nav-container", {
           delay: 200,
