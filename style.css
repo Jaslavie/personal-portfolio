@@ -33,7 +33,7 @@
   /* text */
   --heading: 48px;
   --subparagraph: 22px;
-  --paragraphs: 16px;
+  --paragraphs: 18px;
   --textColor: #ffffffb3;
   --textGradient: linear-gradient(
     180deg,
@@ -118,7 +118,7 @@ h2 {
 h3 {
   font-family: var(--font);
   font-weight: bold;
-  font-size: 28px;
+  font-size: 24px;
 }
 /* headings inside of cards */
 h4 {
@@ -282,6 +282,8 @@ a,
   align-items: center;
   overflow-x: hidden;
   padding: 4vh 0;
+  /* width: 100vw;
+  overflow-x: hidden; */
   /* margin: 2vh 0; */
   /* background-color: var(--card); */
   /* border: solid 3px 0 3px 0 var(--cardBorderColor); */
@@ -1470,9 +1472,7 @@ h1 span,
   border: var(--cardBorder);
   height: auto;
   margin-top: 4vh;
-  transition:
-    background-color 0.5s ease,
-    border 0.5s ease;
+  transition: transform 0.5s ease, border 0.2s ease;
   width: 80vw;
   height: 98vh;
   overflow: hidden;
@@ -1482,12 +1482,12 @@ h1 span,
   width: 100%; /* Ensure the image is as wide as the container */
   height: 100%; /* Ensure the image is as tall as the container */
   object-fit: cover; /* Cover the container without distorting the aspect ratio */
-  transition: transform 0.5s ease; /* Smooth transition for transforms */
   border-radius: 0px; /* Keep the border-radius at 0 */
 }
 
-.work-image:hover img {
+.work-image:hover  {
   transform: scale(1.05);
+  border: 3px solid #ffffff82;
 }
 
 .work-list {
@@ -1624,6 +1624,7 @@ h1 span,
   padding: 2vh;
   max-width: 360px;
   gap: 8px;
+  flex-grow: 1;
 }
 .contact-mid p,
 .contact-right p {
@@ -1821,8 +1822,8 @@ h1 span,
   background-color: var(--prim);
   display: grid;
   place-content: center;
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
 }
 
 /* portfolio project sections */
