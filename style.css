@@ -1708,7 +1708,7 @@ h1 span,
   margin: 2vh 0;
 }
 .case-header-contain {
-  font-size: 48px;
+  font-size: 42px;
   font-family: var(--font);
   line-height: 1.4;
 }
@@ -1731,10 +1731,14 @@ h1 span,
   border-radius: 14px;
 }
 .case-summary-contain {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-direction: row;
   gap: 56px;
   margin: 6vh 0;
+  
+}
+.case-summary-contain p {
+  flex-grow: 1;
 }
 .case-header .typed-cursor.typed-cursor--blink {
   display: none;
