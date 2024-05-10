@@ -1476,6 +1476,7 @@ h1 span,
   width: 80vw;
   height: 98vh;
   overflow: hidden;
+  height: 90vh;
 }
 
 .work-image img {
@@ -2743,6 +2744,12 @@ html {
 
 /* iphone xr */
 @media (max-width: 430px) {
+.work-image {
+  height: 30vh;
+}
+  .contact-contain {
+    flex-wrap: wrap;
+  }
   .favContain i {
     display: none;
   }
