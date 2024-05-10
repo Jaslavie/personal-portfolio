@@ -1,7 +1,8 @@
 :root {
   --font: "Alliance No.1", sans-serif;
   --secfont: "Inconsolata", sans-serif;
-  --textfont: "Lato", sans-serif;
+  --textfont: "Inter", sans-serif;
+  --spanFont: "Source Serif Pro", serif;
 
   /* colors */
   --prim: #6360ff;
@@ -10,7 +11,7 @@
   --card: #1d1d1f;
   --icon: #17171a;
   --iconBackground: #18182f;
-  --outline: rgba(135, 135, 135, 0.25);
+  --outline: #87878740;
   --subheadingColor: rgba(255, 255, 255, 0.601);
   --hoverBackground: rgba(72, 91, 255, 0.15);
   --cardBorderColor: #363637;
@@ -31,10 +32,11 @@
   --containerGap: 28px; /* cards of elements */
 
   /* text */
-  --heading: 48px;
-  --subparagraph: 22px;
+  --title: 42px;
+  --heading: 28px;
+  --subparagraph: 20px;
   --paragraphs: 18px;
-  --textColor: #ffffffb3;
+  --textColor: #ffffffc5;
   --textGradient: linear-gradient(
     180deg,
     rgba(255, 255, 255, 1) 0%,
@@ -53,6 +55,10 @@
 @font-face {
   font-family: "Alliance No.1";
   src: url("fonts/AllianceNo1-Medium copy.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Source Serif Pro";
+  src: url("fonts/SourceSerifPro-SemiboldIt.otf") format("truetype");
 }
 @font-face {
   font-family: "Inconsolata";
@@ -80,7 +86,11 @@ body {
   /* cursor: url('../images/portfolio cursor.png') 16 16, auto; */
 }
 ::selection,
-a::selection, h1::selection, h2::selection, p::selection, .gradient-text::selection{
+a::selection,
+h1::selection,
+h2::selection,
+p::selection,
+.gradient-text::selection {
   background: #415effed;
   z-index: 1;
   color: #fff;
@@ -98,21 +108,26 @@ p {
   font-family: var(--textfont);
   color: var(--textColor);
   font-size: var(--paragraphs);
-  line-height: 42px;
+  line-height: 1.8;
   font-weight: 400;
 }
 h1 {
   font-family: var(--font);
-  font-size: 62px;
+  font-size: var(--title);
+  font-weight: normal;
   background: var(--textGradient);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+h1 span {
+  font-family: var(--spanFont);
+  font-style: italic;
+}
 /* subheadings for titles */
 h2 {
   font-family: var(--font);
-  font-size: 42px;
+  font-size: var(--heading);
   line-height: 1.5;
 }
 h3 {
@@ -176,9 +191,9 @@ a,
 }
 .callout-p {
   font-size: var(--subparagraph);
-  font-weight: 400;
   color: var(--textColor);
   z-index: 1000;
+  font-weight: 500;
 }
 .overview p {
   margin-top: 4vh;
@@ -551,7 +566,7 @@ a,
   color: #ffffff;
 }
 
-.btn-new:hover a p {
+.btn-new:hover a {
   color: var(--prim);
 }
 .btn-sec:hover a p {
@@ -864,8 +879,8 @@ p.black {
 }
 .gradient-text {
   font-family: var(--font);
-  font-size: var(--heading);
-  font-weight: 600;
+  /* font-size: var(--heading); */
+
   background: var(--textGradient);
   background-clip: text;
   -webkit-background-clip: text;
@@ -874,21 +889,24 @@ p.black {
 }
 .type-container {
   width: fit-content;
-  align-items: flex-end;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-items: center;
   z-index: 200;
   position: relative;
   top: 10vh;
-}
-
-.type-container h1,
-.header-text h1 {
+  height: 200px;
   font-size: 48px;
-  color: #fff;
-  margin-top: 10px;
-  line-height: 140%;
-  text-align: center;
+  justify-content: center;
+}
+.header-text-contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  gap: 18px;
 }
 
 */ .row {
@@ -1045,11 +1063,11 @@ p.black {
 }
 .dash-right {
   text-align: right;
-  gap: 4px;
   display: grid;
   grid-template-columns: auto;
   margin: 0;
 }
+
 .dash-main-contain {
   width: 100%;
   display: grid;
@@ -1267,8 +1285,14 @@ p.black {
 .subsub-title span,
 h1 span,
 .bottom-header-text {
-  font-size: var(--heading);
-  font-family: var(--font);
+  /* font-size: var(--heading); */
+  font-family: var(--spanFont);
+  font-weight: normal;
+  background: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
 }
 /* serendipity section */
 .serendipity-header h1 {
@@ -1472,7 +1496,9 @@ h1 span,
   border: var(--cardBorder);
   height: auto;
   margin-top: 4vh;
-  transition: transform 0.5s ease, border 0.2s ease;
+  transition:
+    transform 0.5s ease,
+    border 0.2s ease;
   width: 80vw;
   height: 98vh;
   overflow: hidden;
@@ -1486,7 +1512,7 @@ h1 span,
   border-radius: 0px; /* Keep the border-radius at 0 */
 }
 
-.work-image:hover  {
+.work-image:hover {
   transform: scale(1.05);
   border: 3px solid #ffffff82;
 }
@@ -1698,7 +1724,7 @@ h1 span,
   width: 100vw;
 }
 .case-header {
-  padding: 18vh 12vw 6vh 12vw;
+  padding: 18vh 18vw 6vh 18vw;
   display: grid;
   place-content: center;
   height: fit-content;
@@ -1708,13 +1734,13 @@ h1 span,
   margin: 2vh 0;
 }
 .case-header-contain {
-  font-size: 42px;
+  font-size: var(--title);
   font-family: var(--font);
   line-height: 1.4;
 }
 .case-subheading {
-  font-size: 24px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 400;
   color: var(--subheadingColor);
   font-family: var(--secfont);
 }
@@ -1735,7 +1761,6 @@ h1 span,
   flex-direction: row;
   gap: 56px;
   margin: 6vh 0;
-  
 }
 .case-summary-contain p {
   flex-grow: 1;
@@ -1752,7 +1777,7 @@ h1 span,
   gap: 18vh;
 }
 .btn-contain {
-  margin: 2vh 11vw;
+  margin: 2vh 18vw;
   display: flex;
   flex-direction: row;
   gap: 22px;
@@ -1760,17 +1785,14 @@ h1 span,
 
 .case-text-contain {
   gap: 12px;
-  display: grid;
-  padding: 0 11vw;
-}
-.case-text-contain p {
-  font-size: 22px;
-  margin-top: 8vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0 18vw;
 }
 .case-text-contain p span {
-  font-weight: 600;
   color: #fff;
-  font-style: italic;
+  font-style: underline;
 }
 .case-inner-img-contain img {
   border-radius: 0;
@@ -1787,7 +1809,7 @@ h1 span,
   color: rgba(225, 225, 225, 0.45);
 }
 .case-call-out {
-  padding: 12vh 11vw;
+  padding: 12vh 18vw;
   display: flex;
   flex-direction: column;
   gap: 22px;
@@ -1814,11 +1836,11 @@ h1 span,
   border-radius: var(--containerBorderRadius);
   background-color: var(--card);
   border: var(--border);
-  padding: 36px;
+  padding: 22px;
   display: grid;
   grid-auto-flow: column;
   gap: 22px;
-  margin: 0 11vw;
+  margin: 0 18vw;
 }
 
 .mini-icon {
@@ -2748,9 +2770,9 @@ html {
 
 /* iphone xr */
 @media (max-width: 430px) {
-.work-image {
-  height: 30vh;
-}
+  .work-image {
+    height: 30vh;
+  }
   .contact-contain {
     flex-wrap: wrap;
   }

@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
+
     <title>💙</title>
-    <meta name="description" content="Jasmine is a Product Designer and Developer who designs for strategic operations for data-driven, fast-paced, and product-minded teams" />
+    <meta
+      name="description"
+      content="Jasmine is a Product Designer and Developer who designs for strategic operations for data-driven, fast-paced, and product-minded teams"
+    />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="shortcut icon"
@@ -164,7 +167,7 @@
               </div>
             </a>
           </div>
-         
+
           <div
             class="icon-items"
             style="margin-left: 24vw; margin-top: 40vw; margin-top: 39vw"
@@ -196,27 +199,30 @@
         <script src="main.js"></script>
 
         <div class="head-contain">
-          <div class="type-container gradient-text">
-            <div>Hey! I'm Jasmine</div>
+          <div class="header-text-contain">
+            <div class="type-container">
+              <h1 class="gradient-text">Hey! I'm Jasmine</h1>
 
-            <div class="bottom-header-text">
-              <span class="auto-type"></span>
+              <h1 class="bottom-header-text">
+                <span class="auto-type"></span>
+              </h1>
             </div>
+            <p class="callout-p" style="margin-top: 42px; text-align: center">
+              <!-- 18 y.o. Product Designer building @NASA @TheRocketProject. -->
+              18 y.o. Product Designer building @NASA 
+            </p>
           </div>
-          <p class="callout-p" style="margin-top: 22px; text-align: center">
-            18 y.o. product designer who likes building things @ 3am
-          </p>
-          <i
+          <!-- <i
             class="fa-solid fa-chevron-down"
             style="margin-top: 6vh; color: var(--textColor); font-size: 22px"
-          ></i>
+          ></i> -->
           <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
           <script>
             var typed = new Typed(".auto-type", {
               strings: [
                 "I'm a /Designer.",
                 "I'm a &lt;Engineer/&gt;.",
-                "I'm a Hackathon Enthusiast.",
+                "I'm a WW2 Enthusiast.",
               ],
               typeSpeed: 80,
               backSpeed: 80,
@@ -314,14 +320,14 @@
             <div class="work-heading">
               <div class="caption">FOUNDING PRODUCT DESIGNER</div>
 
-              <div  >
+              <div>
                 <h2>Questify: a Gamified Platform for University Clubs</h2>
                 <div class="arrowContain">
                   <i class="fa-solid fa-arrow-right"></i>
                 </div>
               </div>
 
-              <div  class="tag-wrap">
+              <div class="tag-wrap">
                 <div class="tag">END-TO-END</div>
                 <div class="tag">DASHBOARD</div>
                 <div class="tag">MOBILE APP</div>
@@ -347,7 +353,7 @@
             <div class="work-heading">
               <div class="caption">PRODUCT DESIGNER</div>
 
-              <div  >
+              <div>
                 <h2>
                   GeoFlare: the real-time, collaborative wildfire response
                   platform through satellite imagery
@@ -357,7 +363,7 @@
                 </div>
               </div>
 
-              <div  class="tag-wrap">
+              <div class="tag-wrap">
                 <div class="tag">PRODUCT DESIGN</div>
                 <div class="tag">COMPUTER VISION</div>
                 <div class="tag">HACKATHON</div>
@@ -382,14 +388,14 @@
             <div class="work-heading">
               <div class="caption">DIRECTOR OF I.T.</div>
 
-              <div  >
+              <div>
                 <h2>Bonsai Bento: High School E-Commerce Startup</h2>
                 <div class="arrowContain">
                   <i class="fa-solid fa-arrow-right"></i>
                 </div>
               </div>
 
-              <div class="tag-wrap" >
+              <div class="tag-wrap">
                 <div class="tag">WEBSITE</div>
                 <div class="tag">END-TO-END</div>
               </div>
@@ -410,14 +416,14 @@
             <div class="work-heading">
               <div class="caption">FOUNDER AND DESIGNER</div>
 
-              <div  >
+              <div>
                 <h2>Voicewise: Self-Improvement Hub for Students</h2>
                 <div class="arrowContain">
                   <i class="fa-solid fa-arrow-right"></i>
                 </div>
               </div>
 
-              <div class="tag-wrap" >
+              <div class="tag-wrap">
                 <div class="tag">REACT.JS</div>
                 <div class="tag">END-TO-END</div>
                 <div class="tag">CURRICULUM DEVELOPMENT</div>
@@ -504,7 +510,7 @@
           <div class="tag-contain" style="margin-top: 8vh">
             <div class="btn-new">
               <a
-              href="images/Wu, Jasmine Resume.pdf"
+                href="images/Wu, Jasmine Resume.pdf"
                 class="btn"
                 target="_blank"
               >
@@ -542,7 +548,7 @@
           { delay: 100, origin: "bottom", interval: 100 },
         );
         ScrollReveal().reveal(" .current-contain", {
-          delay: 100,
+          delay: 800,
           origin: "bottom",
           interval: 500,
         });
@@ -551,9 +557,10 @@
           origin: "top",
           distance: "60px",
         });
-        ScrollReveal().reveal(".work-image, .infinite-contain", {
-          delay: 900,
-          duration: 800,
+        ScrollReveal().reveal(" h1, h2, p, .infinite-contain, .work-image, .tag-wrap,  .type-container,", {
+          delay: 800,
+          interval: 500,
+          duration: 1200,
         });
       </script>
     </body>
