@@ -328,9 +328,9 @@
               </div>
 
               <div class="tag-wrap">
-                <div class="tag">END-TO-END</div>
-                <div class="tag">DASHBOARD</div>
-                <div class="tag">MOBILE APP</div>
+                <div class="tag">SaaS</div>
+                <div class="tag">Dashboard</div>
+                <div class="tag">Mobile App</div>
               </div>
 
               <p class="callout-p">
@@ -534,30 +534,31 @@
       <script>
         ScrollReveal({
           reset: false,
-          duration: 1200,
           delay: 400,
           opacity: 0,
         });
 
         ScrollReveal().reveal(
-          ".favContain, .center-text, .head-contain, .icon-contain, .center-text-contain, .btn-new, .tech-stack, .work-contain, .caption, .tag, .work-list .work, .tech-stack img, #about .about-col-1, .sub-title, .subsub-title, .callout, .pins-contain",
-          { delay: 100, origin: "bottom", distance: "30px" },
+          ".favContain, .center-text, .head-contain, .icon-contain, .center-text-contain, .btn-new, .tech-stack, .work-contain, .work-list .work, .tech-stack img, #about .about-col-1, .sub-title, .subsub-title, .callout, .pins-contain",
+          { delay: 100, origin: "bottom", distance: "30px", duration: 1000},
         );
         ScrollReveal().reveal(
           " .header-text, .bottom-header-text,  .head-contain i, .planetContain,",
-          { delay: 100, origin: "bottom", interval: 100 },
+          { delay: 100, origin: "bottom", interval: 100, duration: 1000 },
         );
-        ScrollReveal().reveal(" .current-contain", {
-          delay: 800,
+        ScrollReveal().reveal(" .work-heading, .current-contain", {
+          delay: 400,
           origin: "bottom",
           interval: 500,
+          duration: 1000
         });
         ScrollReveal().reveal(".nav-container", {
           delay: 200,
           origin: "top",
           distance: "60px",
+          duration: 1000
         });
-        ScrollReveal().reveal(" h1, h2, p, .infinite-contain, .work-image, .tag-wrap,  .type-container,", {
+        ScrollReveal().reveal("  h1, h2, p, .infinite-contain, .work-image, .tag-wrap,  .type-container,", {
           delay: 800,
           interval: 500,
           duration: 1200,
