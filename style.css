@@ -1726,13 +1726,13 @@ h1 span,
   display: grid;
   place-content: center;
   height: fit-content;
-  gap: 12px;
+  gap: 6px;
 }
 .case-header .tag-wrap {
   margin: 2vh 0;
 }
 .case-header-contain {
-  font-size: var(--title);
+  font-size: 38px;
   font-family: var(--font);
   line-height: 1.4;
 }
@@ -1742,13 +1742,12 @@ h1 span,
   color: var(--subheadingColor);
   font-family: var(--secfont);
 }
-.case-subheading-contain {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 16px;
-  margin: 0;
-  height: fit-content;
+.case-subheading-main {
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--subheadingColor);
+  font-style: italic;
+  font-family: var(--textfont);
 }
 .case-subheading-contain img {
   max-width: 40px;
