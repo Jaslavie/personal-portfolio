@@ -20,15 +20,15 @@
     500ms border ease-in-out;
 
   /* border formatting */
-  --border: 3px solid var(--outline); /* border for large containers */
+  --border: 2px solid var(--outline); /* border for large containers */
   --cardBorder: 2px solid var(--cardBorderColor); /* border for cards and tags */
-  --containerBorderRadius: 12px;
+  --containerBorderRadius: 8px;
   --cardBorderRadius: 6px;
-  --borderHover: 3px solid var(--prim);
+  --borderHover: 2px solid var(--prim);
 
   /* general spacing */
   --smallGap: 8px; /* small gap */
-  --listGap: 18px; /* list of elements */
+  --listGap: 14px; /* list of elements */
   --containerGap: 28px; /* cards of elements */
 
   /* text */
@@ -73,7 +73,7 @@
 
 img {
   border-radius: var(--cardBorderRadius);
-  margin: 2vh 0;
+  margin: 0;
 }
 
 html,
@@ -417,9 +417,7 @@ a,
   display: grid;
   place-content: center;
   z-index: 12;
-  transition:
-    500ms background-color ease,
-    500ms filter ease;
+  transition: 500ms background-color ease, 500ms filter ease;
 }
 .icon-items {
   position: absolute;
@@ -455,9 +453,7 @@ a,
   color: var(--textColor);
   font-size: 1.5em;
   /* cursor: url('../images/hover cursor.png') 16 16, auto ; */
-  transition:
-    color 0.5s ease,
-    text-shadow 0.5s ease;
+  transition: color 0.5s ease, text-shadow 0.5s ease;
 }
 
 .scroll-down {
@@ -476,9 +472,7 @@ a,
   display: grid;
   place-content: center;
   /* cursor: url('../images/hover cursor.png') 16 16, auto ; */
-  transition:
-    color 0.5s ease,
-    text-shadow 0.5s ease;
+  transition: color 0.5s ease, text-shadow 0.5s ease;
   animation: slowfloat 2s ease-in-out infinite;
 }
 
@@ -511,12 +505,12 @@ a,
 
 .btn {
   background-color: var(--prim);
-  padding: 16px 30px;
+  padding: 8px 18px;
   border-radius: var(--cardBorderRadius);
   max-width: 20em;
   width: fit-content;
-  font-weight: 500;
-  font-size: 22px;
+  font-weight: 400;
+  font-size: 18px;
   font-family: var(--textfont);
   white-space: nowrap;
 }
@@ -531,8 +525,6 @@ a,
 /* contact */
 .contact-btn {
   background-color: var(--prim);
-  width: 50px;
-  height: 50px;
   padding: 4px;
   border-radius: var(--cardBorderRadius);
   display: grid;
@@ -652,6 +644,7 @@ nav {
   /* backdrop-filter: blur(8px); */
   z-index: 90000;
   width: 100vw;
+  border-bottom: 1px solid var(--outline);
 }
 
 .nav-container img {
@@ -937,21 +930,15 @@ p.black {
   top: 50px;
 }
 
-.sticky {
-  position: sticky;
-  top: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 /* about section */
 .about-contain {
   display: grid;
   place-content: center;
   grid-template-columns: 0.7fr 1.3fr;
-  gap: 48px;
+  gap: 22px;
   width: 92vw;
-  margin: 20vh 4vw 8vh 4vw;
+  margin: 15vh 4vw 4vh 4vw;
   justify-content: center;
   height: auto;
   align-items: start;
@@ -963,12 +950,11 @@ p.black {
   grid-template-columns: auto;
   gap: 36px;
 }
-.dashboard-contain-left .profile-img img {
+.dashboard-contain-left img {
   border-radius: var(--cardBorderRadius);
   width: 100%;
   max-width: 100%;
   height: 100%;
-  max-height: 100%;
   margin: 0;
 }
 .dashboard-contain-left {
@@ -977,6 +963,7 @@ p.black {
   gap: 22px;
   width: 100%;
   align-items: flex-start;
+  height: 100%;
 }
 .inventory-contain {
   border-radius: var(--containerBorderRadius);
@@ -992,7 +979,7 @@ p.black {
   color: var(--cardBorderColor);
   transition: color 500ms ease;
   white-space: nowrap;
-  font-size: 16px;
+  font-size: 14px;
 }
 .inventory-item:hover p {
   color: #fff;
@@ -1080,8 +1067,8 @@ p.black {
 .dash-main-contain .dash-left p {
   width: 360px;
   color: #fff;
-  margin: 2vh 0;
-  font-size: 1.15em;
+
+  font-size: 16px;
 }
 .dash-main-contain .dash-left p span {
   color: rgba(255, 255, 255, 0.7);
@@ -1091,18 +1078,18 @@ p.black {
 .bookshelf-contain,
 .ideation-contain {
   border: var(--cardBorder);
-  padding: 28px;
+  padding: 22px;
   display: grid;
   grid-template-columns: auto;
   border-radius: var(--containerBorderRadius);
-  gap: 18px;
+  gap: 12px;
   width: fit-content;
   height: 100%;
 }
 .bookshelf-contain {
   width: 100%;
   height: fit-content;
-  gap: 22px;
+  gap: 12px;
 }
 .ideation-contain {
   width: 100%;
@@ -1259,9 +1246,7 @@ p.black {
   grid-template-columns: auto;
   gap: 8px;
 }
-.bookshelf-item .tag {
-  font-size: 16px
-}
+
 .prev-contain h3 {
   text-align: left;
 }
@@ -1386,7 +1371,7 @@ h1 span,
   font-size: 14px;
   padding: 8px 12px;
   margin: 0;
-  line-height: 1.2;
+
 }
 .seren-item a p {
   font-size: 20px;
@@ -1410,22 +1395,27 @@ h1 span,
   grid-template-columns: auto;
   align-items: flex-start;
 }
-
+/* tag styling*/
 .tag {
-  padding: 10px 14px;
-  background-color: var(--primTransparent);
-  color: var(--sec);
+  padding: 10px 12px;
+  background-color: var(--outline);
+  color: rgba(255, 255, 255, 0.752);
   border-radius: 4px;
   width: fit-content;
-  font-size: 22px;
+  font-size: 16px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: var(--secfont);
   font-weight: 500;
+  line-height: 0;
   white-space: nowrap;
 }
 .tag-wrap {
   display: flex;
   flex-direction: row;
-  gap: 16px;
+  gap: 12px;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
@@ -1434,23 +1424,24 @@ h1 span,
   gap: 12px;
 }
 .tagAbout a {
-  padding: 8px 18px;
-  border: var(--cardBorder);
+  padding: 6px 12px;
+  border: 1px solid var(--cardBorderColor);
   color: #ffffff;
+  font-family: var(--secfont);
   display: grid;
   grid-auto-flow: column;
   width: fit-content;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  border-radius: var(--cardBorderRadius);
+  border-radius: 4px;
   transition: var(--transitionHover);
   white-space: nowrap;
+  background-color: var(--card);
 }
 .tagAbout p {
   color: #fff;
   font-family: var(--secfont);
-  font-weight: 600;
 }
 .tagAbout a:hover {
   background-color: var(--hoverBackground);
@@ -1462,7 +1453,7 @@ h1 span,
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 22px;
+  gap: 16px;
   width: 100%;
 }
 .work-heading .subsub-title {
@@ -1470,15 +1461,11 @@ h1 span,
 }
 .arrowContain {
   display: none;
-  transition:
-    transform 200ms ease-in-out,
-    opacity 200ms ease-in-out;
+  transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
 }
 .fa-arrow-right {
   color: #ffffff;
-  transition:
-    transform 0.5s ease,
-    opacity 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.5s ease;
   font-size: 40px;
 }
 .work-contain:hover .arrowContain {
@@ -1494,9 +1481,7 @@ h1 span,
   border: var(--cardBorder);
   height: auto;
   margin-top: 4vh;
-  transition:
-    transform 0.5s ease,
-    border 0.2s ease;
+  transition: transform 0.5s ease, border 0.2s ease;
   width: 80vw;
   height: 98vh;
   overflow: hidden;
