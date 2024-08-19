@@ -228,6 +228,9 @@ a,
   font-family: var(--textfont);
   font-style: italic;
 }
+.work-heading .caption {
+  text-align: left;
+}
 .caption {
   font-family: var(--textfont);
   color: var(--textColor);

@@ -329,25 +329,145 @@
             />
           </div>
         </div>
-        <div class="case-section"><h1><span>Design Strategy</span></h1></div>
+        <div class="case-section">
+          <h1><span>Design Strategy</span></h1>
+        </div>
         <div class="case-text-contain">
           <div class="case-container">
             <div class="case-subheading">NEEDS</div>
             <h2>Investigating Need and Priorities</h2>
-           <div style="gap: 2vh;">
-             <p>
-              Based on our characterization of the target user, we conclude the
-              following being crucial considerations in our design strategy:
-            
-            </p>
-            <p>
+            <div style="gap: 2vh">
+              <p>
+                Based on our characterization of the target user, we conclude
+                the following being crucial considerations in our design
+                strategy:
+              </p>
+
               <ol>
-                <li>Maintaining familiar workflows and tools from legacy systems</li>
-                <li>Identifying the key touch points that empower decision-making</li>
+                <li>
+                  Maintaining familiar workflows and tools from legacy systems
+                </li>
+                <li>
+                  Identifying the key touch points that empower decision-making
+                </li>
               </ol>
+
+              <hr class="divider" />
+              <img src="../images/dispatch/dispatchNeeds.svg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="case-text-contain">
+          <div class="case-container">
+            <div class="case-subheading">COMMUNICATIONS</div>
+            <h2>Communications Flow</h2>
+            <p>
+              Based on what operator needed to make decisions, and their normal
+              operator flow, I created <span>flow diagrams</span> to map
+              distinct operator roles and identify dependencies that affect
+              their decision-making process.
             </p>
-           </div>
-           
+
+            <img src="../images/dispatch/commsFlow.svg" alt="" />
+          </div>
+        </div>
+        <div class="case-text-contain">
+          <div class="case-container">
+            <div class="case-subheading">FEATURE PRIORITIZATION</div>
+            <h2>Prioritizing Features</h2>
+            <p>
+              With key decision points, operator frustrations, and the user
+              journey defined, we prioritized features that
+              <span
+                >directly addressed the core problem of cognitive overload</span
+              >
+              from nonemergency calls.
+            </p>
+
+            <img
+              src="../images/dispatch/dispatchPriorityHierarchy.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="case-text-contain">
+          <div class="case-container">
+            <div class="case-subheading">OPERATING STAGES</div>
+            <h2>
+              Mapping Key Actions and Decision Points with Human-in-the-Loop
+            </h2>
+            <p>
+              Based on the prioritized features, we worked to map each core
+              action on a timeline. We emphasized areas to
+              <span>incorporate humans in the decision-making process as</span>
+              to maintain dispatcher’s autonomy and expertise in the end-to-end
+              emergency cycle.
+            </p>
+
+            <img src="../images/dispatch/dispatchStages.svg" alt="" />
+          </div>
+        </div>
+        <div class="case-text-contain">
+          <div class="case-container">
+            <div class="case-subheading">SCENARIOS</div>
+            <h2>Generating Scenarios for Edge Cases</h2>
+            <p>
+              Scenario Generation highlighted different
+              <span>categories of emergencies and mitigation strategies</span>
+              to address them with the DispatchAI platform.
+            </p>
+
+            <img src="../images/dispatch/dispatchScenarios.svg" alt="" />
+          </div>
+        </div>
+        <div
+          class="case-section"
+          style="display: flex; flex-direction: column; align-items: flex-start"
+        >
+          <div class="case-subheading">SUMMARY</div>
+          <h2>KEY INSIGHTS</h2>
+        </div>
+        <div class="case-container">
+          <div class="case-text-contain">
+            <h3 style="color: white">
+              ⏰ Non-Emergency Responses causes critical delays
+            </h3>
+            <p>
+              Research demonstrated that
+              <span>9/10 calls are noncritical</span>. This is not only
+              exacerbated by the staffing shortage, but causes critical mental
+              health problems for dispatchers. In large-scale crises, delays can
+              result in preventable deaths.
+            </p>
+          </div>
+          <div class="case-text-contain">
+            <h3 style="color: white">
+              📡 Breakdown of Communication Systems Exacerbate Emergencies
+            </h3>
+            <p>
+              Most calls are built around radio frequency. Interference with
+              these
+              <span
+                >brittle mediums can cause the entire communication line to
+                collapse</span
+              >. This is what happened during the 9/11 attacks when hundreds of
+              firefighter lives were lost due to insufficient communications
+              infrastructure.
+            </p>
+          </div>
+          <div class="case-text-contain">
+            <h3 style="color: white">
+              ⏰ Non-Emergency Responses causes critical delays
+            </h3>
+            <p>
+              Manual instruction scripts, muffled calls, and quasi geolocation
+              services are daily experiences for dispatchers. This has led to
+              <span
+                >misinformed decisions, inaccurate location identification, and
+                extreme stress</span
+              >
+              for dispatchers.
+            </p>
           </div>
         </div>
       </div>
@@ -400,8 +520,10 @@
         });
         ScrollReveal().reveal(".case-section, .case-text-contain", {
           delay: 400,
-          duration: 400,
+          duration: 600,
+          interval: 200,
         });
+       
         ScrollReveal().reveal(".case-header-img img", {
           delay: 4800,
           duration: 1000,
