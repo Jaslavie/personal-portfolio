@@ -1397,6 +1397,11 @@ h1 span,
   grid-template-columns: auto;
   align-items: flex-start;
 }
+.work-contain .caption {
+  text-align: left;
+  justify-content: left;
+}
+
 /* tag styling*/
 .tag {
   padding: 10px 12px;
