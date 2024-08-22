@@ -43,15 +43,6 @@
     rgba(153, 153, 153, 1) 100%
   );
 }
-
-/* @font-face {
-  font-family: "Palanquin Dark";
-  src:
-    url("fonts/PalanquinDark-SemiBold copy.ttf") format("truetype"),
-    url("fonts/PalanquinDark-Bold copy.ttf") format("truetype"),
-    url("fonts/PalanquinDark-Medium copy.ttf") format("truetype"),
-    url("fonts/PalanquinDark-Regular copy.ttf") format("truetype");
-} */
 @font-face {
   font-family: "Alliance No.1";
   src: url("fonts/AllianceNo1-Medium copy.ttf") format("truetype");
@@ -1321,10 +1312,11 @@ h1 span,
   align-items: start;
 }
 .serendipity-contain {
-  margin: 10vh 0;
+  margin: 2vh 0;
   display: grid;
   gap: var(--containerGap);
   grid-template-columns: auto;
+  width: 100%;
 }
 .seren-img {
   display: flex;
@@ -1333,7 +1325,7 @@ h1 span,
 }
 .seren-img img {
   border-radius: var(--cardBorderRadius);
-  max-width: 500px;
+  max-width: 40vw;
 }
 .seren-item a,
 .seren-item-shelf a {
@@ -1342,8 +1334,8 @@ h1 span,
   place-content: center;
   justify-content: flex-start;
   grid-template-columns: auto;
-  gap: var(--listGap);
-  padding: 28px;
+  gap: 8px;
+  padding: 2vh;
   border: var(--border);
   background-color: var(--card);
   width: calc (100% - 72px);
@@ -1355,12 +1347,11 @@ h1 span,
 .seren-item-shelf img {
   width: 150px;
   height: 150px;
-  border-radius: 25px;
   transition: transform 500ms ease;
 }
 .seren-item-shelf a {
   grid-auto-flow: column;
-  gap: 28px;
+  gap: 12px;
 }
 
 .right-seren-contain {
@@ -1379,16 +1370,14 @@ h1 span,
 }
 .seren-item a:hover img,
 .seren-item-shelf a:hover img {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 .seren-item a .tag-wrap .tag {
   font-size: 14px;
   padding: 8px 12px;
   margin: 0;
 }
-.seren-item a p {
-  font-size: 20px;
-}
+
 .seren-item a h3,
 .seren-item-shelf a h3 {
   font-size: 22px;
