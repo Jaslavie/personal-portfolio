@@ -567,27 +567,27 @@
           origin: "top",
         });
       </script>
-       <script>
-        const nav = document.querySelector('nav');
+      <script>
+        const nav = document.querySelector(".nav-container");
         let lastScrollPosition = 0;
 
-        window.addEventListener('scroll', () => {
-            const currentScrollPosition = window.pageYOffset;
-            const viewportHeight = window.innerHeight;
+        window.addEventListener("scroll", () => {
+          const currentScrollPosition = window.pageYOffset;
+          const viewportHeight = window.innerHeight;
 
-            if (currentScrollPosition > viewportHeight * 0.8) {
-                if (currentScrollPosition > lastScrollPosition) {
-                    nav.classList.add('hidden');
-                } else {
-                    nav.classList.remove('hidden');
-                }
+          if (currentScrollPosition > viewportHeight * 0.8) {
+            if (currentScrollPosition > lastScrollPosition) {
+              nav.classList.add("hidden");
             } else {
-                nav.classList.remove('hidden');
+              nav.classList.remove("hidden");
             }
+          } else {
+            nav.classList.remove("hidden");
+          }
 
-            lastScrollPosition = currentScrollPosition;
+          lastScrollPosition = currentScrollPosition;
         });
-    </script>
+      </script>
     </body>
   </html>
 </html>

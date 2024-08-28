@@ -657,10 +657,13 @@ nav {
   z-index: 90000;
   width: 100vw;
   border-bottom: 1px solid var(--outline);
+  transition: transform 0.3s ease-in-out;
+}
+.nav-container.hidden {
+  transform: translateY(-100%);
 }
 
 .nav-container img {
-  /* cursor: url('../images/hover cursor.png') 16 16, auto ; */
   border-radius: 0;
 }
 
