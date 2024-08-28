@@ -1850,7 +1850,7 @@ h1 span,
   background-color: var(--outline);
   border-radius: 4px;
   border: var(--border);
-  padding: 12px;
+  padding: 18px;
   display: flex;
   flex-direction: column;
   align-items: start;
