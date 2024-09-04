@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../style.css" />
     <link
       rel="shortcut icon"
-      href="images/jasmine wu logo official.png"
+      href="../images/jasmine wu logo official.png"
       type="image/x-icon"
     />
     <link
@@ -44,9 +44,9 @@
             <ul>
               <li id="work-nav"><a href="#projects" id="active">work</a></li>
               <li id="hobbies-nav">
-                <a href="serendipity.html">serendipity</a>
+                <a href="../serendipity.html">serendipity</a>
               </li>
-              <li id="about-nav"><a href="about.html">about</a></li>
+              <li id="about-nav"><a href="../about.html">about</a></li>
             </ul>
             <div class="toggle-button">
               <i class="fa-solid fa-bars"></i>
@@ -134,48 +134,24 @@
           });
         </script>
       </div>
-      <div class="case-header-img">
-        <img src="../images/questify/questifyMockImg.svg" alt="" />
-      </div>
 
       <div class="case-main">
-        <div class="btn-contain">
-          <div class="btn-new">
-            <a href="#" class="btn" target="_blank">
-              Jump to final designs
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          </div>
-          <div class="btn-new btn-sec">
-            <a
-              href="https://waitlist.questify.tech/"
-              class="btn"
-              target="_blank"
-            >
-              Website
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          </div>
+        <div class="case-header-img">
+          <img src="../images/questify/questifyMockImg.svg" alt="" />
         </div>
-
+      
         <div class="case-text-contain">
-          <div class="case-subheading">✦INTRODUCTION</div>
+          <div class="case-subheading">INTRODUCTION</div>
           <h2>
-            Working with 7 devs over the summer to develop 2 end-to-end
-            platforms streamlining
-            <span>data analysis and club exploration</span>
+            Working with 7 UCI Students to solve our personal frustrations
           </h2>
           <p>
-            Organization involvement is one of the pillars of university
-            experience. Even though a majority of students want to get more
-            involved, common barriers-to-entry such as complex club discovery
-            and academic pressure discourage students from getting involved.
-            <br /><br />
-            We wanted to experiment with the possibility of combining something
-            familiar while encouraging more involvement. This is what me and 7
-            other UCI students decided to explore gamification. Can we apply
-            leverage this in a healthy way to improve a core aspect of a
-            student’s experience?
+            Entering my Freshman Year of University, I knew I wanted to get
+            involved, but the <span> trade-offs</span> of joining one club over
+            another were overwhelming. Getting involved in clubs is a pillar of
+            university experience, but <span>barriers-to-entry</span>
+            like the complexity of club discovery and academic pressure
+            discourage students from finding their tribe.
           </p>
         </div>
         <div class="case-inner-img-contain">
@@ -189,8 +165,11 @@
             <span>exploration</span> for busy college students?
           </h1>
         </div>
+        <div class="case-section">
+          <h1><span>Problem Discovery</span></h1>
+        </div>
         <div class="case-text-contain">
-          <div class="case-subheading">00 PROBLEM EXPLORATION</div>
+          <div class="case-subheading">PROBLEM EXPLORATION</div>
           <h2>
             University clubs are decentralized, inconsistent, and frustrating to
             navigate
@@ -212,29 +191,22 @@
             CampusGroups
           </p>
         </div>
-        <div class="callout-mini-contain">
-          <div class="mini-icon">
-            <img src="../images/thoughtBubble.png" style="width: 30px" />
-          </div>
-          <div class="callout-mini-contain-text">
-            <h3>Imagine this:</h3>
-            <p>
-              You’re a HS Senior who just got into your dream college. You’re
-              excited to get involved but with 1k+ clubs and move-in prep, you
-              just don’t have time. You end up joining clubs that you’re not
-              interested in and fall off in a month. What now?
-            </p>
-          </div>
-        </div>
+        <div class="case-text-contain">
+          <div class="case-subheading">PROBLEM</div>
 
-        <div class="case-inner-img-contain">
-          <img src="../images/questify/universityRandomPapers.svg" alt="" />
+          <h2>Imagine this:</h2>
           <p>
+            You’re a HS Senior who just got into your dream college. You’re
+            excited to get involved but with <span>over 1,000 clubs</span> and move-in prep, you
+            just don’t have time. You end up joining clubs that you’re not
+            interested in and fall off in a month. What now?
+          </p>
+
+          <img src="../images/questify/universityRandomPapers.svg" alt="" />
+          <div class="caption">
             spreadsheets, google forms, physical forms... and a bunch of
             unorganized touch points
-          </p>
-        </div>
-        <div class="case-text-contain">
+          </div>
           <p>
             After digging deeper into the student life of other campuses, we
             found that public universities have a LOT of clubs
@@ -255,6 +227,7 @@
             <span>Do UCI students experience the same frustrations?</span>
           </p>
         </div>
+
         <div class="case-text-contain">
           <div class="case-subheading">PROBLEM VALIDATION</div>
           <h2>
@@ -270,10 +243,11 @@
             students and clubs. I also included the main input items (feedback
             and demographic data) that were not well centralized in clubs.
           </p>
-        </div>
-        <div class="case-inner-img-contain">
+          <hr class="divider" />
           <img src="../images/questify/questifyBeforeAndAfter.svg" alt="" />
+          <div class="caption">Pipeline between users and clubs</div>
         </div>
+
         <div class="case-text-contain">
           <div class="case-subheading">SNEAK PEAK</div>
           <h2>A <span>direct link</span> between clubs <> students</h2>
@@ -314,36 +288,50 @@
         <div class="case-inner-img-contain">
           <img src="../images/questify/userCommentsQuest.svg" />
         </div>
-        <div class="case-text-contain">
-          <h4>We surveyed 24 UCI students. Here were the patterns.</h4>
-          <p>
-            To dig deeper into root cause and patterns of frustrations across
-            UCI students, I worked with my team to craft a
-            <span>research protocol</span> shipped to students to UCI discord
-            channels and personal connections to club executives.
-          </p>
+        <!--* user research -->
+        <div class="case-container">
+          <div class="case-text-contain">
+            <div class="case-subheading">RESEARCH DOCUMENTATION</div>
+            <h2>User Research Protocol</h2>
+            <p>
+              To dig deeper into root cause and patterns of frustrations across
+              UCI students, I worked with my team to craft a
+              <span>research protocol</span> shipped to students to UCI discord
+              channels and personal connections to club executives.
+            </p>
+            <img src="../images/questify/userProtocolQuestify.svg" alt="" />
+            <div class="caption">
+              User Research Protocol Document for a 3-week research sprint
+            </div>
+          </div>
+          <div class="case-text-contain">
+            <img src="../images/questify/userResearchQuestify.svg" alt="" />
+          </div>
         </div>
+
         <div class="case-inner-img-contain">
           <img src="../images/questify/researchFindingsV2Questify.svg" alt="" />
         </div>
         <div class="case-text-contain">
-          <h4>We interviewed 4 students</h4>
-          <p>
-            After scheduling interviews with 4 UCI students, here are the common
-            patterns of behavior we found. <br /><br />
-            <span>frustrated by:</span> complexity of current systems forcing
-            them to do more work than necessary -> higher user drop-off
-            <br />
-            <span>motivated by:</span> building social connections and
-            career-boosting opportunities
-          </p>
-        </div>
-        <div class="case-inner-img-contain">
-          <img src="../images/questify/userInterviewQuestify.svg" alt="" />
-          <p>
-            Comments collected from 1:1 interviews. Not real names, to keep
-            confidentiality
-          </p>
+          <div class="case-container">
+            <div class="case-subheading">USER RESEARCH</div>
+            <h2>Interviewing 4 UCI Students</h2>
+            <p>
+              After scheduling interviews with 4 UCI students, here are the
+              common patterns of behavior we found. <br /><br />
+              <span>frustrated by:</span> complexity of current systems forcing
+              them to do more work than necessary -> higher user drop-off
+              <br />
+              <span>motivated by:</span> building social connections and
+              career-boosting opportunities
+            </p>
+
+            <img src="../images/questify/userInterviewQuestify.svg" alt="" />
+            <div class="caption">
+              Comments collected from 1:1 interviews. Not real names, to keep
+              confidentiality
+            </div>
+          </div>
         </div>
       </div>
 
