@@ -27,7 +27,7 @@
   --borderHover: 1.5px solid var(--prim);
 
   /* general spacing */
-  --smallGap: 8px; /* small gap */
+  --smallGap: 4px; /* small gap */
   --listGap: 14px; /* list of elements */
   --containerGap: 28px; /* cards of elements */
 
@@ -86,12 +86,7 @@ p::selection,
   z-index: 1;
   color: #fff;
 }
-a:-webkit-any-link {
-  /* cursor: url('../images/hover cursor.png') 16 16, auto ; */
-  text-decoration: none;
-  transition: color 0.5s ease;
-  color: #ffffff;
-}
+
 
 /* fonts */
 li,
@@ -102,7 +97,19 @@ p {
   line-height: 1.8;
   font-weight: 400;
 }
-p span {
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--sec);
+  font-size: inherit;
+  transition: text-decoration 1s ease;
+  line-height: inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
+p span, li span{
   font-weight: 600;
   color: white;
 }
@@ -118,8 +125,6 @@ h1 {
 h1 span {
   font-family: var(--spanFont);
   font-style: italic;
-  
-
 }
 /* subheadings for titles */
 h2 {
@@ -131,7 +136,7 @@ h2 {
 h3 {
   font-family: var(--font);
   font-weight: 400;
-  color:rgba(255, 255, 255, 0.75);
+  color: rgba(255, 255, 255, 0.75);
   font-size: 22px;
 }
 h3 span {
@@ -167,7 +172,7 @@ h4 {
   width: 20px;
   margin: 0;
 }
-a,
+
 .main-content a {
   font-family: var(--textfont);
 
@@ -195,7 +200,7 @@ a,
   color: var(--textColor);
 }
 .callout-p {
-  font-size: var(--subparagraph);
+  font-size: 18px;
   color: var(--textColor);
   z-index: 1000;
 }
@@ -657,10 +662,13 @@ nav {
   z-index: 90000;
   width: 100vw;
   border-bottom: 1px solid var(--outline);
+  transition: transform 0.3s ease-in-out;
+}
+.nav-container.hidden {
+  transform: translateY(-100%);
 }
 
 .nav-container img {
-  /* cursor: url('../images/hover cursor.png') 16 16, auto ; */
   border-radius: 0;
 }
 
@@ -909,7 +917,7 @@ p.black {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50vw;
+  width: 40vw;
   gap: 18px;
 }
 
@@ -1096,6 +1104,14 @@ p.black {
   width: fit-content;
   height: 100%;
 }
+.date {
+  font-size: 14px;
+  color: #7b7b7b;
+  font-family: var(--textfont);
+  align-items: flex-start;
+  display: flex;
+  width: 100%;
+}
 .bookshelf-contain {
   width: 100%;
   height: fit-content;
@@ -1220,7 +1236,7 @@ p.black {
   align-items: flex-start;
   justify-content: flex-start;
   height: fit-content;
-  padding: 18px;
+  padding: 12px;
   grid-auto-flow: column;
   gap: 18px;
   background-color: var(--card);
@@ -1277,10 +1293,9 @@ p.black {
 .subsub-title span,
 h1 span,
 .bottom-header-text {
-  /* font-size: var(--heading); */
   font-family: var(--spanFont);
   font-weight: normal;
- 
+  color: white;
 }
 /* serendipity section */
 .serendipity-header h1 {
@@ -1712,15 +1727,27 @@ h1 span,
   font-size: 14px;
 }
 /* portfolio case study sections */
+.image-full-contain {
+  display: grid;
+  grid-template-columns: auto;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 0;
+}
+.image-full-contain img {
+  width: 100vw;
+  height: auto;
+  margin: 0;
+}
 .case-section {
   display: flex;
   margin: 0 18vw;
   justify-content: flex-start;
   align-items: center;
-
 }
 .case-section h1 span {
-  background: linear-gradient(to right, #ffffff, #ffffff0c); 
+  background: linear-gradient(to right, #ffffff, #ffffff0c);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -1815,17 +1842,13 @@ h1 span,
   display: grid;
   gap: 10vh;
 }
-.case-main a {
-  font-weight: 400;
-  text-decoration: underline;
-  color: white;
-}
+
 .divider {
-  width: 100%;   
-  border: none;     
-  height: 1.5px;     
-  background-color: var(--outline); 
-  margin: 2vh 0;     
+  width: 100%;
+  border: none;
+  height: 1.5px;
+  background-color: var(--outline);
+  margin: 2vh 0;
 }
 .btn-contain {
   margin: 2vh 18vw;
@@ -1850,7 +1873,7 @@ h1 span,
   background-color: var(--outline);
   border-radius: 4px;
   border: var(--border);
-  padding: 12px;
+  padding: 18px;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -2315,11 +2338,6 @@ h1 span,
   padding: 2vh;
 }
 
-a {
-  text-decoration: none;
-  font-weight: bold;
-  font-weight: 600;
-}
 
 .stack {
   display: flex;
