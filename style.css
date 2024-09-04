@@ -86,12 +86,7 @@ p::selection,
   z-index: 1;
   color: #fff;
 }
-a:-webkit-any-link {
-  /* cursor: url('../images/hover cursor.png') 16 16, auto ; */
-  text-decoration: none;
-  transition: color 0.5s ease;
-  color: #ffffff;
-}
+
 
 /* fonts */
 li,
@@ -102,7 +97,19 @@ p {
   line-height: 1.8;
   font-weight: 400;
 }
-p span {
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--sec);
+  font-size: inherit;
+  transition: text-decoration 1s ease;
+  line-height: inherit;
+}
+a:hover {
+  text-decoration: underline;
+}
+p span, li span{
   font-weight: 600;
   color: white;
 }
@@ -165,7 +172,7 @@ h4 {
   width: 20px;
   margin: 0;
 }
-a,
+
 .main-content a {
   font-family: var(--textfont);
 
@@ -1229,7 +1236,7 @@ p.black {
   align-items: flex-start;
   justify-content: flex-start;
   height: fit-content;
-  padding: 18px;
+  padding: 12px;
   grid-auto-flow: column;
   gap: 18px;
   background-color: var(--card);
@@ -1835,11 +1842,7 @@ h1 span,
   display: grid;
   gap: 10vh;
 }
-.case-main a {
-  font-weight: 400;
-  text-decoration: underline;
-  color: white;
-}
+
 .divider {
   width: 100%;
   border: none;
@@ -2335,11 +2338,6 @@ h1 span,
   padding: 2vh;
 }
 
-a {
-  text-decoration: none;
-  font-weight: bold;
-  font-weight: 600;
-}
 
 .stack {
   display: flex;
