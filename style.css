@@ -1196,7 +1196,7 @@ p.black {
 .sticky-note-right p,
 .sticky-note p {
   color: var(--textColor);
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.8;
 }
 .sticky-note-left p span,
