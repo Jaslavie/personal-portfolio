@@ -97,8 +97,13 @@ p {
   line-height: 1.8;
   font-weight: 400;
 }
-
 a {
+  text-decoration: none;
+  font-size: var(--paragraphs);
+  font-family: var(--textfont);
+  font-weight: 500;
+}
+p a {
   text-decoration: none;
   font-weight: 400;
   color: var(--sec);
@@ -106,7 +111,7 @@ a {
   transition: text-decoration 1s ease;
   line-height: inherit;
 }
-a:hover {
+p a:hover {
   text-decoration: underline;
 }
 p span, li span{
@@ -967,7 +972,7 @@ p.black {
   display: grid;
   height: 100%;
   grid-template-columns: auto;
-  gap: 36px;
+  gap: 6px;
 }
 .dashboard-contain-left img {
   border-radius: var(--cardBorderRadius);
@@ -1077,7 +1082,7 @@ p.black {
   width: 100%;
   display: grid;
   grid-auto-flow: column;
-  gap: 28px;
+  gap: 12px;
 }
 .dash-main-contain .dash-left {
   gap: 36px;
@@ -1191,7 +1196,7 @@ p.black {
 .sticky-note-right p,
 .sticky-note p {
   color: var(--textColor);
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.8;
 }
 .sticky-note-left p span,
@@ -1360,7 +1365,7 @@ h1 span,
   animation-duration: 3s;
 }
 .seren-item-shelf img {
-  width: 150px;
+  width: auto;
   height: 150px;
   transition: transform 500ms ease;
 }
@@ -1460,6 +1465,7 @@ h1 span,
   transition: var(--transitionHover);
   white-space: nowrap;
   background-color: var(--card);
+  text-decoration: none;
 }
 .tagAbout p {
   color: #fff;
@@ -1927,16 +1933,6 @@ h1 span,
   color: #fff;
   font-weight: 600;
   font-style: italic;
-}
-.callout-mini-contain {
-  border-radius: var(--containerBorderRadius);
-  background-color: var(--card);
-  border: var(--border);
-  padding: 22px;
-  display: grid;
-  grid-auto-flow: column;
-  gap: 22px;
-  margin: 0 18vw;
 }
 
 .mini-icon {

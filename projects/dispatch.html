@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../style.css" />
     <link
       rel="shortcut icon"
-      href="images/jasmine wu logo official.png"
+      href="../images/jasmine wu logo official.png"
       type="image/x-icon"
     />
     <link
@@ -148,8 +148,9 @@
             <span>Berkeley AI Hackathon</span> , where my team won
             <span>the Grand Prize with $50,000</span>
             in investment from Skydeck, and an additional $14,000 in credits
-            from Intel and OpenAI. Post-Hackathon, we decided to take this
-            project further and launched a venture with Skydeck.
+            from <span>Intel and OpenAI</span>. Post-Hackathon, we decided to
+            take this project further and launched a venture with Skydeck, the
+            #2 top ranked Startup Accelerator in the US.
           </p>
           <img src="../images/dispatch/dispatchBerkeley.jpg" alt="" />
           <div class="caption">
@@ -351,6 +352,22 @@
               src="../images/dispatch/dispatchUserJourney.svg"
               style="outline: 1px rgb(121, 121, 121) solid"
             />
+            <div class="caption">
+              User Journey of Operator Workflow and corresponding design
+              opportunities
+            </div>
+
+            <div class="case-text-contain-image" style="margin-top: 2.5vh">
+              <h3>🔍 Design Opportunity</h3>
+              <p>
+                The research revealed that
+                <span>poorly-documented</span> emergency calls caused by the
+                unpredictable circumstances of dispatch is the root cause of
+                distress. The opportunity, therefore, is offloading
+                documentation to a more
+                <span>accurate and efficient agent</span>
+              </p>
+            </div>
           </div>
           <div class="case-text-contain">
             <div class="case-subheading">PROBLEM TRANSLATION</div>
@@ -360,6 +377,9 @@
               src="../images/dispatch/dispatchOperatorPainPoints.png"
               alt=""
             />
+            <div class="caption">
+              Operator Pain Points and corresponding design opportunities
+            </div>
           </div>
         </div>
         <div class="case-section">
@@ -389,6 +409,10 @@
 
                 <hr class="divider" />
                 <img src="../images/dispatch/dispatchNeeds.svg" alt="" />
+                <div class="caption">
+                  Auditing legacy systems and identifying patterns across user
+                  needs
+                </div>
               </div>
             </div>
           </div>
@@ -404,6 +428,9 @@
               </p>
 
               <img src="../images/dispatch/commsFlow.svg" alt="" />
+              <div class="caption">
+                Stakeholder Communication and Handoff to AI Flow Map
+              </div>
             </div>
           </div>
           <div class="case-text-contain">
@@ -424,6 +451,10 @@
                 src="../images/dispatch/dispatchFeatures.svg"
                 style="outline: 1px rgb(121, 121, 121) solid"
               />
+              <div class="caption">
+                Feature Prioritization based on User Needs and Operator
+                Painpoints
+              </div>
             </div>
           </div>
           <div class="case-text-contain">
@@ -446,6 +477,9 @@
                 src="../images/dispatch/dispatchStages.svg"
                 style="outline: 1px rgb(121, 121, 121) solid"
               />
+              <div class="caption">
+                Mission Flow Mapping to identify key decision points
+              </div>
             </div>
           </div>
           <div class="case-text-contain">
@@ -459,6 +493,10 @@
               </p>
 
               <img src="../images/dispatch/dispatchScenarios.svg" alt="" />
+              <div class="caption">
+                Scenario Mapping to identify edge cases and mitigation
+                strategies for special-case calls
+              </div>
             </div>
           </div>
 
@@ -529,7 +567,10 @@
               <div class="case-subheading">PRODUCT SPECIFICATION</div>
               <h2>Defining Functional Requirements</h2>
               <p>
-                Our product goal is to design intuitive and customizable modules
+                On top of Product Design, I also acted as our team's
+                <span>Product Manager</span> to translate and define
+                requirements based on user insight. Our product goal is to
+                design intuitive and <span>customizable modules</span>
                 to enable dispatchers to make quicker decisions with more
                 confidence and less stress.
               </p>
@@ -554,6 +595,9 @@
               </ol>
 
               <img src="../images/dispatch/productSpecsDispatch.png" alt="" />
+              <div class="caption">
+                Product Specification Requirements Documentation for Dispatch AI
+            </div> 
             </div>
           </div>
           <div class="case-text-contain">
@@ -589,7 +633,7 @@
       <div id="footer-placeholder"></div>
       <script>
         $(function () {
-          $("#footer-placeholder").load("assets/html/footer.html");
+          $("#footer-placeholder").load("../assets/html/footer.html");
         });
       </script>
 
@@ -627,7 +671,7 @@
           distance: "60px",
         });
 
-        ScrollReveal().reveal("img", {
+        ScrollReveal().reveal("img, .captain", {
           delay: 650,
           duration: 500,
         });
