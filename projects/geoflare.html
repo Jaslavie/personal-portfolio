@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>💙</title>
+    <meta
+      name="description"
+      content="Jasmine is a Product Designer and Developer who designs for strategic operations for data-driven, fast-paced, and product-minded teams"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="shortcut icon"
+      href="images/jasmine wu logo official.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+
+  <html>
+    <body>
+      <!-- nav bar -->
+      <div class="nav-container">
+        <nav>
+          <a href="../../index.html"
+            ><img
+              src="../images/jasmineWuLogoLong.svg"
+              class="logo"
+              width="250px"
+              height="auto"
+            />
+          </a>
+          <div class="right-nav">
+            <ul>
+              <li id="work-nav"><a href="#projects" id="active">work</a></li>
+              <li id="hobbies-nav">
+                <a href="serendipity.html">serendipity</a>
+              </li>
+              <li id="about-nav"><a href="about.html">about</a></li>
+            </ul>
+            <div class="toggle-button">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="dropdown-nav">
+        <div class="column">
+          <li><a href="#projects">work</a></li>
+          <li id="work-nav"><a href="play.html">play</a></li>
+          <li><a href="serendipity.html">serendipity</a></li>
+          <li><a href="about.html">about</a></li>
+          <a href="mailto: jasmineqw45@gmail.com" class="btn">Get in Touch</a>
+        </div>
+      </div>
+
+      <div style = "display: grid; place-content: center; height: 100vh">
+        <h1>Coming Soon</h1>
+      </div>
+
+      <script src="main.js"></script>
+      <!-- footer -->
+      <div id="footer-placeholder"></div>
+      <script>
+        ScrollReveal({
+          reset: false,
+          delay: 400,
+          opacity: 0,
+        });
+
+        ScrollReveal().reveal(".nav-container", {
+          delay: 200,
+          origin: "top",
+          distance: "60px",
+          duration: 1000,
+        });
+        ScrollReveal().reveal(
+          "  h1, h2, p, .infinite-contain, .work-image, .tag-wrap,  .type-container,",
+          {
+            delay: 800,
+            interval: 500,
+            duration: 1200,
+          },
+        );
+      </script>
+    </body>
+  </html>
+</html>
