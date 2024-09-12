@@ -1763,11 +1763,12 @@ h1 span,
 .case-container {
   display: flex;
   flex-direction: column;
-  gap: 1vh;
+  gap: 2.5vh;
 }
 .case-text-contain img {
   width: 100%;
   height: auto;
+  margin-top: 2.5vh;
 }
 .case-header-img {
   height: fit-content;
@@ -1866,7 +1867,7 @@ h1 span,
 }
 
 .case-text-contain {
-  gap: 12px;
+  gap: 4px;
   display: flex;
   flex-direction: column;
   align-items: start;
