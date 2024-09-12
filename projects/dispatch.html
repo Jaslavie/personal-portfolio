@@ -413,166 +413,147 @@
         </div>
         <div class="case-container">
           <div class="case-text-contain">
-            <div class="case-container">
-              <div class="case-subheading">NEEDS</div>
-              <h2>Investigating Need and Priorities</h2>
-              <div style="gap: 2vh">
-                <p>
-                  Based on our characterization of the target user, we conclude
-                  the following being crucial considerations in our design
-                  strategy:
-                </p>
+            <div class="case-subheading">NEEDS</div>
+            <h2>Investigating Need and Priorities</h2>
+            <div style="gap: 2vh">
+              <p>
+                Based on our characterization of the target user, we conclude
+                the following being crucial considerations in our design
+                strategy:
+              </p>
 
-                <ol>
-                  <li>
-                    Maintaining familiar workflows and tools from legacy systems
-                  </li>
-                  <li>
-                    Identifying the key touch points that empower
-                    decision-making
-                  </li>
-                </ol>
+              <ol>
+                <li>
+                  Maintaining familiar workflows and tools from legacy systems
+                </li>
+                <li>
+                  Identifying the key touch points that empower decision-making
+                </li>
+              </ol>
 
-                <hr class="divider" />
-                <img src="../images/dispatch/dispatchNeeds.svg" alt="" />
-                <div class="caption">
-                  Auditing legacy systems and identifying patterns across user
-                  needs
-                </div>
+              <hr class="divider" />
+              <img src="../images/dispatch/dispatchNeeds.svg" alt="" />
+              <div class="caption">
+                Auditing legacy systems and identifying patterns across user
+                needs
               </div>
             </div>
           </div>
           <div class="case-text-contain">
-            <div class="case-container">
-              <div class="case-subheading">COMMUNICATION PROBLEM</div>
-              <h2>Analyzing the Threat of Communication Breakdowns</h2>
-              <p>
-                <span>Communications Failure</span> is consistently identified
-                as the primary cause for delayed first-responder response. This
-                has caused unnecessary and tragic deaths that
-                <span
-                  >could have been avoidable with more effective communication
-                  systems</span
+            <div class="case-subheading">COMMUNICATION PROBLEM</div>
+            <h2>Analyzing the Threat of Communication Breakdowns</h2>
+            <p>
+              <span>Communications Failure</span> is consistently identified as
+              the primary cause for delayed first-responder response. This has
+              caused unnecessary and tragic deaths that
+              <span
+                >could have been avoidable with more effective communication
+                systems</span
+              >
+            </p>
+            <img src="../images/dispatch/commsFailureDispatch.png" alt="" />
+          </div>
+          <div class="case-text-contain">
+            <div class="case-subheading">COMMUNICATIONS FLOW</div>
+            <h2>Addressing the Communications Failure</h2>
+            <p>
+              To address the communication failures that delay first-responder
+              actions, I developed <span>flow diagrams</span> mapping the
+              critical roles and decision points during a live emergency. By
+              identifying key dependencies and breakdowns, I used this to inform
+              the design of the handoff flow,
+              <span
+                >ensuring vital information is funneled to all incident
+                stakeholders</span
+              >.
+            </p>
+            <div class="case-text-contain-image" style="margin-top: 2.5vh">
+              <div class="case-subheading">NOTE</div>
+              <h3>
+                Structure based on the
+                <a
+                  href="https://en.wikipedia.org/wiki/Incident_Command_System#:~:text=The%20Incident%20Command%20System%20(ICS,(ICS%2D100%20level%20depicted)"
+                  target="_blank"
+                  >Incident Command System</a
                 >
-              </p>
-              <img src="../images/dispatch/commsFailureDispatch.png" alt="" />
+                under NIMS (National Incident Management System) for
+                standardized emergency response.
+              </h3>
             </div>
-          </div>
-          <div class="case-text-contain">
-            <div class="case-container">
-              <div class="case-subheading">COMMUNICATIONS FLOW</div>
-              <h2>Addressing the Communications Failure</h2>
-              <p>
-                To address the communication failures that delay first-responder
-                actions, I developed <span>flow diagrams</span> mapping the
-                critical roles and decision points during a live emergency. By
-                identifying key dependencies and breakdowns, I used this to
-                inform the design of the handoff flow,
-                <span
-                  >ensuring vital information is funneled to all incident
-                  stakeholders</span
-                >.
-              </p>
-              <div class="case-text-contain-image" style="margin-top: 2.5vh">
-                <div class="case-subheading">NOTE</div>
-                <h3>
-                  Structure based on the
-                  <a
-                    href="https://en.wikipedia.org/wiki/Incident_Command_System#:~:text=The%20Incident%20Command%20System%20(ICS,(ICS%2D100%20level%20depicted)"
-                    target="_blank"
-                    >Incident Command System</a
-                  >
-                  under NIMS (National Incident Management System) for
-                  standardized emergency response.
-                </h3>
-              </div>
 
-              <img src="../images/dispatch/commsFlow.svg" alt="" />
-              <div class="caption">
-                Stakeholder Communication and Handoff to AI Flow Map
-              </div>
+            <img src="../images/dispatch/commsFlow.svg" alt="" />
+            <div class="caption">
+              Stakeholder Communication and Handoff to AI Flow Map
             </div>
           </div>
           <div class="case-text-contain">
-            <div class="case-container">
-              <div class="case-subheading">GOAL-SETTING</div>
-              <h2>🎯 The Primary Objective</h2>
-              <p>
-                The primary goal is to
-                <span>increase interoperability and efficient handoff </span> of
-                critical information while
-                <span>reducing the cognitive load</span> of the dispatcher. This
-                requires a careful balancing act between automation and
-                human-in-the-loop decision-making. This will be addressed in
-                future architecture designs.
-              </p>
-            </div>
+            <div class="case-subheading">GOAL-SETTING</div>
+            <h2>🎯 The Primary Objective</h2>
+            <p>
+              The primary goal is to
+              <span>increase interoperability and efficient handoff </span> of
+              critical information while
+              <span>reducing the cognitive load</span> of the dispatcher. This
+              requires a careful balancing act between automation and
+              human-in-the-loop decision-making. This will be addressed in
+              future architecture designs.
+            </p>
           </div>
           <div class="case-text-contain">
-            <div class="case-container">
-              <div class="case-subheading">FEATURE PRIORITIZATION</div>
-              <h2>Prioritizing Features</h2>
-              <p>
-                With key decision points, operator frustrations, and the user
-                journey defined, we prioritized features that
-                <span
-                  >directly addressed the core problem of cognitive
-                  overload</span
-                >
-                from nonemergency calls.
-                <br />
-              </p>
+            <div class="case-subheading">FEATURE PRIORITIZATION</div>
+            <h2>Prioritizing Features</h2>
+            <p>
+              With key decision points, operator frustrations, and the user
+              journey defined, we prioritized features that
+              <span
+                >directly addressed the core problem of cognitive overload</span
+              >
+              from nonemergency calls.
+              <br />
+            </p>
 
-              <img
-                src="../images/dispatch/dispatchFeatures.svg"
-                style="outline: 1px rgb(121, 121, 121) solid"
-              />
-              <div class="caption">
-                Feature Prioritization based on User Needs and Operator
-                Painpoints
-              </div>
+            <img
+              src="../images/dispatch/dispatchFeatures.svg"
+              style="outline: 1px rgb(121, 121, 121) solid"
+            />
+            <div class="caption">
+              Feature Prioritization based on User Needs and Operator Painpoints
             </div>
           </div>
           <div class="case-text-contain">
-            <div class="case-container">
-              <div class="case-subheading">OPERATING STAGES</div>
-              <h2>
-                Mapping Key Actions and Decision Points with Human-in-the-Loop
-              </h2>
-              <p>
-                Based on the prioritized features, we worked to map each core
-                action on a timeline. We emphasized areas to
-                <span
-                  >incorporate humans in the decision-making process as</span
-                >
-                to maintain dispatcher’s autonomy and expertise in the
-                end-to-end emergency cycle.
-              </p>
+            <div class="case-subheading">OPERATING STAGES</div>
+            <h2>
+              Mapping Key Actions and Decision Points with Human-in-the-Loop
+            </h2>
+            <p>
+              Based on the prioritized features, we worked to map each core
+              action on a timeline. We emphasized areas to
+              <span>incorporate humans in the decision-making process as</span>
+              to maintain dispatcher’s autonomy and expertise in the end-to-end
+              emergency cycle.
+            </p>
 
-              <img
-                src="../images/dispatch/dispatchStages.svg"
-                style="outline: 1px rgb(121, 121, 121) solid"
-              />
-              <div class="caption">
-                Mission Flow Mapping to identify key decision points
-              </div>
+            <img
+              src="../images/dispatch/dispatchStages.svg"
+              style="outline: 1px rgb(121, 121, 121) solid"
+            />
+            <div class="caption">
+              Mission Flow Mapping to identify key decision points
             </div>
           </div>
           <div class="case-text-contain">
-            <div class="case-container">
-              <div class="case-subheading">SCENARIOS</div>
-              <h2>Generating Scenarios for Edge Cases</h2>
-              <p>
-                Scenario Generation highlighted different
-                <span>categories of emergencies and mitigation strategies</span>
-                to address them with the DispatchAI platform.
-              </p>
+            <div class="case-subheading">SCENARIOS</div>
+            <h2>Generating Scenarios for Edge Cases</h2>
+            <p>
+              Scenario Generation highlighted different
+              <span>categories of emergencies and mitigation strategies</span>
+              to address them with the DispatchAI platform.
+            </p>
 
-              <img src="../images/dispatch/dispatchScenarios.svg" alt="" />
-              <div class="caption">
-                Scenario Mapping to identify edge cases and mitigation
-                strategies for special-case calls
-              </div>
+            <img src="../images/dispatch/dispatchScenarios.svg" alt="" />
+            <div class="caption">
+              Scenario Mapping to identify edge cases and mitigation strategies
+              for special-case calls
             </div>
           </div>
 
@@ -639,109 +620,154 @@
         </div>
         <div class="case-container">
           <div class="case-text-contain">
-            <div class="case-container">
-              <div class="case-subheading">PRODUCT SPECIFICATION</div>
-              <h2>Defining Functional Requirements</h2>
-              <p>
-                On top of Product Design, I also acted as our team's
-                <span>Product Manager</span> to translate and define
-                requirements based on user insight. Our product goal is to
-                design intuitive and <span>customizable modules</span>
-                to enable dispatchers to make quicker decisions with more
-                confidence and less stress.
-              </p>
+            <div class="case-subheading">PRODUCT SPECIFICATION</div>
+            <h2>Defining Functional Requirements</h2>
+            <p>
+              On top of Product Design, I also acted as our team's
+              <span>Product Manager</span> to translate and define requirements
+              based on user insight. Our product goal is to design intuitive and
+              <span>customizable modules</span>
+              to enable dispatchers to make quicker decisions with more
+              confidence and less stress.
+            </p>
+            <br />
+            <p>
+              With my team, we defined several core functional requirements:
+            </p>
+
+            <ol>
+              <li>
+                Clear alert system for <span>handoff </span> between the AI and
+                Human Operator
+              </li>
+              <li>
+                Incident management panel with
+                <span>real-time action</span> suggestions
+              </li>
+              <li>
+                Modular and customizable panels for
+                <span>situational awareness</span>
+              </li>
+            </ol>
+
+            <img src="../images/dispatch/productSpecsDispatch.png" alt="" />
+            <div class="caption">
+              Product Specification Requirements Documentation for Dispatch AI
+            </div>
+          </div>
+          <div class="case-text-contain">
+            <div class="case-subheading">DATA PIPELINE</div>
+            <h2>The Dispatch AI Operational Loop</h2>
+            <p>
+              Dispatch AI is designed around a
+              <span>continuous operational loop</span>
+              where data is collected, analyzed, and integrated to inform
+              <span>real-time decision making</span>. Data is logged and used to
+              inform future decisions.
+            </p>
+            <img src="../images/dispatch/dataPipelineDispatch.png" alt="" />
+          </div>
+          <div class="case-text-contain">
+            <div class="case-subheading">LOFI</div>
+            <h2>Low Fidelity Mockups</h2>
+            <p>
+              Based on feedback from the LAPD, the lofi design prioritizes
+              <span>modularity</span> through panel-based widget design and
+              meaningful <span>organization of information</span> so operators
+              can quickly access information that drive action.<br />
               <br />
-              <p>
-                With my team, we defined several core functional requirements:
-              </p>
-
-              <ol>
-                <li>
-                  Clear alert system for <span>handoff </span> between the AI
-                  and Human Operator
-                </li>
-                <li>
-                  Incident management panel with
-                  <span>real-time action</span> suggestions
-                </li>
-                <li>
-                  Modular and customizable panels for
-                  <span>situational awareness</span>
-                </li>
-              </ol>
-
-              <img src="../images/dispatch/productSpecsDispatch.png" alt="" />
-              <div class="caption">
-                Product Specification Requirements Documentation for Dispatch AI
-              </div>
-            </div>
-          </div>
-          <div class="case-text-contain">
-            <div class="case-container">
-              <div class="case-subheading">DATA PIPELINE</div>
-              <h2>The Dispatch AI Operational Loop</h2>
-              <p>
-                Dispatch AI is designed around a
-                <span>continuous operational loop</span>
-                where data is collected, analyzed, and integrated to inform
-                <span>real-time decision making</span>. Data is logged and used
-                to inform future decisions.
-              </p>
-              <img src="../images/dispatch/dataPipelineDispatch.png" alt="" />
-            </div>
-          </div>
-          <div class="case-text-contain">
-            <div class="case-container">
-              <div class="case-subheading">LOFI</div>
-              <h2>Low Fidelity Mockups</h2>
-              <p>
-                Based on feedback from the LAPD, the lofi design prioritizes
-                <span>modularity</span> through panel-based widget design and
-                meaningful <span>organization of information</span> so operators
-                can quickly access information that drive action.<br />
-                <br />
-                The following were developed at this stage:
-              </p>
-              <ul style="margin-left: 22px">
-                <li>Modular panels</li>
-                <li>Modals and toasts</li>
-                <li>Improving and building on the Hackathon MVP</li>
-              </ul>
-              <img src="../images/dispatch/MidFiMockupsDispatch.png" alt="" />
-            </div>
+              The following were developed at this stage:
+            </p>
+            <ul style="margin-left: 22px">
+              <li>Modular panels</li>
+              <li>Modals and toasts</li>
+              <li>Improving and building on the Hackathon MVP</li>
+            </ul>
+            <img src="../images/dispatch/MidFiMockupsDispatch.png" alt="" />
           </div>
 
           <div class="case-text-contain">
-            <div class="case-container">
-              <div class="case-subheading">HIFI</div>
-              <h2>High Fidelity Mockups</h2>
-              <p>
-                After finalizing the overall information architecture, I
-                developed a design system with colors and icons aligned with the
-                <a
-                  href="https://en.wikipedia.org/wiki/NATO_Joint_Military_Symbology"
-                  target="_blank"
-                  >NATO Symbology guidelines</a
-                >
-                for military and government applications. The modules were
-                further refined with additional detail to align with the
-                <span>multi-tasking workflow</span> dispatchers are familiar
-                with. <span>Fully equipped</span> screens were prioritized over
-                limiting information.
-              </p>
-              <img src="../images/dispatch/HiFiMockupsDispatch.svg" alt="" />
-            </div>
+            <div class="case-subheading">HIFI</div>
+            <h2>High Fidelity Mockups</h2>
+            <p>
+              After finalizing the overall information architecture, I developed
+              a design system with colors and icons aligned with the
+              <a
+                href="https://en.wikipedia.org/wiki/NATO_Joint_Military_Symbology"
+                target="_blank"
+                >NATO Symbology guidelines</a
+              >
+              for military and government applications. The modules were further
+              refined with additional detail to align with the
+              <span>multi-tasking workflow</span> dispatchers are familiar with.
+              <span>Fully equipped</span> screens were prioritized over limiting
+              information.
+            </p>
+            <img src="../images/dispatch/HiFiMockupsDispatch.svg" alt="" />
           </div>
         </div>
+        <div class="case-section">
+          <h1><span>Final Design</span></h1>
+        </div>
+        <div class="case-container">
+          <div class="case-text-contain">
+            <div class="case-subheading">LIVE Emergency</div>
+            <h2>View emergencies in real-time</h2>
+            <p style="margin-bottom: 2vh">
+              Translate languages, view transcript, and approve recommendations
+              during a live call.
+            </p>
+            <video
+              src="/images/dispatch/demo/dispatchDemo_liveEmergency.mov"
+              autoplay
+              muted
+              loop
+              width="100%"
+              height="auto"
+            ></video>
+          </div>
+          <div class="case-text-contain">
+            <div class="case-subheading">INCIDENT MANAGEMENT</div>
+            <h2>Reviewing and approving action recommendations</h2>
+            <p style="margin-bottom: 2vh">
+              AI recommends actions based on historic and live data while the
+              operator reviews and selects those to approve.
+            </p>
+            <video
+              src="/images/dispatch/demo/dispatchDemo_confirmAction.mov"
+              autoplay
+              muted
+              loop
+              width="100%"
+              height="auto"
+            ></video>
+          </div>
+          <div class="case-text-contain">
+            <div class="case-subheading">CALL HISTORY LOG</div>
+            <h2>View previous calls to make decisions</h2>
+            <p style="margin-bottom: 2vh">
+              Dispatchers and Center Managers can view previous logs of call data to inform future decisions. 
+            </p>
+            <video
+              src="/images/dispatch/demo/dispatchDemo_log.mov"
+              autoplay
+              muted
+              loop
+              width="100%"
+              height="auto"
+            ></video>
+          </div>
+        </div>
+
         <div class="case-section">
           <h1><span>Micro Interactions</span></h1>
         </div>
         <div class="case-container">
           <div
             class="case-text-contain"
-            style="display: flex; flex-direction: row"
+            style="display: flex; flex-direction: row; gap: 22px"
           >
-            <div class="case-container" style="width: 50%">
+            <div style="width: 50%; gap: 4px">
               <h2>Toggle on-and-off Modules Panel</h2>
               <p>
                 Give operators more freedom and customizability with their
@@ -760,14 +786,15 @@
           </div>
           <div
             class="case-text-contain"
-            style="display: flex; flex-direction: row"
+            style="display: flex; flex-direction: row; gap: 22px"
           >
-            <div class="case-container" style="width: 50%">
+            <div style="width: 50%">
               <h2>Pathfinding Interactions</h2>
               <p>
-                Operators can monitor the path first-responders will
-                travel based on <span>live google maps data</span>. They can see the traffic between each waypoint, view
-                status updates, and <span>recommend a change in the route</span> if necessary.
+                Operators can monitor the path first-responders will travel
+                based on <span>live google maps data</span>. They can see the
+                traffic between each waypoint, view status updates, and
+                <span>recommend a change in the route</span> if necessary.
               </p>
             </div>
             <video
@@ -781,9 +808,31 @@
           </div>
           <div
             class="case-text-contain"
-            style="display: flex; flex-direction: row"
+            style="display: flex; flex-direction: row; gap: 22px"
           >
-            <div class="case-container" style="width: 50%">
+            <div style="width: 50%">
+              <h2>User Feedback</h2>
+              <p>
+                Keeping the operator-in-the-loop by
+                <span>incorporating their feedback during decision-making</span
+                >. This data will be used to inform and adapt future AI
+                recommendations.
+              </p>
+            </div>
+            <video
+              src="/images/dispatch/demo/dispatchDemo_feedback.mov"
+              autoplay
+              muted
+              loop
+              width="460px"
+              height="auto"
+            ></video>
+          </div>
+          <div
+            class="case-text-contain"
+            style="display: flex; flex-direction: row; gap: 22px"
+          >
+            <div style="width: 50%">
               <h2>Drag and Drop</h2>
               <p>
                 To enforce <span>customization and modularity</span>, all panels
@@ -800,22 +849,17 @@
         </div>
 
         <div class="case-text-contain">
-          <div class="case-container">
-            <div class="case-subheading">DESIGN SYSTEM</div>
-            <h2>Design System and Components</h2>
-            <p>
-              The design system is aligned with NATO Iconography and Color
-              Guidelines. Widget components are modulated to fit multiple use
-              cases for different emergency scenarios.
-            </p>
+          <div class="case-subheading">DESIGN SYSTEM</div>
+          <h2>Design System and Components</h2>
+          <p>
+            The design system is aligned with NATO Iconography and Color
+            Guidelines. Widget components are modulated to fit multiple use
+            cases for different emergency scenarios.
+          </p>
 
-            <hr class="divider" />
-            <img src="../images/dispatch/BrandingGuideDispatch.png" alt="" />
-            <img
-              src="../images/dispatch/ComponentsLibraryDispatch.svg"
-              alt=""
-            />
-          </div>
+          <hr class="divider" />
+          <img src="../images/dispatch/BrandingGuideDispatch.png" alt="" />
+          <img src="../images/dispatch/ComponentsLibraryDispatch.svg" alt="" />
         </div>
 
         <div
@@ -875,11 +919,6 @@
         ScrollReveal().reveal("img, .captain", {
           delay: 650,
           duration: 500,
-        });
-        ScrollReveal().reveal(".case-section, .case-text-contain", {
-          delay: 400,
-          duration: 600,
-          interval: 200,
         });
 
         ScrollReveal().reveal(".case-header-img img", {
