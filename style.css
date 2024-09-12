@@ -1763,7 +1763,7 @@ h1 span,
 .case-container {
   display: flex;
   flex-direction: column;
-  gap: 2vh;
+  gap: 1vh;
 }
 .case-text-contain img {
   width: 100%;
