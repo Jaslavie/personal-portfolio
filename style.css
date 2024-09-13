@@ -1619,7 +1619,14 @@ h1 span,
   top: 0;
   left: 0;
 }
-
+#serendipity-title h1 {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+}
 /* motto section */
 #motto {
   background-color: #101010;
@@ -2791,7 +2798,7 @@ html {
     flex-wrap: wrap;
   }
   .dashboard-contain-left {
-    order: 2; 
+    order: 2;
   }
   .dashboard-contain-left img {
     width: 92vw;
@@ -2805,12 +2812,18 @@ html {
     align-items: center;
     justify-content: center;
   }
+  .serendipity-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .memories img {
     margin-top: 0vh;
   }
   .memories-contain {
     margin: 5vh 2vh;
-    gap:10vh;
+    gap: 10vh;
   }
   .center-text-contain {
     gap: 4px;
@@ -2828,7 +2841,6 @@ html {
     flex-direction: row;
     width: 100%;
     gap: 12px;
-
   }
   .inventory-item a {
     height: 70px;
@@ -2838,9 +2850,9 @@ html {
     width: 100%;
   }
   .dashboard-contain {
-    order: 1; 
+    order: 1;
   }
-  .skills-contain{
+  .skills-contain {
     display: none;
   }
   .memories h3,
@@ -2906,14 +2918,48 @@ html {
   .head-contain {
     padding: 10vh 5vh 0vh 5vh;
   }
-  h1 span {
+
+  .serendipity-header h1, h1, h1 span {
     font-size: 32px;
   }
+  .seren-img
   .head-contain {
     padding: 0;
   }
   .container {
     padding: 2vh 5vh;
+  }
+  /** footer */
+  #contact h1 {
+    text-align: left;
+  }
+  .contact-contain {
+    margin: 0;
+    gap: 4px;
+  }
+  .favWrapper {
+    gap: 12px;
+  }
+  .tech-stack {
+    height: fit-content;
+    background-image: none;
+  }
+  #serendipity-title h1 {
+    flex-direction: column;
+    font-size: 28px;
+  }
+  .typed-cursor {
+    display: none;
+  }
+  .favCard {
+    min-width: 100px;
+  }
+  .callout-p {
+    font-size: 14px;
+  }
+  .serendipity-contain {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -3002,9 +3048,7 @@ html {
   .favContain i {
     display: none;
   }
-  .callout-p {
-    font-size: 18px;
-  }
+  
   .arrowContain {
     display: none;
   }
@@ -3019,9 +3063,7 @@ html {
   .bottom-header-text {
     font-size: 48px;
   }
-  p {
-    font-size: 16px;
-  }
+
   .center-text {
     font-size: 28px;
   }
@@ -3270,5 +3312,3 @@ html {
 ol {
   padding-left: 4em;
 }
-
-
