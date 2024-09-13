@@ -2880,9 +2880,7 @@ html {
     padding: 2vh;
     gap: 12px;
   }
-  h1 {
-    font-size: 60px;
-  }
+
   .subsub-title,
   .subsub-title span {
     font-size: 40px;
@@ -2916,7 +2914,7 @@ html {
   }
 
   .head-contain {
-    padding: 10vh 5vh 0vh 5vh;
+    padding: 10vh 2vh 0vh 2vh;
   }
 
   .serendipity-header h1, h1, h1 span {
@@ -3056,9 +3054,7 @@ html {
     width: 100%;
   }
 
-  #header {
-    padding: 0 5vw;
-  }
+  
   .type-container,
   .bottom-header-text {
     font-size: 48px;
@@ -3075,9 +3071,10 @@ html {
   }
   .head-contain h1,
   .head-contain h1 span {
-    font-size: 36px;
+    font-size: 32px;
     line-height: 55px;
   }
+  
   .work-heading p {
     display: none;
   }
