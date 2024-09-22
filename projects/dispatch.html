@@ -119,7 +119,8 @@
               <p>
                 UX Research <br />
                 Design Systems <br />
-                Usability Testing <br />
+                Data Engineering <br />
+                Full-Stack Development <br />
                 Interaction Design
               </p>
             </div>
@@ -139,23 +140,45 @@
         <div class="case-header-img">
           <img src="../images/dispatch/dispatchHeading.svg" alt="" />
         </div>
-
-        <div class="case-text-contain">
-          <div class="case-subheading">SUMMARY</div>
-          <h2>🏆 Winning the largest AI Hackathon in the World</h2>
-          <p>
-            Dispatch was initially built out of a spontaneous trip to the
-            <span>Berkeley AI Hackathon</span> , where my team won
-            <span>the Grand Prize with $50,000</span>
-            in investment from Skydeck, and an additional $14,000 in credits
-            from <span>Intel and OpenAI</span>. Post-Hackathon, we decided to
-            take this project further and launched a venture with Skydeck, the
-            #2 top ranked Startup Accelerator in the US.
-            <span>I worked as the solo designer.</span>
-          </p>
-          <img src="../images/dispatch/dispatchBerkeley.jpg" alt="" />
-          <div class="caption">
-            Us at the Berkeley AI Hackathon Closing Ceremony
+        <div class="case-container">
+          <div class="case-text-contain">
+            <div class="case-subheading">SUMMARY</div>
+            <h2>🏆 Winning the largest AI Hackathon in the World</h2>
+            <p>
+              Dispatch was initially built out of a spontaneous trip to the
+              <span>Berkeley AI Hackathon</span>, where my team won
+              <span>the Grand Prize with $50,000</span>
+              in investment from Skydeck, and an additional $14,000 in credits
+              from <span>Intel and OpenAI</span>. Post-Hackathon, we decided to
+              take this project further and launched a venture with Skydeck, the
+              #2 top ranked Startup Accelerator in the US with less than a 1%
+              acceptance rate.
+              <span>I worked as the solo designer.</span>
+            </p>
+            <img src="../images/dispatch/dispatchBerkeley.jpg" alt="" />
+            <div class="caption">
+              Us at the Berkeley AI Hackathon Closing Ceremony
+            </div>
+          </div>
+          <div class="case-text-contain">
+            <h2>⚙️ Re-Architecting the Data Processing Pipeline</h2>
+            <p>
+              Outside of Design, I also developed the front-end and back-end of
+              DispatchAI, refactored the database pipeline to more efficiently
+              handle real-time calls, and developed a Machine Learning Model to
+              simplify call-handling! Click <a href="#data">here</a> to view the
+              full code, thought process, and design tradeoffs!
+            </p>
+          </div>
+          <div class="case-text-contain">
+            <h2>✨ Ownership</h2>
+            <p>
+              <span>I owned the entire design of DispatchAI</span>
+              , from user research, developing the MVP, to the branding, final
+              user interface, and micro-interactions. I collaborated with 3
+              engineers to conduct customer discovery interviews and explore
+              technical tradeoffs.
+            </p>
           </div>
         </div>
         <div class="case-section">
@@ -705,13 +728,57 @@
             </p>
             <img src="../images/dispatch/HiFiMockupsDispatch.svg" alt="" />
           </div>
+
+          <div class="case-text-contain">
+            <h2>Information Flow for Actionable Data</h2>
+            <p>
+              This is based on how humans naturally read information:
+              <span>top down and left right</span>. This is how data is
+              represented to prevent passive ingestion and promote
+              <span>active decision-making with data</span>.
+            </p>
+            <br /><br />
+            <ul style="margin-left: 22px">
+              <li>
+                <span>Top:</span> high level metrics and health checks for quick
+                decision-making
+              </li>
+              <li>
+                <span>Middle:</span> most complex information for detailed
+                analytics, drill down, strategy
+              </li>
+              <li>
+                <span>Bottom:</span> operational control and resource management
+              </li>
+            </ul>
+            <hr class="divider" />
+            <img src="../images/dispatch/dataOrgDispatch.png" alt="" />
+          </div>
+          <div class="case-text-contain">
+            <div class="case-subheading">ITERATIONS</div>
+            <h2>Pre and Post Hackathon Iterations</h2>
+            <p>
+              I improved on the MVP designs from the Hackathon based on new user
+              interviews and conversations we had with dispatchers and
+              government officials.
+              <br /><br />
+              Design decisions that were made:
+            </p>
+            <ul style="margin-left: 22px">
+              <li>Incorporate more modularity and customization</li>
+              <li>Interactive map interface for situational awareness</li>
+              <li>Separate incident management panel for action planning</li>
+            </ul>
+            <hr class="divider" />
+            <img src="../images/dispatch/iterationDispatch.png" alt="" />
+          </div>
         </div>
         <div class="case-section">
           <h1><span>Final Design</span></h1>
         </div>
         <div class="case-container">
           <div class="case-text-contain">
-            <div class="case-subheading">LIVE Emergency</div>
+            <div class="case-subheading">LIVE EMERGENCY</div>
             <h2>View emergencies in real-time</h2>
             <p style="margin-bottom: 2vh">
               Translate languages, view transcript, and approve recommendations
@@ -751,6 +818,22 @@
             </p>
             <video
               src="/images/dispatch/demo/dispatchDemo_log.mov"
+              autoplay
+              muted
+              loop
+              width="100%"
+              height="auto"
+            ></video>
+          </div>
+          <div class="case-text-contain">
+            <div class="case-subheading">DATA MANAGEMENT</div>
+            <h2>Forecast future call volumes and provide recommendations</h2>
+            <p style="margin-bottom: 2vh">
+              Forecast future calls based on historic call data and geographic
+              metrics.
+            </p>
+            <video
+              src="/images/dispatch/demo/dispatchDemo_stats.mov"
               autoplay
               muted
               loop
@@ -849,19 +932,158 @@
           </div>
         </div>
 
-        <div class="case-text-contain">
-          <div class="case-subheading">DESIGN SYSTEM</div>
-          <h2>Design System and Components</h2>
-          <p>
-            The design system is aligned with NATO Iconography and Color
-            Guidelines. Widget components are modulated to fit multiple use
-            cases for different emergency scenarios.
-          </p>
-
-          <hr class="divider" />
-          <img src="../images/dispatch/BrandingGuideDispatch.png" alt="" />
-          <img src="../images/dispatch/ComponentsLibraryDispatch.svg" alt="" />
+        <div class="case-section">
+          <h1 id="data"><span>Code and Data Processing</span></h1>
         </div>
+        <div class="case-container">
+          <div class="case-text-contain">
+            <div class="case-subheading"></div>
+            <h2>Data Processing Pipeline for Live Communication</h2>
+            <p>
+              I re-calibrated the data management system from
+              <span>Postgres to Redis</span> to handle real-time calls. Research
+              indicated that <span>speedy communication is <i>crucial</i></span
+              >. The technical handling of live calls has
+              <span>significant impact on user experience</span> and enabling a
+              scalable architecture. <br /><br />
+              I re-evaluated and re-programmed the codebase to address the
+              inefficiency with Postgres.
+            </p>
+            <img src="../images/dispatch/dataPipeline2Dispatch.svg" alt="" />
+          </div>
+
+          <div class="case-text-contain">
+            <div class="case-subheading"></div>
+            <h2>Predictive Analytics for Event Forecasting</h2>
+            <p>
+              I programmed a Machine Learning Pipeline with historic call data
+              (sourced from online call datasets) to recommend actions, live
+              script messages, and forecast high volume call periods. I trained
+              a model with
+              <span>Long Short Term Memory (LSTM)</span> and the
+              <span>GPT4</span> to generate script recommendations.
+            </p>
+            <img
+              src="../images/dispatch/predictiveAnalyticsDispatch.svg"
+              alt=""
+            />
+            <div class="caption">
+              UI of Data Dashboard that forecasts future call volumes and
+              provides recommendations
+            </div>
+            <img src="../images/dispatch/trainModelDispatch.svg" alt="" />
+            <div class="caption">
+              Python code snippet for training the LSTM model on historic call
+              data
+            </div>
+          </div>
+          <div class="case-text-contain">
+            <div class="case-subheading"></div>
+            <h2>Evaluating Model Performance</h2>
+            <p>
+              I developed <span>benchmark tests</span> to evaluate the
+              <span
+                >comparative efficiency of a sequential model vs parallel
+                processing</span
+              >. Since the speed of data processing directly impacts the way
+              information is consumed by the user and the response time (a core
+              business metric), this exercise gave extra context for the design.
+            </p>
+            <div class="case-text-contain-image" style="margin-top: 22px">
+              <h3>Benchmarking OpenAI GPT4 Model</h3>
+              <p>Measuring latency of a single input prediction.</p>
+              <img src="../images/dispatch/benchmarkGPTDispatch.png" alt="" />
+              <div class="caption">
+                Graph visualization of latency between the sequential model and
+                GPT4
+              </div>
+
+              <img src="../images/dispatch/benchmarkGPTDispatch2.png" alt="" />
+              <div class="caption">
+                Terminal output of the benchmark testing
+              </div>
+            </div>
+            <div class="case-text-contain-image">
+              <h3>Benchmarking Mistral LLM Model</h3>
+              <p>
+                Large Language Model used for Complex Natural Language Tasks.
+              </p>
+              <img src="../images/dispatch/benchmarkMistral.png" alt="" />
+              <div class="caption">
+                Analyzing the latency between the Mistral LLM and GPT4
+              </div>
+            </div>
+          </div>
+          <div class="case-text-contain">
+            <h2>💡 Verdict</h2>
+            <p>
+              Caller scripts are streamed sequentially in real-time. Thus, LTSM
+              is ideal for simpler non-emergency calls with
+              <span
+                >limited computational overhead and faster response times</span
+              >. <br /><br />
+              <span>Latency:</span> LTSM has more consistent latency. Mistral
+              increases latency proportional to batch size
+              <br />
+              <span>Accuracy:</span> Mistral is ~13% more accurate than LTSM,
+              however the latency is less consistent
+            </p>
+          </div>
+          <div class="case-text-contain">
+            <div class="case-subheading">TRADEOFFS</div>
+            <h2>Translating Technical Insights to Design Decisions</h2>
+            <p>
+              I evaluated the technical and design trade-offs of
+              <span>implementing a simpler, LSTM algorithm</span> and
+              corresponding design decisions based on user and business goals.
+            </p>
+            <img src="../images/dispatch/tradeOffDispatch.svg" alt="" />
+          </div>
+          <div class="case-text-contain">
+            <h2>✨ Key Insight</h2>
+            <h3>
+              Evaluating the Engineering trade-offs revealed that
+              <span
+                >implementing fully equipped modules matters more than reducing
+                cognitive load</span
+              >
+              to enhance situational awareness. Dispatchers are already familiar
+              with multiple screens.
+              <span>Removing these would be limiting</span> to what they're
+              already trained to use.
+            </h3>
+          </div>
+        </div>
+        <div class="case-container">
+          <div class="case-text-contain">
+            <div class="case-subheading">DESIGN SYSTEM</div>
+            <h2>Design System and Components</h2>
+            <p>
+              The design system is aligned with NATO Iconography and Color
+              Guidelines. Widget components are modulated to fit multiple use
+              cases for different emergency scenarios.
+            </p>
+
+            <hr class="divider" />
+            <img src="../images/dispatch/BrandingGuideDispatch.png" alt="" />
+            <img
+              src="../images/dispatch/ComponentsLibraryDispatch.svg"
+              alt=""
+            />
+          </div>
+          <div class="case-text-contain">
+            <div class="case-subheading">DESIGN SYSTEM</div>
+            <h2>Panels and Modules</h2>
+            <p>Panel and modal components for a modular design palette.</p>
+
+            <hr class="divider" />
+
+            <img src="../images/dispatch/componentsDispatch.svg" alt="" />
+            <img src="../images/dispatch/componentModulesDispatch.png" alt="" />
+            <img src="../images/dispatch/PanelsDispatch.svg" alt="" />
+          </div>
+        </div>
+
         <div class="case-container">
           <div
             class="case-section"
