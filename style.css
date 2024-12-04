@@ -33,7 +33,7 @@
 
   /* text */
   --title: 48px;
-  --heading: 28px;
+  --heading: 26px;
   --subparagraph: 22px;
   --paragraphs: 16px;
   --textColor: #ffffffc5;
@@ -123,7 +123,7 @@ li span {
 h1 {
   font-family: var(--font);
   font-size: var(--title);
-  font-weight: normal;
+  font-weight: 400;
   background: var(--textGradient);
   background-clip: text;
   -webkit-background-clip: text;
@@ -145,6 +145,8 @@ h3 {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.75);
   font-size: 22px;
+  margin: 0;
+  height: fit-content;
 }
 h3 span {
   font-style: italic;
@@ -826,15 +828,17 @@ body.dropdown-nav.open {
 
 .head-contain {
   display: grid;
-  height: 100vh;
+  height: 96vh;
   justify-items: center;
   align-items: end;
   color: #fff;
-  overflow-y: hidden;
+  overflow: visible;
   background-image: url("images/backgroundHero.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  align-content: center;
+  gap: 22px;
 }
 .planetContain {
   z-index: 1;
@@ -843,12 +847,91 @@ body.dropdown-nav.open {
   justify-content: center;
   align-items: center;
   width: 100%;
+  position: absolute;
 }
+
 .planetContain img {
   border-radius: 0;
   width: 40vw;
   margin: 0;
 }
+/* text animation for hero */
+@keyframes letterFade {
+  0% {
+    opacity: 0;
+    color: #8785ff;
+    transform: translateY(22px);
+    background: linear-gradient(180deg, #424248, #adadad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100% {
+    opacity: 1;
+    color: white;
+    transform: translateY(0);
+    background: linear-gradient(180deg, #ffffff, #ffffff81);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.reveal-text {
+  display: inline-block;
+}
+
+.reveal-text span {
+  display: inline-block;
+  opacity: 0;
+  animation: letterFade 0.5s ease-out forwards;
+  font-weight: 400;
+  font-family: var(--font);
+  font-style: normal;
+}
+
+.reveal-text .highlight {
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 500;
+  -webkit-background-clip: initial;
+  -webkit-text-fill-color: white;
+  background-image: none;
+  color: white;
+  animation: letterFade 0.5s ease-out forwards;
+}
+/* tag animation for hero */
+@keyframes tagFadeUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+#header .tag-wrap {
+  opacity: 0; /* Start hidden */
+  animation: tagFadeUp 0.8s ease-out forwards;
+  /* Calculate delay based on text animation duration + total characters */
+  animation-delay: calc(0.5s + (38ms * 60)); /* 0.5s is letterFade duration, 60 is approx char count */
+}
+
+/* Individual tag animation */
+#header .tagAbout {
+  opacity: 0;
+  animation: tagFadeUp 0.8s ease-out forwards;
+}
+
+/* Stagger the tags */
+#header .tagAbout:nth-child(1) {
+  animation-delay: calc(0.5s + (38ms * 60)); /* Same as tag-wrap */
+}
+
+#header .tagAbout:nth-child(2) {
+  animation-delay: calc(0.5s + (38ms * 60) + 0.4s); /* Add 0.2s delay for second tag */
+}
+
+/* navigation */
 nav ul li {
   /* creates horizontal alignment */
   display: inline-block;
@@ -943,7 +1026,7 @@ p.black {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
+  padding: 0 23vw;
   gap: 18px;
 }
 
@@ -1126,13 +1209,13 @@ p.black {
 .bookshelf-contain,
 .ideation-contain {
   border: var(--cardBorder);
-  padding: 22px;
+  padding: 12px;
   display: grid;
   grid-template-columns: auto;
   border-radius: var(--containerBorderRadius);
-  gap: 12px;
-  width: fit-content;
-  height: 100%;
+  gap: 6px;
+  width: fill-container;
+  
 }
 .date {
   font-size: 14px;
@@ -2192,6 +2275,7 @@ h1 span,
 /* use for all containing a header and a paragraph underneath */
 .head-text-contain {
   margin-bottom: 10vh;
+  
 }
 .emoji-contain {
   padding: 4vh;
