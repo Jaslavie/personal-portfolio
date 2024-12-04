@@ -549,12 +549,12 @@ h4 {
 
 .btn {
   background-color: var(--prim);
-  padding: 8px 18px;
+  padding: 12px 22px;
   border-radius: var(--cardBorderRadius);
   max-width: 20em;
   width: fit-content;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 22px;
   font-family: var(--textfont);
   white-space: nowrap;
 }
@@ -577,43 +577,60 @@ h4 {
 }
 
 .contact-btn i {
-  font-size: 22px;
+  position: relative;
+  color: white;
 }
-.contact-btn:hover i {
-  color: var(--prim);
+
+.contact-btn i::after,
+.btn-new a::after,
+.btn-nav a::after,
+.btn a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: white;
+  transition: width 0.3s ease;
 }
-.btn:hover,
+
+.contact-btn:hover i::after {
+  width: 100%;
+}
+
 .contact-btn:hover {
-  background-color: #fff;
-  /* border: var(--borderHover);
-  filter: var(--hoverBlur); */
+  border: 1px solid white;
 }
 .btn-new a {
   display: grid;
   align-items: center;
   justify-content: center;
   grid-auto-flow: column;
-  gap: 8px;
-  transition: background-color 300ms ease;
+  gap: 12px;
+  border: var(--border);
   z-index: 1000;
+  background-color: transparent;
+  transition: background-color 300ms ease, border 300ms ease;
 }
+.btn-new:hover {
+  background-color: var(--card);
+  border: var(--outline);
+}
+
 .btn-new a p {
   font-weight: 500;
   color: #ffffff;
-}
-
-.btn-new:hover a {
-  color: var(--prim);
 }
 .btn-sec:hover a p {
   color: #201f2d;
 }
 .btn-new i {
-  font-size: 20px;
+  font-size: 24px;
 }
 .btn-new:hover i {
-  color: var(--prim);
-  transform: translateX(4px);
+  color: white;
+  transform: translateX(6px);
 }
 .btn-sec:hover i {
   color: #201f2d;
