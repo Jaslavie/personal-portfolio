@@ -1107,7 +1107,7 @@ p.black {
   margin-top: -15vh;
 }
 .inventory-item p {
-  color: var(--cardBorderColor);
+  color: var(--textColor);
   transition: color 500ms ease;
   white-space: nowrap;
   font-size: 14px;
@@ -1276,7 +1276,7 @@ p.black {
   position: relative;
   display: grid;
   grid-template-columns: auto;
-  gap: 22px;
+  gap: 18px;
   height: 250px;
 }
 
