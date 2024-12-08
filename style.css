@@ -151,13 +151,15 @@ a:hover::after {
   width: calc(100% - 4px);
 }
 
-/* Exception for links that shouldn't have this effect */
+/* ignore this for link effects */
 .nav-container a::after,
 .tag-wrap a::after,
 .work-image a::after,
 .seren-item a::after,
 .seren-item-shelf a::after,
-.current-contain a {
+.current-contain a,
+.seren-item a,
+.seren-item-shelf a {
   display: none;
   text-decoration: none;
 }
