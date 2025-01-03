@@ -42,7 +42,7 @@
           </a>
           <div class="right-nav">
             <ul>
-              <li id="work-nav"><a href="#projects">work</a></li>
+              <li id="work-nav"><a href="index.html#projects">work</a></li>
               <li id="hobbies-nav">
                 <a href="serendipity.html">serendipity</a>
               </li>
@@ -58,7 +58,7 @@
 
       <div class="dropdown-nav">
         <div class="column">
-          <li><a href="#projects">work</a></li>
+          <li><a href="index.html#projects">work</a></li>
           <li><a href="serendipity.html">serendipity</a></li>
           <li><a href="lists.html">lists</a></li>
           <li><a href="about.html">about</a></li>
@@ -201,8 +201,13 @@
           origin: "bottom",
           distance: "15px",
         });
+        ScrollReveal().reveal(".list-container", {
+          delay: 900,
+          origin: "bottom",
+          distance: "15px",
+        });
         ScrollReveal().reveal(".list-item h3, .list-item p", {
-          delay: 800,
+          delay: 1000,
           interval: 200,
           origin: "bottom",
           distance: "15px",
