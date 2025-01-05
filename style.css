@@ -1305,11 +1305,19 @@ p.black {
   height: 100%;
 }
 .list-container {
+  flex-direction: column;
+  gap: 22px;
+  margin-top: 22px;
+  padding: 18px;
+}
+.list-container h3 {
+  color: white;
+}
+.list-row {
+  display: flex;
   flex-direction: row;
   gap: 12px;
-  margin-top: 22px;
-  min-height: 340px;
-  padding: 18px;
+  width: 100%;
 }
 .list-item {
   display: flex;
