@@ -2821,6 +2821,16 @@ html {
 
 /* footer wraps + hero image replaced, flex wrap pins*/
 @media (max-width: 768px) {
+  .center-text, .center-text span {
+    font-size: 36px;
+  }
+  /** footer **/
+  .contact-mid, .contact-right {
+    width: 100%;
+  }
+  .contact-contain img {
+    display: none;
+  }
   /** lists page **/
   .list-row {
     flex-direction: column;
@@ -2830,10 +2840,33 @@ html {
     text-align: left;
     line-height: 1.2;
   }
-  .callout-p {
+  #lists .callout-p {
     text-align: left !important;
   }
+  /** serendipity page **/
+  #serendipity-title h1 {
+    align-items: flex-start;
+    flex-direction: row;
+    font-size: 28px;
+    gap: 4px;
+  }
+  #serendipity-title h1 span {
+    margin-top: -4px;
+  }
+  .auto-type {
+    height: 100%;
+  }
+  /** about page **/
+  .inventory-item {
+    width: 100%;
+  }
   /** home page **/
+  .header-text-contain {
+    padding: 0;
+  }
+  .tag-wrap {
+    justify-content: center;
+  }
   .planetContain img {
     width: 80vw;
   }
@@ -3156,10 +3189,6 @@ html {
   .tech-stack {
     height: fit-content;
     background-image: none;
-  }
-  #serendipity-title h1 {
-    flex-direction: column;
-    font-size: 28px;
   }
   .typed-cursor {
     display: none;
