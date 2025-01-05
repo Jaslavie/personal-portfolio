@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- metadata -->
     <title>Jasmine Wu</title>
-    <meta
-      name="description"
-      content="Jasmine is a design engineer deeply interested in solving hard problems in AI and Defense Tech. Attending Hackathons (15x winner) and studying CS & Neuroscience @ UCI on the side."
-    />
+    <meta name="description" content="Jasmine is a design engineer deeply interested in solving hard problems in AI and Defense Tech. Attending Hackathons (15x winner) and studying CS & Neuroscience @ UCI on the side." />
+    <meta name="keywords" content="jasmine wu, startup, design, engineering, defense, hackathons, builder, founder" />
+    <meta name="author" content="Jasmine Wu" />
+    <meta name="robots" content="index, follow" />
+    
     <link rel="stylesheet" href="style.css" />
     <link
       rel="shortcut icon"
@@ -176,6 +178,9 @@
                 Nationalism and morale
               </p>
               <p>
+                Markov Prediction models & Decision-making
+              </p>
+              <p>
                 Optimizing life... 
               </p>
           </div>
@@ -234,6 +239,16 @@
           origin: "bottom",
           distance: "15px",
         });
+      </script>
+      <!-- metadata -->
+      <script src="scripts/structured-data.js"></script>
+      <script type="application/ld+json">
+          document.addEventListener('DOMContentLoaded', function() {
+              const structuredDataScript = document.createElement('script');
+              structuredDataScript.type = 'application/ld+json';
+              structuredDataScript.text = JSON.stringify(generateStructuredData());
+              document.head.appendChild(structuredDataScript);
+          });
       </script>
     </body>
   </html>

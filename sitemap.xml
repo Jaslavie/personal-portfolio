@@ -1,0 +1,17 @@
+<!-- help search engines understand the website -->
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://jaslavie.com</loc>
+        <lastmod>2025-01-05</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <images>
+            <image>
+                <loc>https://jaslavie.com/images/about/profilePictureJasmineBW.jpg</loc>
+                <title>Jasmine Wu</title>
+                <caption>Jasmine Wu</caption>
+            </image>
+        </images>
+    </url>
+</urlset>
