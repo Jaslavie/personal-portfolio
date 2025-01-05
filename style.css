@@ -2821,6 +2821,19 @@ html {
 
 /* footer wraps + hero image replaced, flex wrap pins*/
 @media (max-width: 768px) {
+  /** lists page **/
+  .list-row {
+    flex-direction: column;
+    gap: 4vh;
+  }
+  .gradient-text {
+    text-align: left;
+    line-height: 1.2;
+  }
+  .callout-p {
+    text-align: left !important;
+  }
+  /** home page **/
   .planetContain img {
     width: 80vw;
   }
