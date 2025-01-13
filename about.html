@@ -663,7 +663,7 @@
                 <h3>Bucket List</h3>
                 <div class="sticky-contain">
                   <div class="sticky-note-left">
-                    <p><span>speak at 50 conferences, hackathons, ect</span></p>
+                    <p><span>speak at 50 conferences, hackathons, etc.</span></p>
                   </div>
                   <div
                     class="sticky-note-right"
@@ -686,24 +686,53 @@
           </div>
         </div>
       </div>
-      <div class="memories-contain">
+
+      <div class="child" id="missions">
+        <h1><span>My life's mission: redefine how humans interact with complex systems.</span></h1>
+        <p style="margin-top: 10px" class="p-callout">Super curious about novel interfaces and human-ai collaboration in unpredictable environments. Some things I've worked on:
+        </p>
+        <div style="margin-top: 12px; display: flex; flex-direction: column; gap: 4px; margin-left: 22px;">
+          <p>‣ decision-making software for the military @ <a href="https://www.palantir.com/platforms/gotham/" target="_blank">palantir</a></p>
+     
+          <p>‣ conversational AI agents to reduce response times for 911 call centers @ <a href="https://devpost.com/software/dispatch-ai?ref_content=user-portfolio&ref_feature=in_progress" target="_blank">berkeley skydeck</a></p>
+
+          <p>‣ adaptive reasoning system and mission control software for spacesuits @ <a href="https://www.nasa.gov/learning-resources/spacesuit-user-interface-technologies-for-students/" target="_blank">nasa jsc</a></p>
+          
+          <p>‣ telemetry dashboard for electric race cars @ <a href="https://www.fsaeonline.com/" target="_blank">FSAE</a></p>
+        </div>
+        <img src="images/about/mission.png" style="width: 100%; margin-top: 8vh;" />
+      </div>
+
+      <hr class="divider">
+      <div class="child" style="display: flex; flex-direction: column; gap: 6vh;">
+        <div style="display: flex; flex-direction: column; margin-bottom: 22px;">
+          <h1><span>Sidequests: Hacking and Community-building</span></h1>
+        </div>
+
+        
         <!-- hackathons -->
-        <div class="memories">
-          <p class="callout-p">my favorite moments...</p>
-          <h3 style="color: white">
-            Traveling 3,000+ miles to attend 18 hackathons...
-          </h3>
-          <img src="images/about/hackathons.png" />
+        <div class="section" style="gap: 22px; display: flex; flex-direction: column;" id="hackathons">
+          <div>
+            <h2>Hackathons.</h2>
+            <p style="width: 500px">I went to a <a href="https://devpost.com/jaslavie" target="_blank">hackathon</a> every weekend of my freshman year of uni. Won 15/17 hackathons and flew 3,000+ miles.</p>
+          </div>
+          
+          <img style="width: 110%; align-self: center;" src="images/about/hackathons.svg" />
         </div>
+
+        <hr class="divider">
+
         <!-- design -->
-        <div class="memories">
-          <p class="callout-p">my favorite moments...</p>
-          <h3 style="color: white">
-            Building a 300+ member design community 🤍
-          </h3>
-          <img src="images/about/design.png" />
+        <div class="section" style="gap: 22px; display: flex; flex-direction: column;" id="design">
+          <div>
+            <h2>
+              People.
+            </h2>
+            <p style="width: 500px">I hosted workshops, organized the <a href="https://designatuci.com/designathons/" target="_blank">largest design competition</a> in Socal, and met interesting folks along the way.</p>
+          </div>
+          
+          <img style="width: 110%; align-self: center; margin-top: -50px;" src="images/about/designs.svg" />
         </div>
-        <h3>a toast to serendipity 🥂</h3>
       </div>
       <div class="coffee-contain">
         <div class="center-text-contain">
@@ -760,7 +789,7 @@
         });
 
         // Bookshelf animations
-        ScrollReveal().reveal(" .bookshelf-item, .memories", {
+        ScrollReveal().reveal(" .bookshelf-item, .memories, .child", {
           delay: 100,
           origin: "bottom",
           interval: 500,
@@ -794,7 +823,7 @@
           distance: "50px",
         });
 
-        ScrollReveal().reveal(".dash-left, .memories h3, .memories p", {
+        ScrollReveal().reveal(".dash-left", {
           delay: 500,
           origin: "bottom",
           distance: "50px",
@@ -807,12 +836,18 @@
         });
 
         ScrollReveal().reveal(
-          ".dash-header-contain, .dash-header-contain p, .memories img",
+          ".dash-header-contain, .dash-header-contain p,",
           {
             delay: 1600,
             duration: 3000,
           },
         );
+
+        ScrollReveal().reveal("#missions h1, #missions p, #missions img,.memories h1 span, #hackathons, #design", {
+          delay: 80,
+          interval: 300,
+          duration: 1000,
+        });
       </script>
 
       <!-- Glitch Text Effect -->

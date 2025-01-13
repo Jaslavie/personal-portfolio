@@ -445,13 +445,13 @@ h4 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 40vh;
-  margin: 40vh 0;
+  gap: 12vh;
+  margin: 12vh 0;
 }
 .memories {
-  display: grid;
-  place-content: center;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
 }
 .memories h3,
 .memories p {
@@ -1188,7 +1188,6 @@ p.black {
 }
 .memories img {
   width: 100%;
-  margin-top: -15vh;
 }
 .inventory-item p {
   color: var(--textColor);
@@ -1447,7 +1446,6 @@ p.black {
 
 .prev-items-contain {
   overflow-y: scroll;
-  margin-top: 12px;
   display: flex;
   flex-direction: column;
   align-content: flex-start;
@@ -1458,13 +1456,14 @@ p.black {
   margin: 0;
 }
 .prev-item {
-  border-radius: var(--cardBorderRadius);
-  border: var(--cardBorder);
+  /* border-radius: var(--cardBorderRadius);
+  border: var(--cardBorder); */
+  border-bottom: var(--cardBorder);
   display: grid;
   align-items: flex-start;
   justify-content: flex-start;
   height: fit-content;
-  padding: 12px;
+  padding: 16px;
   grid-auto-flow: column;
   gap: 18px;
   background-color: var(--card);
@@ -1473,10 +1472,11 @@ p.black {
   height: fit-content;
   align-items: center;
   width: 100%;
-  border-radius: var(--cardBorderRadius);
-  border: var(--cardBorder);
+  /* border-radius: var(--cardBorderRadius);
+  border: var(--cardBorder); */
+  border-bottom: var(--cardBorder);
   background-color: var(--card);
-  padding: 18px;
+  padding: 16px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
