@@ -1303,8 +1303,7 @@ p.black {
 .skills-contain,
 .prev-contain,
 .bookshelf-contain,
-.ideation-contain, 
-.list-container {
+.ideation-contain {
   border: var(--cardBorder);
   padding: 12px;
   display: flex;
@@ -1323,7 +1322,7 @@ p.black {
   flex-direction: column;
   gap: 22px;
   margin-top: 22px;
-  padding: 18px;
+  padding: 18px 0;
 }
 .list-container h3 {
   color: white;
@@ -1454,7 +1453,7 @@ p.black {
   font-size: 16px;
   font-weight: 200;
 }
-.sticky-note .callout-p {
+.sticky-note .callout-p, .sticky-note-left .callout-p, .sticky-note-right .callout-p {
   font-size: 12px;
   color: #ffffff7e;
 }
@@ -3581,4 +3580,47 @@ html {
 }
 ol {
   padding-left: 4em;
+}
+
+/* journals */
+.content-section {
+  margin: 8vh 0;
+}
+
+#journal {
+  margin: 0 15vw;
+}
+#journal .callout-p {
+  margin-bottom: 8vh;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+}
+#journal .link {
+  margin-bottom: 8vh;
+}
+#journal h2 span{
+  font-size: 30px;
+  color: white;
+}
+.content-section p {
+  margin: 2vh 0;
+  line-height: 1.6;
+  color: var(--textColor);
+}
+.content-section img {
+  width: 100%;
+  height: auto;
+}
+
+.back-button {
+  margin-bottom: 2vh;
+}
+
+.back-button a {
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+
+.back-button a:hover {
+  opacity: 0.8;
 }
