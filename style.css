@@ -2,7 +2,7 @@
   --font: "Helvectica Neue", sans-serif;
   --secfont: "Inconsolata", sans-serif;
   --textfont: "Helvetica Neue", sans-serif;
-  --spanFont: "Source Serif Pro", serif;
+  --spanFont: "EB Garamond", serif;
 
   /* colors */
   --prim: #6360ff;
@@ -187,6 +187,8 @@ h1 {
 h1 span {
   font-family: var(--spanFont);
   font-style: italic;
+  font-size: 52px;
+  font-weight: 400;
 }
 /* subheadings for titles */
 h2 {
@@ -194,6 +196,12 @@ h2 {
   font-size: var(--heading);
   line-height: 1.5;
   font-weight: 400;
+}
+h2 span {
+  font-style: italic;
+  font-weight: 200;
+  font-family: var(--spanFont);
+  font-size: 28px;
 }
 h3 {
   font-family: var(--font);
@@ -225,15 +233,16 @@ h4 {
 /* links */
 .link {
   display: grid;
-  gap: 6px;
+  gap: 2px;
   grid-auto-flow: column;
   justify-content: flex-start;
   align-items: center;
   height: fit-content;
   white-space: nowrap;
+  font-family: var(--secfont);
 }
 .link img {
-  width: 20px;
+  width: 16px;
   margin: 0;
 }
 
@@ -968,14 +977,17 @@ body.dropdown-nav.open {
   font-weight: 400;
   font-family: var(--font);
   font-style: normal;
+  font-size: 42px;
 }
 
 .reveal-text .highlight {
-  font-family: 'Source Serif Pro', serif;
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
   font-weight: 500;
-  -webkit-background-clip: initial;
-  -webkit-text-fill-color: white;
-  background-image: none;
+  font-size: 50px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: white;
   color: white;
   animation: letterFade 0.5s ease-out forwards;
 }
@@ -1070,6 +1082,7 @@ nav ul li a:hover::after {
 .center h1 span {
   background-color: var(--prim);
   font-style: italic;
+  font-size: 52px;
 }
 .avatar2 img {
   height: 600px;
@@ -1260,7 +1273,7 @@ p.black {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 1fr;
-  gap: 12px;
+  gap: 4px;
   height: fill-available;
   max-height: 70vh;
 
@@ -1300,8 +1313,11 @@ p.black {
   gap: 8px;
   align-items: start;
   overflow-y: scroll;
-  min-height: 560px;
   height: 100%;
+  min-height: 550px;
+}
+.skills-contain .prev-items-contain{
+  overflow-y: hidden;
 }
 .list-container {
   flex-direction: column;
@@ -1341,16 +1357,17 @@ p.black {
 }
 .bookshelf-contain {
   width: 100%;
-  height: fit-content;
+  height: 100%;
   gap: 12px;
 }
 .ideation-contain {
   width: 100%;
   height: fit-content;
+  overflow-y: hidden;
 }
 .ideation-content {
-  display: grid;
-  grid-template-columns: 0.5fr 1.25fr 1.25fr;
+  display: flex;
+  flex-direction: row;
   gap: 14px;
 }
 .ideation-item {
@@ -1379,11 +1396,11 @@ p.black {
   border: 1px solid var(--prim);
   border-radius: var(--cardBorderRadius);
   background-color: var(--iconBackground);
-  padding: 28px;
+  padding: 22px 28px 22px 22px;
   display: grid;
   grid-template-columns: auto;
-  gap: 24px;
-  width: 100%;
+  gap: 18px;
+  width: 280px;
   height: fit-content;
 }
 .sticky-contain {
@@ -1402,24 +1419,29 @@ p.black {
 .sticky-note-right,
 .sticky-note {
   background-color: var(--prim);
-  padding: 18px 12px;
+  padding: 12px;
   position: absolute;
-  border-radius: 4px;
-  width: 150px;
-  height: 150px;
-  box-shadow: 0px 0px 5.5px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  width: 170px;
+  height: 170px;
+  box-shadow: 0px 5.5px 5.5px 0px rgba(0, 0, 0, 0.25);
   transition: transform 200ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between
 }
 .sticky-note {
   position: relative;
-  height: fit-content;
+  height: 170px;
+  width: 170px;
 }
 .sticky-note-left p,
 .sticky-note-right p,
 .sticky-note p {
-  color: var(--textColor);
   font-size: 14px;
-  line-height: 1.8;
+  font-family: var(--textfont);
+  line-height: 1.5;
+  color: var(--textColor)
 }
 .sticky-note-left p span,
 .sticky-note p span,
@@ -1427,6 +1449,14 @@ p.black {
   font-weight: 600;
   font-style: italic;
   color: var(--textColor);
+  font-family: var(--spanFont);
+  line-height: 1.2;
+  font-size: 16px;
+  font-weight: 200;
+}
+.sticky-note .callout-p {
+  font-size: 12px;
+  color: #ffffff7e;
 }
 .sticky-note-left:hover span,
 .sticky-note:hover span,
@@ -1463,9 +1493,9 @@ p.black {
   align-items: flex-start;
   justify-content: flex-start;
   height: fit-content;
-  padding: 16px;
+  padding: 12px;
   grid-auto-flow: column;
-  gap: 18px;
+  gap: 8px;
   background-color: var(--card);
 }
 .bookshelf-item {
@@ -1476,13 +1506,13 @@ p.black {
   border: var(--cardBorder); */
   border-bottom: var(--cardBorder);
   background-color: var(--card);
-  padding: 16px;
+  padding: 12px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .bookshelf-item h3 {
-  font-size: 24px;
+  font-size: 22px;
 }
 .bookshelf-left {
   display: grid;
@@ -1490,8 +1520,8 @@ p.black {
   gap: 18px;
 }
 .bookshelf-item img {
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   border-radius: 4px;
   margin: 0;
 }
@@ -1522,8 +1552,8 @@ p.black {
 h1 span,
 .bottom-header-text {
   font-family: var(--spanFont);
-  font-weight: normal;
   color: white;
+  font-weight: 400;
 }
 /* serendipity section */
 .serendipity-header h1 {
@@ -1616,8 +1646,8 @@ h1 span,
   transform: scale(1.02);
 }
 .seren-item a .tag-wrap .tag {
-  font-size: 14px;
-  padding: 8px 12px;
+  font-size: 12px;
+  padding: 4px 8px;
   margin: 0;
 }
 
@@ -1647,18 +1677,16 @@ h1 span,
 
 /* tag styling*/
 .tag {
-  padding: 10px 12px;
+  padding: 8px;
   background-color: var(--outline);
   color: rgba(255, 255, 255, 0.752);
-  border-radius: 4px;
+  border-radius: 2px;
   width: fit-content;
-  font-size: 16px;
-  height: 32px;
+  font-size: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: var(--secfont);
-  font-weight: 500;
   line-height: 0;
   white-space: nowrap;
 }
@@ -1674,17 +1702,18 @@ h1 span,
   gap: 12px;
 }
 .tagAbout a {
-  padding: 4px 12px;
+  padding: 4px 8px;
   border: 1px solid var(--cardBorderColor);
   color: #ffffff;
   font-family: var(--secfont);
+  font-size: 12px;
   display: grid;
   grid-auto-flow: column;
   width: fit-content;
   justify-content: center;
   align-items: center;
   gap: 8px;
-  border-radius: 4px;
+  border-radius: 2px;
   transition: var(--transitionHover);
   white-space: nowrap;
   background-color: var(--card);
