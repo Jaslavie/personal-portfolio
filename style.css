@@ -172,7 +172,7 @@ a:hover::after {
 
 p span,
 li span {
-  font-weight: normal;
+  font-weight: 500;
   color: white;
 }
 h1 {
@@ -3589,7 +3589,7 @@ ol {
 }
 
 #journal {
-  margin: 0 15vw;
+  margin: 0 18vw;
 }
 #journal .callout-p {
   margin-bottom: 8vh;
@@ -3604,13 +3604,16 @@ ol {
   color: white;
 }
 .content-section p {
-  margin: 2vh 0;
+  margin: 4vh 0;
   line-height: 1.6;
   color: var(--textColor);
 }
 .content-section img {
   width: 100%;
   height: auto;
+}
+.content-section p.callout-p {
+  margin-top: .5vh;
 }
 
 .back-button {
@@ -3624,4 +3627,13 @@ ol {
 
 .back-button a:hover {
   opacity: 0.8;
+}
+.content-section .quote {
+  border-left: 4px solid white;
+  padding: 2vh;
+  padding-left: 2vh;
+}
+
+.content-section ul {
+  margin: 2vh 0 2vh 6vh;
 }

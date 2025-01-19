@@ -85,37 +85,61 @@
             <a href="../lists.html#journals"> ← back to lists </a>
           </div>
 
+          <!--* CONTENT STARTS HERE -->
           <h2 style="text-align: left">
-            <span>Testing...</span>
+            <span>my little infinities</span>
           </h2>
 
           <p class="callout-p" style="margin-bottom: 4vh">Jan 18, 2025</p>
 
           <!-- section 1 -->
-          <div class="content-section">
-            <h2>hi there stranger</h2>
-            <p>
-              hi i see you're exploring, nothing here for now. will add
-              something soon.
-            </p>
-            <p>
-              in the meantime, here's a random cat image i found on the
-              internet:
-            </p>
-            <img
-              href="https://freecatphotoapp.com"
-              src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
-              alt="Random Cat Image"
-            />
-          </div>
+           <div class="content-section">
+            <img src="../images/journals/gradCap.png" alt="">
+            <p class="callout-p">My high school graduation cap</p>
+           </div>
 
-          <!--  section 2 -->
+           <div class="content-section">
+            <p>
+                On my high school graduation cap, I referenced a quote from
+                "The Fault in Our Stars" by John Green. In the book, the main 
+                character Hazel gives a <a href="https://www.youtube.com/watch?v=h2-XuKZX0JY" target="_blank">eulogy</a> to her dying lover Augustus:
+            </p>
+                <p class="quote">
+                    "There are infinite numbers between 0 and 1. There's .1 and .12 and .112 and infinite collection of others.  
+                    Some infinities are bigger than other infinities. There are days, many of them, when I resent the size of my unbounded set. 
+                    But, Gus, my love, I cannot tell you how thankful I am for our little infinity.
+                    You gave me a forever within the numbered days, and I'm grateful."
+                </p>
+                <p>
+                    I might be a sucker for tragic love stories, but I think there's a lot of truth to this.
+                    Every single day, we are given a new set of infinite possibilities: some are big 
+                    like landing your dream job, others are small like a precious 5-second embrace
+                    with your long-distance boyfriend before he leaves for 2 weeks (🥲).
+                </p>
+                <p>
+                    Either way, we can choose to treat every experience as our own "little infinity".
+                    I don't really care how long I live, as long as I die realizing I was living
+                    in the present, appreciating every precious moment I have on this spinning rock.
+                </p>
+                <p>
+                    So here's a list of all my small infinites. The list will be constantly updated
+                    as I experience new things. Call it a living document of my life if you will!
+                </p>
+           </div>
+           
           <div class="content-section">
-            <h2></h2>
-            <p></p>
+            <h2>the list</h2>
+            <ul>
+                <li>[11/23/24] really good tasting cream udon from a hole-in-the-wall restaurant!</li>
+                <li>[11/28/24] watching pride and prejudice (comfort film) while i'm sick</li>
+                <li>[12/29/25] building a mini house with my boyfriend for 6 hours</li>
+                <li>[01/01/25] <a href="https://www.youtube.com/watch?v=kqcphMpZ4sU" target="_blank">This</a> wedding speech (also a nod to improbable odds and fate)</li>
+                <li>[01/18/25] grandma's cooking after a quarter away from home.</li>
+            </ul>
+
           </div>
-        </div>
       </section>
+      <!--* CONTENT ENDS HERE -->
 
       <!-- footer -->
       <div id="footer-placeholder"></div>
@@ -136,8 +160,10 @@
           );
         });
       </script>
+
       <script>
-        ScrollReveal({
+        // scroll reveal
+        const sr = ScrollReveal({
           reset: false,
           duration: 1400,
         });
@@ -151,6 +177,27 @@
         ScrollReveal().reveal("h2 span, .callout-p, .content-section", {
           delay: 800,
           interval: 200,
+        });
+
+        // dynamic nav
+        const nav = document.querySelector(".nav-container");
+        let lastScrollPosition = 0;
+
+        window.addEventListener("scroll", () => {
+          const currentScrollPosition = window.pageYOffset;
+          const viewportHeight = window.innerHeight;
+
+          if (currentScrollPosition > viewportHeight * 0.8) {
+            if (currentScrollPosition > lastScrollPosition) {
+              nav.classList.add("hidden");
+            } else {
+              nav.classList.remove("hidden");
+            }
+          } else {
+            nav.classList.remove("hidden");
+          }
+
+          lastScrollPosition = currentScrollPosition;
         });
       </script>
       <!-- metadata -->
