@@ -1606,7 +1606,7 @@ h1 span,
   place-content: center;
   justify-content: flex-start;
   grid-template-columns: auto;
-  gap: 8px;
+  gap: 4px;
   padding: 2vh;
   border: var(--border);
   background-color: var(--card);
@@ -1644,19 +1644,19 @@ h1 span,
 .seren-item-shelf a:hover img {
   transform: scale(1.02);
 }
-.seren-item a .tag-wrap .tag {
-  font-size: 12px;
-  padding: 4px 8px;
-  margin: 0;
+.seren-item a p {
+  font-size: 14px;
 }
 
 .seren-item a h3,
 .seren-item-shelf a h3 {
   font-size: 22px;
+  color: white;
 }
-.seren-item a img {
+.seren-item a img, .seren-item a video {
   width: 100%;
   transition: transform 500ms ease;
+  margin-top: 12px;
 }
 /* portfolio section */
 #portfolio {
@@ -1688,11 +1688,12 @@ h1 span,
   font-family: var(--secfont);
   line-height: 0;
   white-space: nowrap;
+  min-height: 22px;
 }
 .tag-wrap {
   display: flex;
   flex-direction: row;
-  gap: 12px;
+  gap: 8px;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
