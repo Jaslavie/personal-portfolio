@@ -96,6 +96,10 @@ p {
   line-height: 1.8;
   font-weight: 400;
 }
+p i {
+  font-style: italic;
+  color: var(--textColor);
+}
 /* handle links */
 a {
   text-decoration: none;
