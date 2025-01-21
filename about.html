@@ -878,7 +878,7 @@
 
           <img
             style="width: 110%; align-self: center; margin-top: -50px"
-            src="images/about/designs.svg"
+            src="../images/about/design.png"
           />
         </div>
 
@@ -1000,17 +1000,18 @@
 
         // Bookshelf animations
         ScrollReveal().reveal(" .bookshelf-item, .memories, .child", {
-          delay: 100,
+          delay: 50,
           origin: "bottom",
-          interval: 500,
+          distance: "20px",
+          interval: 200,
         });
 
         // Ideation board animations
         ScrollReveal().reveal(" .ideation-item", {
-          delay: 2200,
+          delay: 1200,
           origin: "bottom",
-          distance: "50px",
-          interval: 500,
+          distance: "30px",
+          interval: 200,
         });
 
         // General content animations
@@ -1059,8 +1060,8 @@
           "#missions h1, #missions p, #missions img,.memories h1 span, #hackathons, #design",
           {
             delay: 80,
-            interval: 300,
-            duration: 1000,
+            interval: 150,
+            duration: 800,
           },
         );
       </script>
