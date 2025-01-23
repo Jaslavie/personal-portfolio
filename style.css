@@ -245,7 +245,7 @@ h4 {
   white-space: nowrap;
   font-family: var(--secfont);
 }
-.link img {
+.link img, .content-section .link img{
   width: 16px;
   margin: 0;
 }
@@ -3639,5 +3639,5 @@ ol {
 }
 
 .content-section ul {
-  margin: 2vh 0 2vh 6vh;
+  margin: 1vh 0 1vh 4vh;
 }
