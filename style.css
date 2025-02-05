@@ -377,6 +377,27 @@ h4 {
 .current-contain a:hover .emoji-contain {
   background-color: var(--prim);
 }
+/* links home page */
+.links-contain {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.links-contain .row {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 8px;
+}
+/* .links-contain .row p {
+  font-size: 14px;
+} */
+.links-contain .row a {
+  /* font-size: 13px; */
+  margin-bottom: -8px;
+}
 /* infinite scroll */
 .infinite-contain {
   overflow: hidden;
@@ -396,7 +417,6 @@ h4 {
 .infinite-cards {
   left: 100%;
   width: auto;
-  max-width: 100vw;
   position: absolute;
   overflow-x: hidden;
   white-space: nowrap;
@@ -3351,7 +3371,9 @@ html {
     font-size: 32px;
     line-height: 55px;
   }
-  
+  .reveal-text .highlight {
+    font-size: 40px;
+  }
   .work-heading p {
     display: none;
   }

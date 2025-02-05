@@ -267,11 +267,84 @@
       </div>
 
       <!-- about me section -->
-      <section class="child" style="margin-top: 6em">
+      <section class="child" style="padding: 20vh 28vw;">
         <!-- currently section -->
-        <h1><span>Current Missions.</span></h1>
+        <h1><span>Mission.</span></h1>
         <div class="current-contain-wrapper">
-          <div class="current-contain">
+          <p>
+            I'm a self-taught product designer and engineer building for 
+            <a href="https://www.palantir.com/platforms/gotham/" target="_blank">Palantir</a>,
+            <a href="https://www.nasa.gov/reference/jsc-eva-systems/" target="_blank">NASA</a>, 
+            <!-- <a href="https://sites.uci.edu/uciracing/anteater-formula-racing/" target="_blank">formula race cars</a>,  -->
+            <a href="https://research.contrary.com/" target="_blank">Contrary</a>
+             and 
+            <a href="https://www.8vc.com/fellowships" target="_blank">8VC</a>. Experimenting with new interfacing systems and human-ai collaboration.
+         </p>
+         <p>
+            Previously, I competed in a 
+            <a href="https://devpost.com/jaslavie">hackathon</a> every weekend and won 15, including the largest ai hackathon in the world. 
+            Here, I joined <a href="https://devpost.com/software/dispatch-ai" target="_blank">Berkeley Skydeck</a> with $68k to design the
+            human-ai collaboration pipeline for dispatchers. I also hosted the largest 
+            <a href="https://designatuci.com/designathon/24" target="_blank">design hackathon</a> in the U.S funded by 
+            Notion and Figma. 
+          </p>
+          <p>
+            As a kid I built cardboard claw machines and sold handmade clothes in my living room. 
+            I got hooked on building things and feeding my insatiable curiosity. 
+            <br><br>
+            Occasionally I rabbit hole into
+            <a href="https://www.pinterest.com/Jaslavie/wwii/" target="_blank">ww2 history</a> and renaissance artworks at starbucks.
+            <!-- a café. -->
+          </p>
+          <hr class="divider">
+          <div class="links-contain">
+            <div class="row">
+              <p>linkedin</p>
+              <div class="link">
+                <p>
+                  <a href="https://linkedin.com/in/jaslavie" target="_blank"
+                    >/jaslavie</a
+                  >
+                  <img src="../images/arowRight.svg" />
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <p>twitter</p>
+              <div class="link">
+                <p>
+                  <a href="https://linkedin.com/in/jaslavie" target="_blank"
+                    >@jaslavie</a
+                  >
+                  <img src="../images/arowRight.svg" />
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <p>substack</p>
+              <div class="link">
+              <p>
+                <a href="https://substack.com/@jaslavie" target="_blank"
+                  >@jaslavie</a
+                >
+                <img src="../images/arowRight.svg" />
+              </p>
+              </div>
+            </div>
+            <div class="row">
+              <p>email</p>
+              <div class="link">
+                <p>
+                  <a href="mailto:jasminqw@uci.edu" target="_blank"
+                    >jasminqw@uci.edu</a
+                  >
+                <img src="../images/arowRight.svg" />
+                </p>
+              </div>
+            </div>
+            
+          </div>
+          <!-- <div class="current-contain">
             <a
               href="https://www.nasa.gov/learning-resources/spacesuit-user-interface-technologies-for-students/"
               target="_blank"
@@ -323,10 +396,10 @@
                 </p>
               </div>
             </a>
-          </div>
+          </div> -->
         </div>
       </section>
-
+      <hr class="divider">
       <!-- portfolio section -->
       <section class="child">
         <div id="portfolio">
@@ -695,13 +768,20 @@
             reset: false,
             opacity: 0,
             duration: 1000,
-            distance: "30px"
+            // distance: "30px"
         });
         // Reveal elements in sequence
         sr.reveal(".tag-wrap", {
             delay: 100,
             origin: "bottom",
             interval: 200
+        });
+
+        sr.reveal(".current-contain-wrapper, .divider, .current-contain-wrapper .links-contain ", {
+          delay: 80,
+          interval: 100,
+          duration: 700,
+          // distance: "10px"
         });
 
         sr.reveal(".favContain, .center-text, .head-contain, .icon-contain, .center-text-contain, .btn-new, .tech-stack, .work-contain, .work-list .work, .tech-stack img, #about .about-col-1, .sub-title, .subsub-title, .callout, .pins-contain", {
