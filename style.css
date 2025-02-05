@@ -384,6 +384,7 @@ h4 {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  gap: 4px;
 }
 .links-contain .row {
   display: flex;
