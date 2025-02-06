@@ -361,7 +361,7 @@ h4 {
   flex-direction: column;
   gap: var(--listGap);
   width: 100%;
-  margin-top: 36px;
+  margin-top: 8vh;
 }
 
 .current-contain .emoji-contain {
@@ -1686,7 +1686,7 @@ h1 span,
 /* portfolio section */
 #portfolio {
   display: grid;
-  grid-gap: 30vh;
+  grid-gap: 12vh;
   grid-template-columns: 1fr;
 }
 .work-contain {
