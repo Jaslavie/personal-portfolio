@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- metadata -->
+    <title>Jasmine Wu</title>
+    <meta
+      name="description"
+      content="Jasmine is a design engineer deeply interested in solving hard problems in AI and Defense Tech. Attending Hackathons (15x winner) and studying CS & Neuroscience @ UCI on the side."
+    />
+    <meta
+      name="keywords"
+      content="jasmine wu, startup, design, engineering, defense, hackathons, builder, founder"
+    />
+    <meta name="author" content="Jasmine Wu" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="shortcut icon"
+      href="../images/jasmine wu logo official.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+  <html>
+    <body>
+      <!-- nav bar -->
+      <div class="nav-container">
+        <nav>
+          <a href="../index.html" style="border: none">
+            <img
+              src="../images/jasmineWuLogoLong.svg"
+              class="logo"
+              width="180px"
+              height="auto"
+            />
+          </a>
+          <div class="right-nav">
+            <ul>
+              <li id="work-nav"><a href="../index.html#projects">work</a></li>
+              <li id="hobbies-nav">
+                <a href="../serendipity.html">serendipity</a>
+              </li>
+              <li id="list-nav"><a href="../lists.html">lists</a></li>
+              <li id="about-nav"><a href="../about.html">about</a></li>
+            </ul>
+            <div class="toggle-button">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="dropdown-nav">
+        <div class="column">
+          <li><a href="../index.html#projects">work</a></li>
+          <li><a href="../serendipity.html">serendipity</a></li>
+          <li><a href="../lists.html">lists</a></li>
+          <li><a href="../about.html">about</a></li>
+          <a href="mailto: jasmineqw45@gmail.com" class="btn">Get in Touch</a>
+        </div>
+      </div>
+
+      <section
+        class="child"
+        style="gap: 10vh; display: flex; flex-direction: column"
+      >
+        <!-- main content -->
+        <div id="journal">
+          <!-- back button -->
+          <div class="link">
+            <a href="../lists.html#journals"> ← back to lists </a>
+          </div>
+
+          <!--* CONTENT STARTS HERE -->
+          <h2 style="text-align: left">
+            <span>principles</span>
+          </h2>
+
+          <p class="callout-p" style="margin-bottom: 4vh">Feb 18, 2025</p>
+
+          <!-- section 1 -->
+           <div class="content-section">
+            <img src="../images/journals/athens.png" alt="">
+            <p class="callout-p">School of Athens</p>
+           </div>
+           
+          <div class="content-section">
+            <!-- <h2>the list</h2> -->
+            <p>
+              inspired by “principles” by 
+              <a href="https://substack.com/home/post/p-154681274 " target="_blank">nabeel</a>. hard won life lessons.
+          </p>
+            <ol>
+              <li>Your time estimates are always wrong. Always multiply your expectations by 2x at minimum. You always need more time than you think.</li>
+              <li>Regret is an intoxicating force. It can either kill you or push you to prove yourself. Always choose the latter. </li>
+              <li>Get really good at reading b.s. in people. this is often disguised as prestige and status. Cultivate awareness when people are putting up a front, but don’t try to fix it. <a href="https://www.brainyquote.com/quotes/napoleon_bonaparte_103585" target="_blank">Never interrupt your enemy</a> when they’re making a mistake.</li>
+              <li>You know much, much less than you think. You only realize this when you start surrounding yourself with the top 1%. Aim for this.</li>
+              <li>Chasing achievement/quick wins is a losing game. Always aim for the long-term.</li>
+              <li>Select close friends with the same criteria lvl of scrutiny as you’d use to eval a romantic partner. Ask: “would i be satisfied if i became them?”. Never exceed 3-4 close friends.</li>
+              <li>Stick with your convictions ruthlessly. If the group does not align, leave rather than conform for the sake of harmony (there’s some nuance in this. the baseline of any opinioin should be a combo of intuition + reason).</li>
+              <li>Sticking with habits means creating artificial routines for yourself: drink the same coffee, wear the same clothes, eat the same thing, run every morning. Most people are too flexible with this, you need to stick to this like military doctrine.</li>
+                  
+            </ol>
+
+          </div>
+      </section>
+      <!--* CONTENT ENDS HERE -->
+
+      <!-- footer -->
+      <div id="footer-placeholder"></div>
+
+      <script>
+        $(document).ready(function () {
+          $("#footer-placeholder").load(
+            "../assets/html/footer.html",
+            function (response, status, xhr) {
+              if (status == "error") {
+                console.log(
+                  "Error loading footer:",
+                  xhr.status,
+                  xhr.statusText,
+                );
+              }
+            },
+          );
+        });
+      </script>
+
+      <script>
+        // scroll reveal
+        const sr = ScrollReveal({
+          reset: false,
+          duration: 1400,
+        });
+
+        ScrollReveal().reveal(".link", {
+          delay: 200,
+          origin: "top",
+          distance: "20px",
+        });
+
+        ScrollReveal().reveal("h2 span, .callout-p, .content-section", {
+          delay: 800,
+          interval: 200,
+        });
+
+        // dynamic nav
+        const nav = document.querySelector(".nav-container");
+        let lastScrollPosition = 0;
+
+        window.addEventListener("scroll", () => {
+          const currentScrollPosition = window.pageYOffset;
+          const viewportHeight = window.innerHeight;
+
+          if (currentScrollPosition > viewportHeight * 0.8) {
+            if (currentScrollPosition > lastScrollPosition) {
+              nav.classList.add("hidden");
+            } else {
+              nav.classList.remove("hidden");
+            }
+          } else {
+            nav.classList.remove("hidden");
+          }
+
+          lastScrollPosition = currentScrollPosition;
+        });
+      </script>
+      <!-- metadata -->
+      <script src="scripts/structured-data.js"></script>
+      <script type="application/ld+json">
+        document.addEventListener('DOMContentLoaded', function() {
+            const structuredDataScript = document.createElement('script');
+            structuredDataScript.type = 'application/ld+json';
+            structuredDataScript.text = JSON.stringify(generateStructuredData());
+            document.head.appendChild(structuredDataScript);
+        });
+      </script>
+    </body>
+  </html>
+</html>
