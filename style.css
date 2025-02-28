@@ -3671,3 +3671,6 @@ ol {
 .content-section ul {
   margin: 1vh 0 1vh 4vh;
 }
+.content-section ul li {
+  margin: 1.5vh 0;
+}
