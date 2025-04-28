@@ -1236,6 +1236,7 @@ p.black {
   transition: color 500ms ease;
   white-space: nowrap;
   font-size: 14px;
+  font-family: var(--secfont);
 }
 .inventory-item:hover p {
   color: #fff;
