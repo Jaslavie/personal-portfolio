@@ -3,6 +3,7 @@
   --secfont: "Inconsolata", sans-serif;
   --textfont: "Helvetica Neue", sans-serif;
   --spanFont: "EB Garamond", serif;
+  --canela: "Canela", serif;
 
   /* colors */
   --prim: #6360ff;
@@ -54,6 +55,10 @@
 @font-face {
   font-family: "Inconsolata";
   src: url("fonts/Inconsolata-VariableFont_wdth\,wght.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Canela";
+  src: url("fonts/Canela-LightItalic-Trial.otf") format("truetype");
 }
 * {
   margin: 0;
@@ -270,11 +275,15 @@ h4 {
 .center-text {
   text-align: center;
   font-family: var(--font);
-  font-size: 44px;
+  font-size: 32px;
+  font-weight: 200;
   line-height: 120%;
 }
 .center-text span {
-  color: var(--textColor);
+  /* color: var(--textColor); */
+  font-family: 'EB Garamond', serif;
+  font-style: italic;
+  font-size: 36px;
 }
 .callout-p {
   font-size: 18px;
@@ -1003,7 +1012,7 @@ body.dropdown-nav.open {
   display: inline-block;
   opacity: 0;
   animation: letterFade 0.5s ease-out forwards;
-  font-weight: 400;
+  font-weight: 200;
   font-family: var(--font);
   font-style: normal;
   font-size: 42px;
@@ -1012,7 +1021,7 @@ body.dropdown-nav.open {
 .reveal-text .highlight {
   font-family: 'EB Garamond', serif;
   font-style: italic;
-  font-weight: 500;
+  font-weight: 200;
   font-size: 50px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1706,12 +1715,12 @@ h1 span,
 
 /* tag styling*/
 .tag {
-  padding: 8px;
+  padding: 14px 12px;
   background-color: var(--outline);
   color: rgba(255, 255, 255, 0.752);
   border-radius: 2px;
   width: fit-content;
-  font-size: 12px;
+  font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1763,7 +1772,7 @@ h1 span,
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 16px;
+  gap: 6px;
   width: 100%;
 }
 .work-heading .subsub-title {
@@ -1976,7 +1985,7 @@ h1 span,
 .favWrapper {
   display: grid;
   grid-template-columns: auto;
-  gap: 48px;
+  gap: 22px;
 }
 .favWrapper .center-text-contain {
   height: fit-content;
@@ -3373,7 +3382,7 @@ html {
     gap: 10vh;
   }
   .tag p {
-    font-size: 14px;
+    font-size: 16px;
   }
   .head-contain h1,
   .head-contain h1 span {
