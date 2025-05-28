@@ -1,7 +1,7 @@
 :root {
   --font: "Helvectica Neue", sans-serif;
   --secfont: "Inconsolata", sans-serif;
-  --textfont: "Helvetica Neue", sans-serif;
+  --textfont: "Inter", sans-serif;
   --spanFont: "EB Garamond", serif;
   --canela: "Canela", serif;
 
@@ -13,7 +13,7 @@
   --icon: #17171a;
   --iconBackground: #18182f;
   --outline: #5f5f5f40;
-  --subheadingColor: rgba(255, 255, 255, 0.601);
+  --subheadingColor: rgba(255, 255, 255, 0.395);
   --hoverBackground: rgba(72, 91, 255, 0.15);
   --cardBorderColor: #363637;
   --hoverBlur: drop-shadow(0px 0px 8px rgba(99, 96, 255, 0.5));
@@ -36,8 +36,8 @@
   --title: 48px;
   --heading: 26px;
   --subparagraph: 22px;
-  --paragraphs: 16px;
-  --textColor: #ffffffc5;
+  --paragraphs: 14px;
+  --textColor: #b0b0b0;
   --textGradient: linear-gradient(
     180deg,
     rgba(255, 255, 255, 1) 0%,
@@ -100,7 +100,10 @@ p {
   font-size: var(--paragraphs);
   line-height: 1.8;
   font-weight: 400;
+  font-weight: 400;
+  line-height: 1.8em;
 }
+
 p i {
   font-style: italic;
   color: var(--textColor);
@@ -191,7 +194,7 @@ h3 span {
 
 /* headings inside of cards */
 h4 {
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   font-family: var(--secfont);
   text-align: left;
@@ -277,12 +280,13 @@ h4 {
   font-family: var(--textfont);
   color: var(--textColor);
   text-align: center;
-  font-size: 18px;
-  opacity: 0.75;
+  font-size: 12px;
   align-items: center;
   justify-content: center;
   display: flex;
   width: 100%;
+  margin-top: 8px;
+  font-style: italic;
 }
 
 .space {
@@ -2004,21 +2008,21 @@ h1 span,
   margin: 2.5vh 0;
 }
 .case-header-contain {
-  font-size: 38px;
+  font-size: 32px;
   font-family: var(--font);
   line-height: 1.4;
+  font-weight: 400;
 }
 .case-subheading {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   color: var(--subheadingColor);
   font-family: var(--secfont);
 }
 .case-subheading-main {
   font-size: 18px;
-  font-weight: 400;
-  color: var(--subheadingColor);
-  font-style: italic;
+  font-weight: 200;
+  color: #ffffff82;
   font-family: var(--textfont);
 }
 .case-subheading-contain img {
@@ -2029,18 +2033,38 @@ h1 span,
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0;
+  gap: 12px;
   width: 100%;
+}
+.case-summary p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: #b0b0b0;
+}
+.case-overview-contain img {
+  width: 30%;
+  height:fit-content;
+  
 }
 .case-summary-contain {
   display: flex;
   flex-direction: row;
-  gap: 22px;
-  background-color: var(--card);
+  gap: 28px;
+  /* background-color: var(--card);
   border-radius: 0 8px 8px 8px;
   padding: 12px;
-  border: var(--border);
+  border: var(--border); */
   width: 100%;
+}
+.case-overview-contain p {
+  width: 55%;
+}
+.case-overview-contain {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .case-summary-tag {
   background-color: var(--card);
@@ -2051,10 +2075,9 @@ h1 span,
 }
 .summary-item-contain {
   flex-grow: 1;
-}
-.case-summary-contain p {
-  font-size: 16px;
-  color: #a7a7a7;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 .case-header .typed-cursor.typed-cursor--blink {
   display: none;
@@ -2096,9 +2119,6 @@ h1 span,
 }
 .case-text-contain-image {
   /* background-color: var(--outline); */
-  border-radius: 4px;
-  border: var(--border);
-  padding: 18px;
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -2110,10 +2130,6 @@ h1 span,
 .case-text-contain-image img {
   width: 100%;
   height: auto;
-}
-.case-text-contain p span {
-  color: #fff;
-  font-weight: 600;
 }
 .case-inner-img-contain img {
   border-radius: 0;
