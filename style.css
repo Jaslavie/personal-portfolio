@@ -37,7 +37,7 @@
   --heading: 26px;
   --subparagraph: 22px;
   --paragraphs: 14px;
-  --textColor: #b0b0b0;
+  --textColor: #ffffffa7;
   --textGradient: linear-gradient(
     180deg,
     rgba(255, 255, 255, 1) 0%,
@@ -1476,6 +1476,12 @@ p.black {
   grid-auto-flow: column;
   gap: 8px;
   background-color: var(--card);
+}
+.prev-item h4, .prev-item span {
+  font-size: 16px;
+}
+.prev-item p {
+  font-size: 12px;
 }
 .bookshelf-item {
   height: fit-content;
