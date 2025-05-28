@@ -144,7 +144,7 @@ a:hover::after {
 
 p span,
 li span {
-  font-weight: 500;
+  font-weight: 400;
   color: white;
 }
 h1 {
@@ -3107,4 +3107,98 @@ ol {
 }
 .content-section ul li {
   margin: 1.5vh 0;
+}
+
+
+.glitch-text {
+  position: relative;
+  display: inline-block;
+  opacity: 1; /* Keep text visible */
+}
+
+.glitch-text::before {
+  content: attr(data-value);
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: glitchText 1.5s steps(1) var(--glitch-delay);
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+}
+
+.glitch-text {
+  opacity: 0;
+  animation: fadeIn 0.1s var(--glitch-delay) forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Add glitch effect for all links */
+a:not(.nav-container a):not(.tag-wrap a):not(.work-image a) {
+  position: relative;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+a:not(.nav-container a):not(.tag-wrap a):not(.work-image a):hover {
+  color: white;
+}
+
+/* Base link styles */
+a:not(.nav-container a):not(.tag-wrap a):not(.work-image a) {
+  position: relative;
+  text-decoration-color: #64748b;
+  text-decoration-style: dotted;
+  text-underline-offset: 4px;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+}
+
+/* Ensure glitch container maintains layout */
+a:not(.nav-container a):not(.tag-wrap a):not(.work-image a) span {
+  display: inline-block;
+  white-space: nowrap;
+  text-align: left;
+}
+
+/* Hover state */
+a:not(.nav-container a):not(.tag-wrap a):not(.work-image a):hover {
+  color: white;
+  text-decoration-color: white;
+}
+
+/* Glitch animation keyframes */
+@keyframes linkGlitch {
+  0% { transform: none; filter: none; }
+  10% { transform: skew(-2deg); filter: hue-rotate(90deg); }
+  20% { transform: skew(2deg); filter: hue-rotate(-90deg); }
+  30% { transform: none; filter: none; }
+  40% { transform: translate(-2px); }
+  50% { transform: translate(2px); }
+  60% { transform: none; }
+  70% { transform: skew(2deg); }
+  80% { transform: skew(-2deg); }
+  90% { transform: none; filter: invert(0.5); }
+  100% { transform: none; filter: none; }
+}
+
+/* Glitch effect on hover */
+a:not(.nav-container a):not(.tag-wrap a):not(.work-image a).glitching {
+  animation: linkGlitch 0.5s steps(1) infinite;
+}
+
+.highlight.reveal-text {
+  text-decoration: none;
+}
+
+.highlight.reveal-text span {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 50px;
 }

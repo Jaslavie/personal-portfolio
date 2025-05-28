@@ -75,7 +75,6 @@
           <li><a href="serendipity.html">serendipity</a></li>
           <li><a href="lists.html">lists</a></li>
           <li><a href="about.html">about</a></li>
-          <a href="mailto: jasmineqw45@gmail.com" class="btn">Get in Touch</a>
         </div>
       </div>
       <script src="main.js"></script>
@@ -225,19 +224,6 @@
             </div> -->
           </div>
         </div>
-        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-        <script>
-          var typed = new Typed(".auto-type", {
-            strings: [
-              "Data-Driven Designer",
-              "User-Centric Engineer",
-              "Hackathon Enthusiast",
-            ],
-            typeSpeed: 50,
-            backSpeed: 50,
-            loop: true,
-          });
-        </script>
         <div class="planetContain">
           <img src="images/planetImage.svg" alt="" />
         </div>
@@ -271,7 +257,7 @@
             The hardest problem is translating chaos into order. 
             <!-- The hardest problem is not intelligence. It's helping humans trust and act on it. -->
             I believe human-AI interfaces that make sense of uncertainty will unlock this. 
-            I’m currently designing decision support systems for the battlefield at
+            I'm currently designing decision support systems for the battlefield at
             <a href="https://www.palantir.com/platforms/gotham/" target="_blank">Palantir</a> and
             <a href="https://www.gallatin.ai/" target="_blank">Gallatin AI</a>.  
             I'm a
@@ -660,7 +646,9 @@
       <!-- scroll reveal -->
       <script>
         // Text reveal animation first
-        const text = "Jasmine is a design engineer deeply interested in solving hard problems";
+        // Jasmine designs human-AI interfaces for spacewalks and the battlefield.
+        // Jasmine designs human-ai interfaces to help humans make sense of uncertainty.
+        const text = "Jasmine designs human-ai interfaces that translate chaos into order.";
         const container = document.querySelector(".reveal-text");
         
         // Split text into words
@@ -675,12 +663,7 @@
                 wordWrapper.style.marginRight = "0.2em";
                 
                 const characters = word.split("");
-                const isSpecialWord = word === "design" || word === "engineer" || word === "hard" || word === "problems";
-                
-                if (word === "interested") {
-                    const lineBreak = document.createElement("br");
-                    container.appendChild(lineBreak);
-                }
+                const isSpecialWord = word === "human-ai" || word === "interfaces" || word === "chaos" || word === "into" || word === "order.";         
                 
                 characters.forEach((char, charIndex) => {
                     const span = document.createElement("span");
@@ -688,6 +671,9 @@
                     
                     if (isSpecialWord) {
                         span.classList.add("highlight");
+                        if (word === "chaos" || word === "into" || word === "order.") {
+                            span.classList.add("chaoslink");
+                        }
                     }
                     
                     const totalIndex = words.slice(0, wordIndex).join("").length + charIndex;
@@ -696,12 +682,66 @@
                     
                     // Resolve promise after last character animation
                     if (wordIndex === words.length - 1 && charIndex === characters.length - 1) {
-                        setTimeout(resolve, (totalIndex * 40) + 500); // Wait for last character + animation duration
+                        setTimeout(resolve, (totalIndex * 40));
                     }
                 });
                 
                 container.appendChild(wordWrapper);
             });
+        });
+
+        // After text animation, initialize glitch effect
+        textAnimationPromise.then(() => {
+            const chaosElements = document.querySelectorAll('.chaoslink');
+            if (chaosElements.length > 0) {
+                const linkWrapper = document.createElement('a');
+                
+                // linkWrapper.href = "";
+                linkWrapper.style.cursor = "default";
+                linkWrapper.classList.add("highlight", "reveal-text");
+                linkWrapper.style.textDecoration = "none";
+                
+                const textSpan = document.createElement('span');
+                textSpan.style.display = "inline-block";
+                textSpan.style.textDecoration = "none";
+                textSpan.style.fontFamily = "'EB Garamond', serif";
+                textSpan.style.fontStyle = "italic";
+                textSpan.style.fontWeight = "200";
+                textSpan.style.fontSize = "50px";
+                textSpan.textContent = "chaos into order.";
+                
+                // Force layout calculation to get correct width
+                document.body.appendChild(textSpan);
+                const width = textSpan.offsetWidth;
+                document.body.removeChild(textSpan);
+                
+                // Set fixed width to prevent layout shifts
+                textSpan.style.width = width + 'px';
+                
+                linkWrapper.appendChild(textSpan);
+                
+                // Create glitch effect with width preservation
+                const glitch = new GlitchEffect(textSpan, {
+                    characters: "!@#$%^&*()_+:,.<>12",
+                    speed: 80,
+                    duration: 300,
+                    fadeSpeed: 400,
+                    
+                });
+                
+                // Replace original elements
+                const firstChaosElement = chaosElements[0];
+                firstChaosElement.parentNode.insertBefore(linkWrapper, firstChaosElement);
+                
+                chaosElements.forEach(element => {
+                    if (element.parentNode) {
+                        element.parentNode.removeChild(element);
+                    }
+                });
+                
+                linkWrapper.addEventListener("mouseenter", () => glitch.start());
+                linkWrapper.addEventListener("mouseleave", () => glitch.stop());
+            }
         });
 
         // dynamic nav
@@ -785,6 +825,29 @@
               structuredDataScript.text = JSON.stringify(generateStructuredData());
               document.head.appendChild(structuredDataScript);
           });
+      </script>
+      <script src="glitch.js"></script>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          document.querySelectorAll("a").forEach((link) => {
+            if (
+              !link.closest(".nav-container") &&
+              !link.closest(".tag-wrap") &&
+              !link.closest(".work-image") &&
+              !link.closest(".btn-nav") &&
+              !link.closest(".contact-btn")
+            ) {
+              const glitch = new GlitchEffect(link, {
+                characters: "!@#$%^&*()_+-=[]{}|;:,.<>?0123456789",
+                speed: 50,
+                duration: 1000
+              });
+
+              link.addEventListener("mouseenter", () => glitch.start());
+              link.addEventListener("mouseleave", () => glitch.stop());
+            }
+          });
+        });
       </script>
     </body>
   </html>
