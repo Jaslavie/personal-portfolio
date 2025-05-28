@@ -596,6 +596,21 @@
               </a>
             </div>
           </div>
+          <div class="bookshelf-item">
+            <div class="bookshelf-left">
+              <img src="images/about/fridman.jpg" alt="" />
+              <div class="bookshelf-center-text">
+                <h3>Lex Fridman Podcast</h3>
+                <div class="tag">podcast</div>
+              </div>
+            </div>
+
+            <div class="btn-nav">
+              <a href="https://www.youtube.com/watch?v=cp1lprZUQcE" target="_blank">
+                <img src="images/arowRight.svg" alt="" />
+              </a>
+            </div>
+          </div>
           <!-- paul graham -->
           <div class="bookshelf-item">
             <div class="bookshelf-left">
@@ -630,21 +645,7 @@
             </div>
           </div>
 
-          <div class="bookshelf-item">
-            <div class="bookshelf-left">
-              <img src="images/about/big think logo.jpeg" alt="" />
-              <div class="bookshelf-center-text">
-                <h3>Big Think</h3>
-                <div class="tag">channel</div>
-              </div>
-            </div>
-
-            <div class="btn-nav">
-              <a href="https://www.youtube.com/@bigthink" target="_blank">
-                <img src="images/arowRight.svg" alt="" />
-              </a>
-            </div>
-          </div>
+          
         </div>
         <div class="ideation-contain">
           <h2><span>Ideation Board</span></h2>
@@ -792,9 +793,7 @@
           >
         </h1>
         <p style="margin-top: 10px" class="p-callout">
-          Designing workflows for human-ai collaboration. Curious about decision-making in
-          unpredictable environments. Ultimately, to secure our national interests. 
-          <br/>
+          
           Some things I've worked on:
         </p>
         <div
@@ -1209,6 +1208,29 @@
             structuredDataScript.type = 'application/ld+json';
             structuredDataScript.text = JSON.stringify(generateStructuredData());
             document.head.appendChild(structuredDataScript);
+        });
+      </script>
+      <script src="glitch.js"></script>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          document.querySelectorAll("a").forEach((link) => {
+            if (
+              !link.closest(".nav-container") &&
+              !link.closest(".tag-wrap") &&
+              !link.closest(".work-image") &&
+              !link.closest(".btn-nav") &&
+              !link.closest(".contact-btn")
+            ) {
+              const glitch = new GlitchEffect(link, {
+                characters: "!@#$%^&*()_+-=[]{}|;:,.<>?0123456789",
+                speed: 50,
+                duration: 1000
+              });
+
+              link.addEventListener("mouseenter", () => glitch.start());
+              link.addEventListener("mouseleave", () => glitch.stop());
+            }
+          });
         });
       </script>
     </body>

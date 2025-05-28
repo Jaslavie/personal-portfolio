@@ -647,14 +647,14 @@
         <!-- artworks -->
         <div class="serendipity-header" id="paintings">
           <div class="gradient-text">
-            <h1 style="text-align: center">
-              Side Quest: Classical Painting
+            <h1 style="text-align: center; font-family: 'EB Garamond', serif; font-style: italic; font-weight: 400;">
+              Designer by trade, painter by heart
             </h1>
           </div>
           
           <p>
-            I spent a good chunk of my 19 years painting / drawing — everything
-            from anime to impressionism
+            My first love was painting. I spent most of my 19 years painting impressionist pieces and 
+            sketching animals in my notebook.
           </p>
         </div>
         <div class="serendipity-wrapper">
@@ -800,6 +800,30 @@
             structuredDataScript.type = 'application/ld+json';
             structuredDataScript.text = JSON.stringify(generateStructuredData());
             document.head.appendChild(structuredDataScript);
+        });
+      </script>
+      <script src="glitch.js"></script>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          document.querySelectorAll("a").forEach((link) => {
+            if (
+              !link.closest(".nav-container") &&
+              !link.closest(".tag-wrap") &&
+              !link.closest(".work-image") &&
+              !link.closest(".btn-nav") &&
+              !link.closest(".contact-btn") &&
+              !link.closest(".seren-item")
+            ) {
+              const glitch = new GlitchEffect(link, {
+                characters: "!@#$%^&*()_+-=[]{}|;:,.<>?0123456789",
+                speed: 50,
+                duration: 1000
+              });
+
+              link.addEventListener("mouseenter", () => glitch.start());
+              link.addEventListener("mouseleave", () => glitch.stop());
+            }
+          });
         });
       </script>
     </body>

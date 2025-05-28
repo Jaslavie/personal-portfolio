@@ -4,36 +4,59 @@ class GlitchEffect {
     this.originalText = element.textContent;
     const isChaosText = this.originalText.trim() === "chaos into order.";
     
+    // Create canvas for text measurement
+    const canvas = document.createElement('canvas');
+    const context = canvas.getContext('2d');
+    
+    if (isChaosText) {
+      // Special case for "chaos into order"
+      context.font = "italic 200 50px 'EB Garamond', serif";
+      this.originalWidth = context.measureText(this.originalText).width;
+      
+      this.originalStyles = {
+        fontFamily: "'EB Garamond', serif",
+        fontStyle: "italic",
+        fontWeight: "200",
+        fontSize: "50px",
+        display: 'inline-block',
+        width: `${this.originalWidth}px`
+      };
+    } else {
+      // For regular links, get computed style
+      const computedStyle = window.getComputedStyle(element);
+      context.font = computedStyle.font;
+      this.originalWidth = context.measureText(this.originalText).width;
+      
+      this.originalStyles = {
+        font: computedStyle.font,
+        fontFamily: computedStyle.fontFamily,
+        fontSize: computedStyle.fontSize,
+        fontWeight: computedStyle.fontWeight,
+        fontStyle: computedStyle.fontStyle,
+        letterSpacing: computedStyle.letterSpacing,
+        textTransform: computedStyle.textTransform,
+        color: computedStyle.color,
+        display: 'inline-block',
+        width: `${this.originalWidth}px`
+      };
+    }
+    
     // Create wrapper to maintain width
     this.wrapper = document.createElement('span');
     this.wrapper.style.display = 'inline-block';
-    // this.wrapper.style.overflowX = 'hidden';
-    // this.wrapper.style.whiteSpace = 'nowrap';
-    // Store the original width
-    this.originalWidth = element.getBoundingClientRect().width + 'px';
-    this.wrapper.style.width = this.originalWidth;
+    this.wrapper.style.width = `${this.originalWidth}px`;
     
-    // Wrap the element content if not already wrapped
+    
+    // Wrap the element content
     if (!element.contains(this.wrapper)) {
       const content = element.textContent;
       element.textContent = '';
       this.wrapper.textContent = content;
       element.appendChild(this.wrapper);
     }
-
-    this.originalStyles = isChaosText ? {
-      fontFamily: "'EB Garamond', serif",
-      fontStyle: "italic",
-      fontWeight: "200",
-      fontSize: "50px",
-      display: 'inline-block'
-    } : {
-      font: window.getComputedStyle(element).font,
-      display: 'inline-block'
-    };
     
     this.options = {
-      characters: "!@#$%^&*()_+:,.<>12",
+      characters: "!@#$%^&*()_+:,.",
       speed: 50,
       duration: 150,
       fadeSpeed: 100,

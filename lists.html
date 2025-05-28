@@ -272,8 +272,7 @@
                     href="https://www.youtube.com/watch?v=x5i-tvvHX68"
                     target="_blank"
                   >
-                    Flight 93 Revolt
-                  </a>
+                    Flight 93 Revolt</a>
                   <img src="images/arowRight.svg" />
                 </p>
                 <p>
@@ -365,7 +364,7 @@
                   <img src="images/arowRight.svg" />
                 </p>
                 <p>
-                  <a href="./journals/paradigms.html">Paradigm shifts</a>
+                  <a href="https://substack.com/@jaslavie/p-155306488" target="_blank">Paradigm shifts</a>
                   <img src="images/arowRight.svg" />
                 </p>
                 <p>
@@ -387,6 +386,10 @@
                 </p>
                 <p>
                   <a href="./journals/books.html">30 books in a nutshell</a>
+                  <img src="images/arowRight.svg" />
+                </p>
+                <p>
+                  <i>the HAI guide (forthcoming)</i>
                   <img src="images/arowRight.svg" />
                 </p>
               </div>
@@ -499,6 +502,30 @@
             structuredDataScript.type = 'application/ld+json';
             structuredDataScript.text = JSON.stringify(generateStructuredData());
             document.head.appendChild(structuredDataScript);
+        });
+      </script>
+      <script src="glitch.js"></script>
+      <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          document.querySelectorAll("a").forEach((link) => {
+            if (
+              !link.closest(".nav-container") &&
+              !link.closest(".tag-wrap") &&
+              !link.closest(".work-image") &&
+              !link.closest(".btn-nav") &&
+              !link.closest(".contact-btn") &&
+              !link.closest(".favContain")
+            ) {
+              const glitch = new GlitchEffect(link, {
+                characters: "!@#$%^&*()_+-=[]{}|;:,.<>?0123456789",
+                speed: 50,
+                duration: 1000
+              });
+
+              link.addEventListener("mouseenter", () => glitch.start());
+              link.addEventListener("mouseleave", () => glitch.stop());
+            }
+          });
         });
       </script>
     </body>
