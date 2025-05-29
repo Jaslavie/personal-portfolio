@@ -207,9 +207,10 @@
 
           <!-- <div class="tag-wrap"> -->
             <!-- <div class="tagAbout"> -->
-              <!-- <p class="currently-contain">
-                currently @ Palantir
-              </p> -->
+              <p class="currently-contain">
+                ⚲ currently in 
+                <a href="https://www.palantir.com/" target="_blank">Washington D.C.</a>
+              </p>
             <!-- </div> -->
             <!-- <div class="tagAbout">
               <a
@@ -669,11 +670,12 @@
                     const span = document.createElement("span");
                     span.textContent = char;
                     
+                    
                     if (isSpecialWord) {
                         span.classList.add("highlight");
-                        if (word === "chaos" || word === "into" || word === "order.") {
-                            span.classList.add("chaoslink");
-                        }
+                        // if (word === "chaos" || word === "into" || word === "order.") {
+                        //     span.classList.add("chaoslink");
+                        // }
                     }
                     
                     const totalIndex = words.slice(0, wordIndex).join("").length + charIndex;
@@ -814,8 +816,10 @@
         });
 
         sr.reveal(".currently-contain", {
-          delay: 3000,
-          interval: 300
+          delay: 2300,
+          
+          origin: "bottom",
+          // duration: 300
         });
 
         
