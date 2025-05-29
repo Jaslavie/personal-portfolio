@@ -205,15 +205,12 @@
             </h1>
           </div>
 
-          <div class="tag-wrap">
-            <!-- <div class="tagAbout">
-              <a
-                href="https://www.palantir.com/platforms/gotham/"
-                target="_blank"
-              >
-                <p>Product Design @ Palantir ↗</p>
-              </a>
-            </div> -->
+          <!-- <div class="tag-wrap"> -->
+            <!-- <div class="tagAbout"> -->
+              <!-- <p class="currently-contain">
+                currently @ Palantir
+              </p> -->
+            <!-- </div> -->
             <!-- <div class="tagAbout">
               <a
                 href="https://www.nasa.gov/johnson/exhibits/extravehicular-activities/"
@@ -222,7 +219,7 @@
                 <p>Research @ NASA ↗</p>
               </a>
             </div> -->
-          </div>
+          <!-- </div> -->
         </div>
         <div class="planetContain">
           <img src="images/planetImage.svg" alt="" />
@@ -288,7 +285,10 @@
             Occasionally, I rabbit hole into
             <a href="https://www.pinterest.com/Jaslavie/wwii/" target="_blank">WW2 history</a>, 
             <a href="https://substack.com/home/post/p-156802970" target="_blank">write</a>, and linger in classical art museums. 
-
+            My favorite painting is the 
+            <a href="https://docs.google.com/document/d/1CzlYHEmkBuTxmPa-5-PeTGrjZgd06Puz3gIr9QQ1f1c/edit?tab=t.0" target="_blank">Blue Boy</a> 
+            and my favorite book is 
+            <a href="https://en.wikipedia.org/wiki/Mastery_(book)" target="_blank">Mastery</a>.
             
           </p>
           <hr class="divider">
@@ -811,6 +811,11 @@
         sr.reveal("h1, h2, p, .infinite-contain, .work-image, .type-container", {
             delay: 200,
             interval: 300
+        });
+
+        sr.reveal(".currently-contain", {
+          delay: 3000,
+          interval: 300
         });
 
         
