@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Art Animation</title>
+    <style>
+        body {
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: "EB Garamond", serif;
+        }
+        #ascii-art {
+            color: #666;
+            white-space: pre;
+            font-size: 27.62px;
+            line-height: 1;
+            cursor: default;
+            position: relative;
+            font-weight: Regular;
+            opacity: 0.85;
+            letter-spacing: 0.02em;
+        }
+        .char {
+            display: inline-block;
+            transition: color 0.3s;
+            font-family: "EB Garamond", serif;
+            font-size: 27.62px;
+            color: rgba(255, 255, 255, 0.506);
+        }
+
+        .char-wrapper {
+            display: inline-block;
+            position: relative;
+            text-align: center;
+        }
+
+        .char.active {
+            color: #fff;
+            transition: color 0.2s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <div id="ascii-art"></div>
+
+    <script>
+        const art = `                                                                                       _.oo.
+                                      _ .u [[/;:,.                     _.odMMM'
+                                .o888uu[[[ / ;:  -.      _.@p^       MM.
+                             oN8888uu[[[ /; -:: - .                 dp^
+                           dNMMN8u[[[ [/; : - - .         .o@p
+                        MMMN888uu[[/; : : - .    o@^
+                        NNMN888uu[[[ / ~ .o@^
+                         88888888uu[ [ [/o@^-. .
+                       oI8888uu[ [ /o@P^:- - . .
+                .@^    YUU[[/o@^; : :- - - . .
+           OMP        ^/o@p: ; ; : - - - . .
+      .dMM         o@   ^;:  : - - - . . .
+   dMMM@^                    ^^^
+ YMUP^
+   ^^`;
+
+        const container = document.getElementById('ascii-art');
+        
+        // Split the art into individual characters and wrap each in a span
+        const wrappedArt = art.split('\n').map(line => 
+            line.split('').map(char => 
+                char === ' ' ? ' ' : `<span class="char">${char}</span>`
+            ).join('')
+        ).join('\n');
+        
+        container.innerHTML = wrappedArt;
+
+        // store original character values as an indexed array
+        const originalChars = art.split('\n').map(line => 
+            line.split('').map(char => char === ' ' ? ' ' : char)
+        );
+
+        // Wrap each character in a container that preserves dimensions
+        document.querySelectorAll('.char').forEach(char => {
+            // Create wrapper and store original dimensions
+            const wrapper = document.createElement('span');
+            wrapper.className = 'char-wrapper';
+            
+            // Force layout calculation to get correct dimensions
+            const rect = char.getBoundingClientRect();
+            wrapper.style.width = `${rect.width}px`;
+            wrapper.style.height = `${rect.height}px`;
+            
+            // Wrap the character
+            char.parentNode.insertBefore(wrapper, char);
+            wrapper.appendChild(char);
+        });
+
+        function simpleGlitch(element, originalChar) {
+            const glitchChars = "!@#$%^&*()_+-=[]{}|;:,.<>";
+            let iterations = 0;
+            const maxIterations = 5;
+
+            // get the index of the original character in the originalChars array
+            const originalIndex = originalChars.flat().indexOf(originalChar);
+            console.log("the original index of the character is: ", originalIndex);
+            
+            const interval = setInterval(() => {
+                element.textContent = glitchChars[Math.floor(Math.random() * glitchChars.length)];
+                iterations++;
+                
+                if (iterations >= maxIterations) {
+                    clearInterval(interval);
+                    element.textContent = originalChar;
+                    console.log("we are reverting to the original character: ", originalChar);
+                }
+            }, 200);
+        }
+
+        function findNearbyChars(sourceChar, radius) {
+            const sourceRect = sourceChar.getBoundingClientRect();
+            const sourceCenter = {
+                x: sourceRect.left + sourceRect.width / 2,
+                y: sourceRect.top + sourceRect.height / 2
+            };
+
+            return Array.from(document.querySelectorAll('.char')).filter(char => {
+                if (char === sourceChar) return false;
+                const rect = char.getBoundingClientRect();
+                const center = {
+                    x: rect.left + rect.width / 2,
+                    y: rect.top + rect.height / 2
+                };
+                const distance = Math.sqrt(
+                    Math.pow(center.x - sourceCenter.x, 2) + 
+                    Math.pow(center.y - sourceCenter.y, 2)
+                );
+                return distance <= radius;
+            });
+        }
+
+        document.querySelectorAll('.char').forEach(char => {
+            const originalChar = char.textContent;
+            
+            char.addEventListener('mouseenter', () => {
+                // Animate hovered character
+                char.classList.add('active');
+                simpleGlitch(char, originalChar);
+
+                // Ripple effect
+                const nearbyChars = findNearbyChars(char, 50);
+                nearbyChars.forEach((nearChar, index) => {
+                    const delay = index * 100;
+                    setTimeout(() => {
+                        const nearOriginalChar = nearChar.textContent;
+                        nearChar.classList.add('active');
+                        simpleGlitch(nearChar, nearOriginalChar);
+                        
+                        // Reset nearby char after animation
+                        setTimeout(() => {
+                            nearChar.classList.remove('active');
+                        }, 1000);
+                    }, delay);
+                });
+
+                // Reset hovered char after animation
+                setTimeout(() => {
+                    char.classList.remove('active');
+                }, 1000);
+            });
+        });
+    </script>
+</body>
+</html>
