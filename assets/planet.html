@@ -10,7 +10,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            height: fit-content;
             margin: 0;
             font-family: "EB Garamond", serif;
         }
@@ -97,27 +97,6 @@
             wrapper.appendChild(char);
         });
 
-        function simpleGlitch(element, originalChar) {
-            const glitchChars = "!@#$%^&*()_+-=[]{}|;:,.<>";
-            let iterations = 0;
-            const maxIterations = 5;
-
-            // get the index of the original character in the originalChars array
-            const originalIndex = originalChars.flat().indexOf(originalChar);
-            console.log("the original index of the character is: ", originalIndex);
-            
-            const interval = setInterval(() => {
-                element.textContent = glitchChars[Math.floor(Math.random() * glitchChars.length)];
-                iterations++;
-                
-                if (iterations >= maxIterations) {
-                    clearInterval(interval);
-                    element.textContent = originalChar;
-                    console.log("we are reverting to the original character: ", originalChar);
-                }
-            }, 200);
-        }
-
         function findNearbyChars(sourceChar, radius) {
             const sourceRect = sourceChar.getBoundingClientRect();
             const sourceCenter = {
@@ -141,25 +120,53 @@
         }
 
         document.querySelectorAll('.char').forEach(char => {
-            const originalChar = char.textContent;
+            // Store the original character as a data attribute
+            char.dataset.originalChar = char.textContent;
+            let isAnimating = false;
             
+            function simpleGlitch(element) {
+                if (element.isGlitching) return;
+                element.isGlitching = true;
+                
+                const glitchChars = "!@#$%^&*()_+-=[]{}|;:,.<>";
+                let iterations = 0;
+                const maxIterations = 5;
+                
+                const interval = setInterval(() => {
+                    element.textContent = glitchChars[Math.floor(Math.random() * glitchChars.length)];
+                    iterations++;
+                    
+                    if (iterations >= maxIterations) {
+                        clearInterval(interval);
+                        // Always revert to the stored original character
+                        element.textContent = element.dataset.originalChar;
+                        setTimeout(() => {
+                            element.isGlitching = false;
+                        }, 1000);
+                    }
+                }, 200);
+            }
+
             char.addEventListener('mouseenter', () => {
+                if (isAnimating) return;
+                isAnimating = true;
+                
                 // Animate hovered character
                 char.classList.add('active');
-                simpleGlitch(char, originalChar);
+                simpleGlitch(char);
 
                 // Ripple effect
                 const nearbyChars = findNearbyChars(char, 50);
                 nearbyChars.forEach((nearChar, index) => {
                     const delay = index * 100;
                     setTimeout(() => {
-                        const nearOriginalChar = nearChar.textContent;
                         nearChar.classList.add('active');
-                        simpleGlitch(nearChar, nearOriginalChar);
+                        simpleGlitch(nearChar);
                         
                         // Reset nearby char after animation
                         setTimeout(() => {
                             nearChar.classList.remove('active');
+                            nearChar.textContent = nearChar.dataset.originalChar;
                         }, 1000);
                     }, delay);
                 });
@@ -167,6 +174,8 @@
                 // Reset hovered char after animation
                 setTimeout(() => {
                     char.classList.remove('active');
+                    char.textContent = char.dataset.originalChar;
+                    isAnimating = false;
                 }, 1000);
             });
         });
